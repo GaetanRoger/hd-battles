@@ -1,9 +1,12 @@
-import { BestiaireService } from './../../shared/bestiaire/bestiaire.service';
-import { Observable, combineLatest } from 'rxjs';
-import { map, filter, startWith, tap } from 'rxjs/operators';
+import { BestiaireService } from '../../shared/services/bestiaire/bestiaire.service';
+import { Observable } from 'rxjs';
+import { filter, map } from 'rxjs/operators';
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators, FormControl, FormArray } from '@angular/forms';
+import { FormArray, FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Monstre } from 'src/app/models/monstre.interface';
+import { Battle } from '../../models/battle';
+import { LocalStorageService } from '../../shared/services/local-storage/local-storage.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-battle-build',
@@ -14,27 +17,14 @@ export class BattleBuildComponent implements OnInit {
   battleBuildForm: FormGroup;
   filteredMontres: Observable<Monstre[]>[] = [];
 
-  constructor(
-    private readonly fb: FormBuilder,
-    private readonly bestiaire: BestiaireService
-  ) {
-  }
-
-  get nameControl(): FormControl {
-    return this.battleBuildForm.get('name') as FormControl;
+  constructor(private readonly fb: FormBuilder,
+              private readonly bestiaire: BestiaireService,
+              private readonly localStorage: LocalStorageService,
+              private readonly router: Router) {
   }
 
   get monstresArray(): FormArray {
     return this.battleBuildForm.get('monstres') as FormArray;
-  }
-
-  getSelectedMonstre(index: number): Observable<Monstre> {
-    return this.monstresArray.at(index).valueChanges
-      .pipe(
-        tap(v => console.log('for index', index, 'value=', v)),
-        map(monstreValue => monstreValue.monstre),
-        tap(v => console.log('for index', index, 'value=', v))
-      );
   }
 
   monstreName(monstre: Monstre): string {
@@ -51,7 +41,8 @@ export class BattleBuildComponent implements OnInit {
   addMonstre(): void {
     const newMonstreControlGroup = this.fb.group({
       monstre: this.fb.control(null, [Validators.required]),
-      quantity: this.fb.control(1, [Validators.required, Validators.min(1)])
+      quantity: this.fb.control(1, [Validators.required, Validators.min(1)]),
+      randomHp: this.fb.control(true, [Validators.required])
     });
     this.monstresArray.push(newMonstreControlGroup);
 
@@ -65,14 +56,20 @@ export class BattleBuildComponent implements OnInit {
     this.filteredMontres.push(filteredMonstres$);
   }
 
+  removeMonstre(index: number): void {
+    this.monstresArray.removeAt(index);
+    this.filteredMontres.splice(index, 1);
+  }
+
+  submit() {
+    const id = Date.now().toString();
+    this.localStorage.addToStoredMap<Battle>('built-battles', id,{id, ...this.battleBuildForm.value});
+    this.router.navigate(['/battle/recap', id]);
+  }
+
   private filterMonstres(monstres: Monstre[], filterValue: string): Monstre[] {
     const cleanedFilterValue = filterValue.trim().toLowerCase();
 
     return monstres.filter(monstre => monstre.title.trim().toLowerCase().includes(cleanedFilterValue));
   }
-
-  removeMonstre(index: number): void {
-    this.monstresArray.removeAt(index);
-  }
-
 }

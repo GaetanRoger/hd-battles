@@ -1,0 +1,54 @@
+<header>
+  <h1 class="title">
+    <small>Prêt pour</small>
+    {{battle.name}}
+    <small>?</small>
+  </h1>
+</header>
+
+<main class="monstres">
+  <mat-card *ngFor="let monstre of battle.monstres" class="monstre">
+    <mat-card-title class="monster-name">
+      <span class="quantity"> {{monstre.quantity}} × </span>
+      <span class="name">{{monstre.monstre.title}}</span>
+    </mat-card-title>
+    <mat-card-subtitle>{{monstre.monstre.header.monster.type}}
+      - {{monstre.monstre.header.monster.alignment}}</mat-card-subtitle>
+    <mat-card-content>
+      <app-monstre-attributs [monstre]="monstre.monstre"></app-monstre-attributs>
+
+      <div class="caracs">
+        <div class="carac">
+          <app-medieval-icon icon="shield" class="icon"></app-medieval-icon>
+          <span class="name">Classe d'armure : </span>
+          <span class="value">{{monstre.monstre.header.monster.ac}}</span>
+        </div>
+        <div class="carac">
+          <app-medieval-icon icon="poison" class="icon"></app-medieval-icon>
+          <span class="name">Points de vie : </span>
+          <app-dice-roll [rawDice]="monstre.monstre.header.monster.hp"
+                         [random]="monstre.randomHp"
+                         class="value"></app-dice-roll>
+        </div>
+        <div class="carac">
+          <app-medieval-icon icon="flag" class="icon"></app-medieval-icon>
+          <span class="name">Vitesse : </span>
+          <span class="value">
+              <app-inline-editable [value]="monstre.monstre.header.monster.speed"
+                                   (valueChange)="monstre.monstre.header.monster.speed = $event"></app-inline-editable></span>
+        </div>
+      </div>
+
+      <div class="description" [innerHTML]="monstre.monstre.content | sanitizeHtml">
+      </div>
+    </mat-card-content>
+
+  </mat-card>
+</main>
+
+<footer>
+  <button mat-raised-button (click)="save()" matTooltip="Les modifications ne sont enregistrées que pour ce combat">
+    Enregistrer les modifications
+  </button>
+  <button mat-raised-button color="accent" (click)="go()">GO !</button>
+</footer>

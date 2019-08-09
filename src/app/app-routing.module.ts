@@ -9,7 +9,7 @@ const routes: Routes = [
   },
   {
     path: '**',
-    redirectTo: '/battle/build'
+    redirectTo: '/battle'
   }
 ];
 

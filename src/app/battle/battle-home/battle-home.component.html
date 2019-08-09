@@ -1,0 +1,3 @@
+<div *ngFor="let battle of battles">
+  <a [routerLink]="['/battle/recap', battle.id]">{{battle.name}} - {{battle.monstres.length}} monstres</a>
+</div>

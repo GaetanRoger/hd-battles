@@ -1,0 +1,9 @@
+<span *ngIf="!editable" (click)="onValueClick()" matTooltip="Cliquer pour modifier">
+  {{value}}
+</span>
+<input #inputElement
+  *ngIf="editable"
+  [(ngModel)]="value"
+  (keyup.enter)="editable = false"
+  (keyup.escape)="editable = false"
+  (blur)="editable = false">

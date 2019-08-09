@@ -1,0 +1,28 @@
+<div class="attributs">
+  <div class="attribut">
+    <span class="attribut-name">{{'Force' | attributName}}</span>
+    <span class="attribut-value">
+      <app-inline-editable [value]="monstre.header.monster.str" (valueChange)="monstre.header.monster.str = $event"></app-inline-editable>
+    </span>
+  </div>
+  <div class="attribut">
+    <span class="attribut-name">{{'Dextérité' | attributName}}</span>
+    <span class="attribut-value">{{monstre.header.monster.dex}}</span>
+  </div>
+  <div class="attribut">
+    <span class="attribut-name">{{'Constitution' | attributName}}</span>
+    <span class="attribut-value">{{monstre.header.monster.con}}</span>
+  </div>
+  <div class="attribut">
+    <span class="attribut-name">{{'Intelligence' | attributName}}</span>
+    <span class="attribut-value">{{monstre.header.monster.int}}</span>
+  </div>
+  <div class="attribut">
+    <span class="attribut-name">{{'Sagesse' | attributName}}</span>
+    <span class="attribut-value">{{monstre.header.monster.wis}}</span>
+  </div>
+  <div class="attribut">
+    <span class="attribut-name">{{'Charisme' | attributName}}</span>
+    <span class="attribut-value">{{monstre.header.monster.cha}}</span>
+  </div>
+</div>

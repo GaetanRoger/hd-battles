@@ -1,4 +1,4 @@
-import { Monstre } from './../../models/monstre.interface';
+import { Monstre } from '../../../models/monstre.interface';
 
 export const BESTIAIRE: Monstre[] = [
   {

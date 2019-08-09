@@ -17,7 +17,24 @@
       <input matInput type="number" placeholder="Nombre" formControlName="quantity">
     </mat-form-field>
 
-    <pre>{{(getSelectedMonstre(i) | async) | json}}</pre>
+    <mat-checkbox formControlName="randomHp">PV tirés au dé ?</mat-checkbox>
+
+    <button mat-icon-button (click)="removeMonstre(i)">
+      <mat-icon>close</mat-icon>
+    </button>
+
+
+    <div class="monstre-card" *ngIf="monstreGroup.value.monstre as monstre">
+      <div *ngIf="monstre.title">
+        <ul>
+          <li>Nom : {{monstre.title}}</li>
+          <li>Type : {{monstre.truetype}}</li>
+          <li>Taille : {{monstre.size}}</li>
+        </ul>
+      </div>
+    </div>
   </div>
   <button mat-raised-button (click)="addMonstre()">Add</button>
+  <br>
+  <button mat-raised-button color="accent" [disabled]="battleBuildForm.invalid" (click)="submit()">Continuer</button>
 </form>

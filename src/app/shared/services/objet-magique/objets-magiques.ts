@@ -1,4 +1,4 @@
-import { ObjetMagique } from './../../models/objet-magique.interface';
+import { ObjetMagique } from '../../../models/objet-magique.interface';
 
 export const OBJETS_MAGIQUES: ObjetMagique[] = [
   {
