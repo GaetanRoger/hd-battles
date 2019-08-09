@@ -1,0 +1,23 @@
+<form [formGroup]="battleBuildForm">
+  <mat-form-field class="name">
+    <input matInput placeholder="Nom du combat" formControlName="name">
+  </mat-form-field>
+
+  <div class="monstre" *ngFor="let monstreGroup of monstresArray.controls; let i = index" [formGroup]="monstreGroup">
+    <mat-form-field class="monstre-id">
+      <input matInput placeholder="ID du monstre" formControlName="monstre" [matAutocomplete]="auto">
+      <mat-autocomplete #auto="matAutocomplete" [displayWith]="monstreName">
+        <mat-option *ngFor="let monstre of filteredMontres[i] | async" [value]="monstre">
+          <span>{{monstre.title}}</span>
+        </mat-option>
+      </mat-autocomplete>
+    </mat-form-field>
+
+    <mat-form-field class="monstre-quantity">
+      <input matInput type="number" placeholder="Nombre" formControlName="quantity">
+    </mat-form-field>
+
+    <pre>{{(getSelectedMonstre(i) | async) | json}}</pre>
+  </div>
+  <button mat-raised-button (click)="addMonstre()">Add</button>
+</form>
