@@ -1,0 +1,30 @@
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  .default, .other {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .value {
+      width: 10%
+    }
+
+  }
+
+  .default .description {
+      width: 85%;
+  }
+  .other .description {
+    width: 75%;
+  }
+
+
+  input {
+    -moz-appearance: textfield;
+  }
+}

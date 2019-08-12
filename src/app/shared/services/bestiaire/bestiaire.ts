@@ -130,6 +130,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 18,
         modifier: 4
+      },
+      ac: {
+        default: {
+          value: 17,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -264,6 +271,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 14,
         modifier: 2
+      },
+      ac: {
+        default: {
+          value: 15,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -379,6 +393,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 11,
         modifier: 0
+      },
+      ac: {
+        default: {
+          value: 10
+        },
+        others: []
       }
     }
   },
@@ -498,6 +518,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 7,
         modifier: -2
+      },
+      ac: {
+        default: {
+          value: 12
+        },
+        others: []
       }
     }
   },
@@ -627,6 +653,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 10,
         modifier: 0
+      },
+      ac: {
+        default: {
+          value: 13
+        },
+        others: []
       }
     }
   },
@@ -761,6 +793,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 15,
         modifier: 2
+      },
+      ac: {
+        default: {
+          value: 13
+        },
+        others: []
       }
     }
   },
@@ -912,6 +950,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 4,
         modifier: -3
+      },
+      ac: {
+        default: {
+          value: 12
+        },
+        others: []
       }
     }
   },
@@ -1058,6 +1102,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 23,
         modifier: 6
+      },
+      ac: {
+        default: {
+          value: 17,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -1180,6 +1231,18 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 6,
         modifier: -2
+      },
+      ac: {
+        default: {
+          value: 14,
+          description: 'armure naturelle'
+        },
+        others: [
+          {
+            value: 11,
+            description: 'quand il est à terre'
+          }
+        ]
       }
     }
   },
@@ -1299,6 +1362,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 2,
         modifier: -4
+      },
+      ac: {
+        default: {
+          value: 12
+        },
+        others: []
       }
     }
   },
@@ -1418,6 +1487,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 6,
         modifier: -2
+      },
+      ac: {
+        default: {
+          value: 13,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -1547,6 +1623,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 4,
         modifier: -3
+      },
+      ac: {
+        default: {
+          value: 14,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -1666,6 +1749,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 4,
         modifier: -3
+      },
+      ac: {
+        default: {
+          value: 13
+        },
+        others: []
       }
     }
   },
@@ -1783,6 +1872,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 7,
         modifier: -2
+      },
+      ac: {
+        default: {
+          value: 13,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -1900,6 +1996,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 6,
         modifier: -2
+      },
+      ac: {
+        default: {
+          value: 9
+        },
+        others: []
       }
     }
   },
@@ -2016,6 +2118,17 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 16,
         modifier: 3
+      },
+      ac: {
+        default: {
+          value: 12,
+        },
+        others: [
+          {
+            value: 15,
+            description: 'avec armure du mage'
+          }
+        ]
       }
     }
   },
@@ -2149,6 +2262,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 1,
         modifier: -5
+      },
+      ac: {
+        default: {
+          value: 18,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -2277,6 +2397,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 10,
         modifier: 0
+      },
+      ac: {
+        default: {
+          value: 15,
+          description: 'armure de cuir clouté'
+        },
+        others: []
       }
     }
   },
@@ -2399,6 +2526,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 10,
         modifier: 0
+      },
+      ac: {
+        default: {
+          value: 17,
+          description: 'armure naturelle, bouclier'
+        },
+        others: []
       }
     }
   },
@@ -2533,6 +2667,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 6,
         modifier: -2
+      },
+      ac: {
+        default: {
+          value: 9
+        },
+        others: []
       }
     }
   },
@@ -2650,6 +2790,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 6,
         modifier: -2
+      },
+      ac: {
+        default: {
+          value: 12
+        },
+        others: []
       }
     }
   },
@@ -2784,6 +2930,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 22,
         modifier: 6
+      },
+      ac: {
+        default: {
+          value: 19,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -2907,6 +3060,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 10,
         modifier: 0
+      },
+      ac: {
+        default: {
+          value: 12,
+          description: 'armure de cuir'
+        },
+        others: []
       }
     }
   },
@@ -3031,6 +3191,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 7,
         modifier: -2
+      },
+      ac: {
+        default: {
+          value: 15,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -3147,6 +3314,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 5,
         modifier: -3
+      },
+      ac: {
+        default: {
+          value: 11
+        },
+        others: []
       }
     }
   },
@@ -3290,6 +3463,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 12,
         modifier: 1
+      },
+      ac: {
+        default: {
+          value: 17,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -3409,6 +3589,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 3,
         modifier: -4
+      },
+      ac: {
+        default: {
+          value: 13
+        },
+        others: []
       }
     }
   },
@@ -3528,6 +3714,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 5,
         modifier: -3
+      },
+      ac: {
+        default: {
+          value: 13
+        },
+        others: []
       }
     }
   },
@@ -3644,6 +3836,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 9,
         modifier: -1
+      },
+      ac: {
+        default: {
+          value: 13,
+          description: 'armure de peau'
+        },
+        others: []
       }
     }
   },
@@ -3761,6 +3960,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 5,
         modifier: -3
+      },
+      ac: {
+        default: {
+          value: 10
+        },
+        others: []
       }
     }
   },
@@ -3890,6 +4095,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 5,
         modifier: -3
+      },
+      ac: {
+        default: {
+          value: 10
+        },
+        others: []
       }
     }
   },
@@ -4024,6 +4235,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 8,
         modifier: -1
+      },
+      ac: {
+        default: {
+          value: 13
+        },
+        others: []
       }
     }
   },
@@ -4150,6 +4367,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 5,
         modifier: -3
+      },
+      ac: {
+        default: {
+          value: 17,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -4278,6 +4502,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 14,
         modifier: 2
+      },
+      ac: {
+        default: {
+          value: 15,
+          description: 'armure de cuir clouté'
+        },
+        others: []
       }
     }
   },
@@ -4420,6 +4651,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 11,
         modifier: 0
+      },
+      ac: {
+        default: {
+          value: 12
+        },
+        others: []
       }
     }
   },
@@ -4556,6 +4793,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 10,
         modifier: 0
+      },
+      ac: {
+        default: {
+          value: 15,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -4675,6 +4919,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 6,
         modifier: -2
+      },
+      ac: {
+        default: {
+          value: 12
+        },
+        others: []
       }
     }
   },
@@ -4807,6 +5057,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 10,
         modifier: 0
+      },
+      ac: {
+        default: {
+          value: 13,
+          description: 'armure de cuir'
+        },
+        others: []
       }
     }
   },
@@ -4931,6 +5188,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 10,
         modifier: 0
+      },
+      ac: {
+        default: {
+          value: 14,
+          description: 'armure de peau'
+        },
+        others: []
       }
     }
   },
@@ -5057,6 +5321,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 12,
         modifier: 1
+      },
+      ac: {
+        default: {
+          value: 13,
+          description: 'armure de cuir'
+        },
+        others: []
       }
     }
   },
@@ -5173,6 +5444,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 5,
         modifier: -3
+      },
+      ac: {
+        default: {
+          value: 9
+        },
+        others: []
       }
     }
   },
@@ -5321,6 +5598,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 7,
         modifier: -2
+      },
+      ac: {
+        default: {
+          value: 15,
+          description: 'armure naturelle, bouclier'
+        },
+        others: []
       }
     }
   },
@@ -5440,6 +5724,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 7,
         modifier: -2
+      },
+      ac: {
+        default: {
+          value: 12
+        },
+        others: []
       }
     }
   },
@@ -5559,6 +5849,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 4,
         modifier: -3
+      },
+      ac: {
+        default: {
+          value: 12
+        },
+        others: []
       }
     }
   },
@@ -5678,6 +5974,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 6,
         modifier: -2
+      },
+      ac: {
+        default: {
+          value: 13
+        },
+        others: []
       }
     }
   },
@@ -5810,6 +6112,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 9,
         modifier: -1
+      },
+      ac: {
+        default: {
+          value: 16,
+          description: 'armure de peau, bouclier'
+        },
+        others: []
       }
     }
   },
@@ -5952,6 +6261,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 9,
         modifier: -1
+      },
+      ac: {
+        default: {
+          value: 15,
+          description: 'armure de peau, bouclier'
+        },
+        others: []
       }
     }
   },
@@ -6069,6 +6385,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 7,
         modifier: -2
+      },
+      ac: {
+        default: {
+          value: 11
+        },
+        others: []
       }
     }
   },
@@ -6194,6 +6516,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 10,
         modifier: 0
+      },
+      ac: {
+        default: {
+          value: 13
+        },
+        others: []
       }
     }
   },
@@ -6311,6 +6639,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 7,
         modifier: -2
+      },
+      ac: {
+        default: {
+          value: 12
+        },
+        others: []
       }
     }
   },
@@ -6427,6 +6761,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 7,
         modifier: -2
+      },
+      ac: {
+        default: {
+          value: 10
+        },
+        others: []
       }
     }
   },
@@ -6545,6 +6885,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 7,
         modifier: -2
+      },
+      ac: {
+        default: {
+          value: 10
+        },
+        others: []
       }
     }
   },
@@ -6678,6 +7024,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 15,
         modifier: 2
+      },
+      ac: {
+        default: {
+          value: 18,
+          description: 'harnois'
+        },
+        others: []
       }
     }
   },
@@ -6797,6 +7150,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 5,
         modifier: -3
+      },
+      ac: {
+        default: {
+          value: 10
+        },
+        others: []
       }
     }
   },
@@ -6916,6 +7275,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 6,
         modifier: -2
+      },
+      ac: {
+        default: {
+          value: 11,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -7032,6 +7398,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 5,
         modifier: -3
+      },
+      ac: {
+        default: {
+          value: 13
+        },
+        others: []
       }
     }
   },
@@ -7155,6 +7527,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 6,
         modifier: -2
+      },
+      ac: {
+        default: {
+          value: 12
+        },
+        others: []
       }
     }
   },
@@ -7276,6 +7654,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 11,
         modifier: 0
+      },
+      ac: {
+        default: {
+          value: 13
+        },
+        others: []
       }
     }
   },
@@ -7421,6 +7805,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 10,
         modifier: 0
+      },
+      ac: {
+        default: {
+          value: 14,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -7538,6 +7929,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 7,
         modifier: -2
+      },
+      ac: {
+        default: {
+          value: 11
+        },
+        others: []
       }
     }
   },
@@ -7655,6 +8052,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 10,
         modifier: 0
+      },
+      ac: {
+        default: {
+          value: 12
+        },
+        others: []
       }
     }
   },
@@ -7786,6 +8189,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 5,
         modifier: -3
+      },
+      ac: {
+        default: {
+          value: 16,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -7907,6 +8317,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 5,
         modifier: -3
+      },
+      ac: {
+        default: {
+          value: 11
+        },
+        others: []
       }
     }
   },
@@ -8028,6 +8444,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 6,
         modifier: -2
+      },
+      ac: {
+        default: {
+          value: 12
+        },
+        others: []
       }
     }
   },
@@ -8162,6 +8584,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 18,
         modifier: 4
+      },
+      ac: {
+        default: {
+          value: 19,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -8281,6 +8710,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 2,
         modifier: -4
+      },
+      ac: {
+        default: {
+          value: 11,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -8402,6 +8838,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 3,
         modifier: -4
+      },
+      ac: {
+        default: {
+          value: 15,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -8525,6 +8968,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 3,
         modifier: -4
+      },
+      ac: {
+        default: {
+          value: 11
+        },
+        others: []
       }
     }
   },
@@ -8647,6 +9096,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 1,
         modifier: -5
+      },
+      ac: {
+        default: {
+          value: 5
+        },
+        others: []
       }
     }
   },
@@ -8768,6 +9223,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 5,
         modifier: -3
+      },
+      ac: {
+        default: {
+          value: 12,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -8901,6 +9363,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 7,
         modifier: -2
+      },
+      ac: {
+        default: {
+          value: 14,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -9034,6 +9503,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 1,
         modifier: -5
+      },
+      ac: {
+        default: {
+          value: 6
+        },
+        others: []
       }
     }
   },
@@ -9158,6 +9633,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 15,
         modifier: 2
+      },
+      ac: {
+        default: {
+          value: 13,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -9294,6 +9776,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 20,
         modifier: 5
+      },
+      ac: {
+        default: {
+          value: 17,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -9423,6 +9912,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 18,
         modifier: 4
+      },
+      ac: {
+        default: {
+          value: 15
+        },
+        others: []
       }
     }
   },
@@ -9565,6 +10060,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 14,
         modifier: 2
+      },
+      ac: {
+        default: {
+          value: 15,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -9699,6 +10201,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 11,
         modifier: 0
+      },
+      ac: {
+        default: {
+          value: 13,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -9841,6 +10350,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 17,
         modifier: 3
+      },
+      ac: {
+        default: {
+          value: 18,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -9972,6 +10488,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 14,
         modifier: 2
+      },
+      ac: {
+        default: {
+          value: 16,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -10118,6 +10641,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 18,
         modifier: 4
+      },
+      ac: {
+        default: {
+          value: 18,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -10252,6 +10782,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 16,
         modifier: 3
+      },
+      ac: {
+        default: {
+          value: 19,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -10378,6 +10915,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 14,
         modifier: 2
+      },
+      ac: {
+        default: {
+          value: 13
+        },
+        others: []
       }
     }
   },
@@ -10524,6 +11067,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 24,
         modifier: 7
+      },
+      ac: {
+        default: {
+          value: 19,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -10652,6 +11202,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 6,
         modifier: -2
+      },
+      ac: {
+        default: {
+          value: 14
+        },
+        others: []
       }
     }
   },
@@ -10782,6 +11338,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 20,
         modifier: 5
+      },
+      ac: {
+        default: {
+          value: 17,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -10914,6 +11477,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 14,
         modifier: 2
+      },
+      ac: {
+        default: {
+          value: 14
+        },
+        others: []
       }
     }
   },
@@ -11063,6 +11632,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 12,
         modifier: 1
+      },
+      ac: {
+        default: {
+          value: 18,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -11212,6 +11788,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 14,
         modifier: 2
+      },
+      ac: {
+        default: {
+          value: 20,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -11363,6 +11946,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 19,
         modifier: 4
+      },
+      ac: {
+        default: {
+          value: 19,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -11514,6 +12104,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 21,
         modifier: 5
+      },
+      ac: {
+        default: {
+          value: 22,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -11663,6 +12260,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 17,
         modifier: 3
+      },
+      ac: {
+        default: {
+          value: 18,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -11816,6 +12420,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 19,
         modifier: 4
+      },
+      ac: {
+        default: {
+          value: 20,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -11969,6 +12580,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 21,
         modifier: 5
+      },
+      ac: {
+        default: {
+          value: 19,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -12122,6 +12740,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 23,
         modifier: 6
+      },
+      ac: {
+        default: {
+          value: 22,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -12275,6 +12900,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 24,
         modifier: 7
+      },
+      ac: {
+        default: {
+          value: 19,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -12428,6 +13060,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 28,
         modifier: 9
+      },
+      ac: {
+        default: {
+          value: 22,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -12583,6 +13222,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 19,
         modifier: 4
+      },
+      ac: {
+        default: {
+          value: 19,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -12738,6 +13384,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 21,
         modifier: 5
+      },
+      ac: {
+        default: {
+          value: 22,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -12887,6 +13540,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 17,
         modifier: 3
+      },
+      ac: {
+        default: {
+          value: 18,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -13040,6 +13700,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 19,
         modifier: 4
+      },
+      ac: {
+        default: {
+          value: 21,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -13189,6 +13856,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 17,
         modifier: 3
+      },
+      ac: {
+        default: {
+          value: 19,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -13338,6 +14012,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 19,
         modifier: 4
+      },
+      ac: {
+        default: {
+          value: 22,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -13487,6 +14168,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 21,
         modifier: 5
+      },
+      ac: {
+        default: {
+          value: 19,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -13636,6 +14324,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 23,
         modifier: 6
+      },
+      ac: {
+        default: {
+          value: 22,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -13789,6 +14484,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 17,
         modifier: 3
+      },
+      ac: {
+        default: {
+          value: 19,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -13942,6 +14644,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 19,
         modifier: 4
+      },
+      ac: {
+        default: {
+          value: 21,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -14088,6 +14797,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 12,
         modifier: 1
+      },
+      ac: {
+        default: {
+          value: 20,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -14211,6 +14927,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 11,
         modifier: 0
+      },
+      ac: {
+        default: {
+          value: 16,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -14336,6 +15059,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 15,
         modifier: 2
+      },
+      ac: {
+        default: {
+          value: 17,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -14459,6 +15189,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 13,
         modifier: 1
+      },
+      ac: {
+        default: {
+          value: 16,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -14582,6 +15319,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 15,
         modifier: 2
+      },
+      ac: {
+        default: {
+          value: 17,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -14706,6 +15450,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 16,
         modifier: 3
+      },
+      ac: {
+        default: {
+          value: 17,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -14832,6 +15583,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 15,
         modifier: 2
+      },
+      ac: {
+        default: {
+          value: 17,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -14955,6 +15713,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 13,
         modifier: 1
+      },
+      ac: {
+        default: {
+          value: 16,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -15079,6 +15844,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 13,
         modifier: 1
+      },
+      ac: {
+        default: {
+          value: 17,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -15202,6 +15974,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 15,
         modifier: 2
+      },
+      ac: {
+        default: {
+          value: 17,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -15330,6 +16109,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 13,
         modifier: 1
+      },
+      ac: {
+        default: {
+          value: 17,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -15448,6 +16234,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 15,
         modifier: 2
+      },
+      ac: {
+        default: {
+          value: 13
+        },
+        others: []
       }
     }
   },
@@ -15581,6 +16373,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 3,
         modifier: -4
+      },
+      ac: {
+        default: {
+          value: 11,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -15723,6 +16522,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 12,
         modifier: 1
+      },
+      ac: {
+        default: {
+          value: 19,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -15853,6 +16659,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 12,
         modifier: 1
+      },
+      ac: {
+        default: {
+          value: 15,
+          description: 'chemise de mailles'
+        },
+        others: []
       }
     }
   },
@@ -15965,6 +16778,17 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 11,
         modifier: 0
+      },
+      ac: {
+        default: {
+          value: 11,
+        },
+        others: [
+          {
+            value: 16,
+            description: 'avec peau d\'écorce'
+          }
+        ]
       }
     }
   },
@@ -16087,6 +16911,15 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 18,
         modifier: 4
+      },
+      ac: {
+        default: {
+          value: 11
+        },
+        others: [{
+          value: 16,
+          description: 'avec peau d\'écorceLoup-garou'
+        }]
       }
     }
   },
@@ -16225,6 +17058,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 9,
         modifier: -1
+      },
+      ac: {
+        default: {
+          value: 16,
+          description: 'armure d\'écailles, bouclier'
+        },
+        others: []
       }
     }
   },
@@ -16341,6 +17181,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 13,
         modifier: 1
+      },
+      ac: {
+        default: {
+          value: 13,
+          description: 'chemise de mailles'
+        },
+        others: []
       }
     }
   },
@@ -16469,6 +17316,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 11,
         modifier: 0
+      },
+      ac: {
+        default: {
+          value: 13,
+          description: 'armure de cuir'
+        },
+        others: []
       }
     }
   },
@@ -16603,6 +17457,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 16,
         modifier: 3
+      },
+      ac: {
+        default: {
+          value: 17,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -16730,6 +17591,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 6,
         modifier: -2
+      },
+      ac: {
+        default: {
+          value: 10
+        },
+        others: []
       }
     }
   },
@@ -16855,6 +17722,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 10,
         modifier: 0
+      },
+      ac: {
+        default: {
+          value: 14,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -16994,6 +17868,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 6,
         modifier: -2
+      },
+      ac: {
+        default: {
+          value: 15
+        },
+        others: []
       }
     }
   },
@@ -17133,6 +18013,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 8,
         modifier: -1
+      },
+      ac: {
+        default: {
+          value: 14
+        },
+        others: []
       }
     }
   },
@@ -17265,6 +18151,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 5,
         modifier: -3
+      },
+      ac: {
+        default: {
+          value: 17,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -17398,6 +18291,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 7,
         modifier: -2
+      },
+      ac: {
+        default: {
+          value: 13
+        },
+        others: []
       }
     }
   },
@@ -17527,6 +18426,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 6,
         modifier: -2
+      },
+      ac: {
+        default: {
+          value: 12,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -17665,6 +18571,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 6,
         modifier: -2
+      },
+      ac: {
+        default: {
+          value: 20,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -17782,6 +18695,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 7,
         modifier: -2
+      },
+      ac: {
+        default: {
+          value: 12,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -17911,6 +18831,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 1,
         modifier: -5
+      },
+      ac: {
+        default: {
+          value: 17,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -18046,6 +18973,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 18,
         modifier: 4
+      },
+      ac: {
+        default: {
+          value: 18,
+          description: 'harnois'
+        },
+        others: []
       }
     }
   },
@@ -18174,6 +19108,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 16,
         modifier: 3
+      },
+      ac: {
+        default: {
+          value: 12
+        },
+        others: []
       }
     }
   },
@@ -18311,6 +19251,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 11,
         modifier: 0
+      },
+      ac: {
+        default: {
+          value: 15,
+          description: 'armure de cuir'
+        },
+        others: []
       }
     }
   },
@@ -18453,6 +19400,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 8,
         modifier: -1
+      },
+      ac: {
+        default: {
+          value: 13,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -18587,6 +19541,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 8,
         modifier: -1
+      },
+      ac: {
+        default: {
+          value: 12,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -18703,6 +19664,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 14,
         modifier: 2
+      },
+      ac: {
+        default: {
+          value: 13,
+          description: 'armure de cuir'
+        },
+        others: []
       }
     }
   },
@@ -18847,6 +19815,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 17,
         modifier: 3
+      },
+      ac: {
+        default: {
+          value: 11
+        },
+        others: []
       }
     }
   },
@@ -18968,6 +19942,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 6,
         modifier: -2
+      },
+      ac: {
+        default: {
+          value: 13
+        },
+        others: []
       }
     }
   },
@@ -19089,6 +20069,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 5,
         modifier: -3
+      },
+      ac: {
+        default: {
+          value: 12
+        },
+        others: []
       }
     }
   },
@@ -19223,6 +20209,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 11,
         modifier: 0
+      },
+      ac: {
+        default: {
+          value: 19
+        },
+        others: []
       }
     }
   },
@@ -19338,6 +20330,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 10,
         modifier: 0
+      },
+      ac: {
+        default: {
+          value: 16,
+          description: 'bouclier, chemise de mailles'
+        },
+        others: []
       }
     }
   },
@@ -19468,6 +20467,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 3,
         modifier: -4
+      },
+      ac: {
+        default: {
+          value: 17,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -19604,6 +20610,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 7,
         modifier: -2
+      },
+      ac: {
+        default: {
+          value: 15,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -19737,6 +20750,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 6,
         modifier: -2
+      },
+      ac: {
+        default: {
+          value: 13,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -19869,6 +20889,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 16,
         modifier: 3
+      },
+      ac: {
+        default: {
+          value: 14,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -20001,6 +21028,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 9,
         modifier: -1
+      },
+      ac: {
+        default: {
+          value: 17,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -20139,6 +21173,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 18,
         modifier: 4
+      },
+      ac: {
+        default: {
+          value: 16,
+          description: 'armure d\'écailles'
+        },
+        others: []
       }
     }
   },
@@ -20272,6 +21313,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 13,
         modifier: 1
+      },
+      ac: {
+        default: {
+          value: 18,
+          description: 'harnois'
+        },
+        others: []
       }
     }
   },
@@ -20403,6 +21451,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 12,
         modifier: 1
+      },
+      ac: {
+        default: {
+          value: 15,
+          description: 'armure composite'
+        },
+        others: []
       }
     }
   },
@@ -20533,6 +21588,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 1,
         modifier: -5
+      },
+      ac: {
+        default: {
+          value: 8
+        },
+        others: []
       }
     }
   },
@@ -20667,6 +21728,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 16,
         modifier: 3
+      },
+      ac: {
+        default: {
+          value: 17,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -20796,6 +21864,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 15,
         modifier: 2
+      },
+      ac: {
+        default: {
+          value: 16,
+          description: 'armure de cuir clouté, bouclier'
+        },
+        others: []
       }
     }
   },
@@ -20934,6 +22009,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 7,
         modifier: -2
+      },
+      ac: {
+        default: {
+          value: 15,
+          description: 'armure de peau, bouclier'
+        },
+        others: []
       }
     }
   },
@@ -21064,6 +22146,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 9,
         modifier: -1
+      },
+      ac: {
+        default: {
+          value: 15,
+          description: 'chemise de mailles'
+        },
+        others: []
       }
     }
   },
@@ -21196,6 +22285,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 8,
         modifier: -1
+      },
+      ac: {
+        default: {
+          value: 15,
+          description: 'armure de cuir, bouclier'
+        },
+        others: []
       }
     }
   },
@@ -21336,6 +22432,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 8,
         modifier: -1
+      },
+      ac: {
+        default: {
+          value: 14,
+          description: 'armure de peau'
+        },
+        others: []
       }
     }
   },
@@ -21464,6 +22567,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 9,
         modifier: -1
+      },
+      ac: {
+        default: {
+          value: 16,
+          description: 'armure de peau, bouclier'
+        },
+        others: []
       }
     }
   },
@@ -21599,6 +22709,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 1,
         modifier: -5
+      },
+      ac: {
+        default: {
+          value: 14,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -21730,6 +22847,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 5,
         modifier: -3
+      },
+      ac: {
+        default: {
+          value: 9
+        },
+        others: []
       }
     }
   },
@@ -21873,6 +22996,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 1,
         modifier: -5
+      },
+      ac: {
+        default: {
+          value: 20,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -22008,6 +23138,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 1,
         modifier: -5
+      },
+      ac: {
+        default: {
+          value: 17,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -22142,6 +23279,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 7,
         modifier: -2
+      },
+      ac: {
+        default: {
+          value: 19,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -22275,6 +23419,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 6,
         modifier: -2
+      },
+      ac: {
+        default: {
+          value: 12
+        },
+        others: []
       }
     }
   },
@@ -22405,6 +23555,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 7,
         modifier: -2
+      },
+      ac: {
+        default: {
+          value: 12
+        },
+        others: []
       }
     }
   },
@@ -22512,6 +23668,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 3,
         modifier: -4
+      },
+      ac: {
+        default: {
+          value: 11
+        },
+        others: []
       }
     }
   },
@@ -22633,6 +23795,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 3,
         modifier: -4
+      },
+      ac: {
+        default: {
+          value: 11
+        },
+        others: []
       }
     }
   },
@@ -22767,6 +23935,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 5,
         modifier: -3
+      },
+      ac: {
+        default: {
+          value: 14,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -22899,6 +24074,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 8,
         modifier: -1
+      },
+      ac: {
+        default: {
+          value: 12
+        },
+        others: []
       }
     }
   },
@@ -23031,6 +24212,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 13,
         modifier: 1
+      },
+      ac: {
+        default: {
+          value: 14,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -23165,6 +24353,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 16,
         modifier: 3
+      },
+      ac: {
+        default: {
+          value: 17,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -23297,6 +24492,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 14,
         modifier: 2
+      },
+      ac: {
+        default: {
+          value: 17,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -23417,6 +24619,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 3,
         modifier: -4
+      },
+      ac: {
+        default: {
+          value: 12
+        },
+        others: []
       }
     }
   },
@@ -23533,6 +24741,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 8,
         modifier: -1
+      },
+      ac: {
+        default: {
+          value: 12,
+          description: 'armure de peau'
+        },
+        others: []
       }
     }
   },
@@ -23667,6 +24882,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 18,
         modifier: 4
+      },
+      ac: {
+        default: {
+          value: 17,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -23804,6 +25026,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 13,
         modifier: 1
+      },
+      ac: {
+        default: {
+          value: 11
+        },
+        others: []
       }
     }
   },
@@ -23938,6 +25166,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 13,
         modifier: 1
+      },
+      ac: {
+        default: {
+          value: 16,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -24055,6 +25290,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 7,
         modifier: -2
+      },
+      ac: {
+        default: {
+          value: 12
+        },
+        others: []
       }
     }
   },
@@ -24184,6 +25425,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 10,
         modifier: 0
+      },
+      ac: {
+        default: {
+          value: 13
+        },
+        others: []
       }
     }
   },
@@ -24316,6 +25563,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 7,
         modifier: -2
+      },
+      ac: {
+        default: {
+          value: 13,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -24423,6 +25677,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 2,
         modifier: -4
+      },
+      ac: {
+        default: {
+          value: 11
+        },
+        others: []
       }
     }
   },
@@ -24540,6 +25800,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 5,
         modifier: -3
+      },
+      ac: {
+        default: {
+          value: 13,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -24674,6 +25941,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 8,
         modifier: -1
+      },
+      ac: {
+        default: {
+          value: 11
+        },
+        others: []
       }
     }
   },
@@ -24802,6 +26075,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 9,
         modifier: -1
+      },
+      ac: {
+        default: {
+          value: 18,
+          description: 'bouclier, cotte de mailles'
+        },
+        others: []
       }
     }
   },
@@ -24950,6 +26230,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 7,
         modifier: -2
+      },
+      ac: {
+        default: {
+          value: 15,
+          description: 'armure naturelle, bouclier'
+        },
+        others: []
       }
     }
   },
@@ -25070,6 +26357,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 12,
         modifier: 1
+      },
+      ac: {
+        default: {
+          value: 11
+        },
+        others: []
       }
     }
   },
@@ -25193,6 +26486,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 7,
         modifier: -2
+      },
+      ac: {
+        default: {
+          value: 13,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -25317,6 +26617,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 7,
         modifier: -2
+      },
+      ac: {
+        default: {
+          value: 15,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -25436,6 +26743,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 5,
         modifier: -3
+      },
+      ac: {
+        default: {
+          value: 11
+        },
+        others: []
       }
     }
   },
@@ -25555,6 +26868,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 7,
         modifier: -2
+      },
+      ac: {
+        default: {
+          value: 12
+        },
+        others: []
       }
     }
   },
@@ -25691,6 +27010,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 12,
         modifier: 1
+      },
+      ac: {
+        default: {
+          value: 17,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -25828,6 +27154,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 17,
         modifier: 3
+      },
+      ac: {
+        default: {
+          value: 18,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -25963,6 +27296,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 15,
         modifier: 2
+      },
+      ac: {
+        default: {
+          value: 17,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -26098,6 +27438,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 19,
         modifier: 4
+      },
+      ac: {
+        default: {
+          value: 18,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -26234,6 +27581,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 20,
         modifier: 5
+      },
+      ac: {
+        default: {
+          value: 18,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -26372,6 +27726,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 17,
         modifier: 3
+      },
+      ac: {
+        default: {
+          value: 18,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -26507,6 +27868,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 15,
         modifier: 2
+      },
+      ac: {
+        default: {
+          value: 17,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -26643,6 +28011,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 15,
         modifier: 2
+      },
+      ac: {
+        default: {
+          value: 18,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -26778,6 +28153,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 19,
         modifier: 4
+      },
+      ac: {
+        default: {
+          value: 18,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -26918,6 +28300,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 15,
         modifier: 2
+      },
+      ac: {
+        default: {
+          value: 18,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -27048,6 +28437,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 8,
         modifier: -1
+      },
+      ac: {
+        default: {
+          value: 12
+        },
+        others: []
       }
     }
   },
@@ -27196,6 +28591,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 20,
         modifier: 5
+      },
+      ac: {
+        default: {
+          value: 18,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -27336,6 +28738,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 16,
         modifier: 3
+      },
+      ac: {
+        default: {
+          value: 13,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -27461,6 +28870,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 6,
         modifier: -2
+      },
+      ac: {
+        default: {
+          value: 15,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -27585,6 +29001,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 3,
         modifier: -4
+      },
+      ac: {
+        default: {
+          value: 7
+        },
+        others: []
       }
     }
   },
@@ -27703,6 +29125,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 3,
         modifier: -4
+      },
+      ac: {
+        default: {
+          value: 10
+        },
+        others: []
       }
     }
   },
@@ -27821,6 +29249,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 5,
         modifier: -3
+      },
+      ac: {
+        default: {
+          value: 12,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -27948,6 +29383,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 16,
         modifier: 3
+      },
+      ac: {
+        default: {
+          value: 17,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -28093,6 +29535,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 16,
         modifier: 3
+      },
+      ac: {
+        default: {
+          value: 12
+        },
+        others: []
       }
     }
   },
@@ -28218,6 +29666,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 8,
         modifier: -1
+      },
+      ac: {
+        default: {
+          value: 12
+        },
+        others: []
       }
     }
   },
@@ -28339,6 +29793,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 6,
         modifier: -2
+      },
+      ac: {
+        default: {
+          value: 13,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -28461,6 +29922,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 8,
         modifier: -1
+      },
+      ac: {
+        default: {
+          value: 13,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -28580,6 +30048,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 7,
         modifier: -2
+      },
+      ac: {
+        default: {
+          value: 14,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -28722,6 +30197,16 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 10,
         modifier: 0
+      },
+      ac: {
+        default: {
+          value: 11,
+          description: 'sous forme humanoïde'
+        },
+        others: [{
+          value: 12,
+          description: 'armure naturelle sous forme hybride ou de loup'
+        }]
       }
     }
   },
@@ -28838,6 +30323,15 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 11,
         modifier: 0
+      },
+      ac: {
+        default: {
+          value: 12,
+        },
+        others: [{
+          value: 15,
+          description: 'avec armure du mage'
+        }]
       }
     }
   },
@@ -28958,6 +30452,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 10,
         modifier: 0
+      },
+      ac: {
+        default: {
+          value: 14,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -29086,6 +30587,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 11,
         modifier: 0
+      },
+      ac: {
+        default: {
+          value: 11,
+          description: 'armure de cuir'
+        },
+        others: []
       }
     }
   },
@@ -29211,6 +30719,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 6,
         modifier: -2
+      },
+      ac: {
+        default: {
+          value: 13,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -29335,6 +30850,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 5,
         modifier: -3
+      },
+      ac: {
+        default: {
+          value: 11
+        },
+        others: []
       }
     }
   },
@@ -29477,6 +30998,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 14,
         modifier: 2
+      },
+      ac: {
+        default: {
+          value: 14,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -29619,6 +31147,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 8,
         modifier: -1
+      },
+      ac: {
+        default: {
+          value: 14,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -29754,6 +31289,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 20,
         modifier: 5
+      },
+      ac: {
+        default: {
+          value: 18,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -29873,6 +31415,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 7,
         modifier: -2
+      },
+      ac: {
+        default: {
+          value: 12
+        },
+        others: []
       }
     }
   },
@@ -30017,6 +31565,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 15,
         modifier: 2
+      },
+      ac: {
+        default: {
+          value: 15,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -30133,6 +31688,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 10,
         modifier: 0
+      },
+      ac: {
+        default: {
+          value: 12,
+          description: 'armure de cuir'
+        },
+        others: []
       }
     }
   },
@@ -30263,6 +31825,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 12,
         modifier: 1
+      },
+      ac: {
+        default: {
+          value: 11
+        },
+        others: []
       }
     }
   },
@@ -30389,6 +31957,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 10,
         modifier: 0
+      },
+      ac: {
+        default: {
+          value: 11
+        },
+        others: []
       }
     }
   },
@@ -30519,6 +32093,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 10,
         modifier: 0
+      },
+      ac: {
+        default: {
+          value: 12
+        },
+        others: []
       }
     }
   },
@@ -30647,6 +32227,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 12,
         modifier: 1
+      },
+      ac: {
+        default: {
+          value: 10
+        },
+        others: []
       }
     }
   },
@@ -30789,6 +32375,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 9,
         modifier: -1
+      },
+      ac: {
+        default: {
+          value: 13,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -30903,6 +32496,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 3,
         modifier: -4
+      },
+      ac: {
+        default: {
+          value: 13,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -31037,6 +32637,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 8,
         modifier: -1
+      },
+      ac: {
+        default: {
+          value: 12,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -31169,6 +32776,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 9,
         modifier: -1
+      },
+      ac: {
+        default: {
+          value: 14,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -31299,6 +32913,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 1,
         modifier: -5
+      },
+      ac: {
+        default: {
+          value: 5
+        },
+        others: []
       }
     }
   },
@@ -31423,6 +33043,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 6,
         modifier: -2
+      },
+      ac: {
+        default: {
+          value: 15,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -31558,6 +33185,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 12,
         modifier: 1
+      },
+      ac: {
+        default: {
+          value: 11,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -31695,6 +33329,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 16,
         modifier: 3
+      },
+      ac: {
+        default: {
+          value: 17,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -31800,6 +33441,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 3,
         modifier: -4
+      },
+      ac: {
+        default: {
+          value: 11
+        },
+        others: []
       }
     }
   },
@@ -31921,6 +33568,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 5,
         modifier: -3
+      },
+      ac: {
+        default: {
+          value: 10
+        },
+        others: []
       }
     }
   },
@@ -32046,6 +33699,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 16,
         modifier: 3
+      },
+      ac: {
+        default: {
+          value: 15,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -32169,6 +33829,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 18,
         modifier: 4
+      },
+      ac: {
+        default: {
+          value: 18,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -32311,6 +33978,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 15,
         modifier: 2
+      },
+      ac: {
+        default: {
+          value: 18,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -32456,6 +34130,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 15,
         modifier: 2
+      },
+      ac: {
+        default: {
+          value: 14,
+          description: 'armure de cuir clouté'
+        },
+        others: []
       }
     }
   },
@@ -32572,6 +34253,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 16,
         modifier: 3
+      },
+      ac: {
+        default: {
+          value: 15,
+          description: 'cuirasse'
+        },
+        others: []
       }
     }
   },
@@ -32701,6 +34389,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 1,
         modifier: -5
+      },
+      ac: {
+        default: {
+          value: 12,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -32834,6 +34529,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 4,
         modifier: -3
+      },
+      ac: {
+        default: {
+          value: 12
+        },
+        others: []
       }
     }
   },
@@ -32963,6 +34664,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 6,
         modifier: -2
+      },
+      ac: {
+        default: {
+          value: 12
+        },
+        others: []
       }
     }
   },
@@ -33094,6 +34801,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 2,
         modifier: -4
+      },
+      ac: {
+        default: {
+          value: 13
+        },
+        others: []
       }
     }
   },
@@ -33223,6 +34936,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 3,
         modifier: -4
+      },
+      ac: {
+        default: {
+          value: 10
+        },
+        others: []
       }
     }
   },
@@ -33354,6 +35073,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 3,
         modifier: -4
+      },
+      ac: {
+        default: {
+          value: 14
+        },
+        others: []
       }
     }
   },
@@ -33487,6 +35212,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 7,
         modifier: -2
+      },
+      ac: {
+        default: {
+          value: 11,
+          description: 'armure de peau'
+        },
+        others: []
       }
     }
   },
@@ -33620,6 +35352,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 8,
         modifier: -1
+      },
+      ac: {
+        default: {
+          value: 12
+        },
+        others: []
       }
     }
   },
@@ -33756,6 +35494,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 15,
         modifier: 2
+      },
+      ac: {
+        default: {
+          value: 16,
+          description: 'cotte de mailles'
+        },
+        others: []
       }
     }
   },
@@ -33886,6 +35631,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 10,
         modifier: 0
+      },
+      ac: {
+        default: {
+          value: 13,
+          description: 'armure de peau'
+        },
+        others: []
       }
     }
   },
@@ -34022,6 +35774,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 6,
         modifier: -2
+      },
+      ac: {
+        default: {
+          value: 14,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -34157,6 +35916,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 7,
         modifier: -2
+      },
+      ac: {
+        default: {
+          value: 11,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -34286,6 +36052,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 7,
         modifier: -2
+      },
+      ac: {
+        default: {
+          value: 11,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -34417,6 +36190,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 7,
         modifier: -2
+      },
+      ac: {
+        default: {
+          value: 12,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -34557,6 +36337,16 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 12,
         modifier: 1
+      },
+      ac: {
+        default: {
+          value: 10,
+          description: 'sous forme humanoïde'
+        },
+        others: [{
+          value: 11,
+          description: 'armure naturelle sous forme hybride ou d\'ours'
+        }]
       }
     }
   },
@@ -34683,6 +36473,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 6,
         modifier: -2
+      },
+      ac: {
+        default: {
+          value: 14,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -34812,6 +36609,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 7,
         modifier: -2
+      },
+      ac: {
+        default: {
+          value: 12
+        },
+        others: []
       }
     }
   },
@@ -34933,6 +36736,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 4,
         modifier: -3
+      },
+      ac: {
+        default: {
+          value: 12
+        },
+        others: []
       }
     }
   },
@@ -35052,6 +36861,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 13,
         modifier: 1
+      },
+      ac: {
+        default: {
+          value: 12
+        },
+        others: []
       }
     }
   },
@@ -35173,6 +36988,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 4,
         modifier: -3
+      },
+      ac: {
+        default: {
+          value: 12
+        },
+        others: []
       }
     }
   },
@@ -35294,6 +37115,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 4,
         modifier: -3
+      },
+      ac: {
+        default: {
+          value: 11
+        },
+        others: []
       }
     }
   },
@@ -35413,6 +37240,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 2,
         modifier: -4
+      },
+      ac: {
+        default: {
+          value: 13
+        },
+        others: []
       }
     }
   },
@@ -35545,6 +37378,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 25,
         modifier: 7
+      },
+      ac: {
+        default: {
+          value: 19,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -35665,6 +37505,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 5,
         modifier: -3
+      },
+      ac: {
+        default: {
+          value: 13,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -35783,6 +37630,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 7,
         modifier: -2
+      },
+      ac: {
+        default: {
+          value: 10
+        },
+        others: []
       }
     }
   },
@@ -35915,6 +37768,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 1,
         modifier: -5
+      },
+      ac: {
+        default: {
+          value: 7
+        },
+        others: []
       }
     }
   },
@@ -36057,6 +37916,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 11,
         modifier: 0
+      },
+      ac: {
+        default: {
+          value: 14,
+          description: 'armure de coquillages'
+        },
+        others: []
       }
     }
   },
@@ -36185,6 +38051,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 17,
         modifier: 3
+      },
+      ac: {
+        default: {
+          value: 18,
+          description: 'cuirasse +2'
+        },
+        others: []
       }
     }
   },
@@ -36315,6 +38188,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 10,
         modifier: 0
+      },
+      ac: {
+        default: {
+          value: 13,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -36436,6 +38316,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 3,
         modifier: -4
+      },
+      ac: {
+        default: {
+          value: 13,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -36566,6 +38453,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 10,
         modifier: 0
+      },
+      ac: {
+        default: {
+          value: 13
+        },
+        others: []
       }
     }
   },
@@ -36690,6 +38583,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 20,
         modifier: 5
+      },
+      ac: {
+        default: {
+          value: 16,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -36807,6 +38707,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 4,
         modifier: -3
+      },
+      ac: {
+        default: {
+          value: 10
+        },
+        others: []
       }
     }
   },
@@ -36924,6 +38830,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 4,
         modifier: -3
+      },
+      ac: {
+        default: {
+          value: 12
+        },
+        others: []
       }
     }
   },
@@ -37064,6 +38976,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 8,
         modifier: -1
+      },
+      ac: {
+        default: {
+          value: 12
+        },
+        others: []
       }
     }
   },
@@ -37188,6 +39106,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 5,
         modifier: -3
+      },
+      ac: {
+        default: {
+          value: 17,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -37305,6 +39230,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 4,
         modifier: -3
+      },
+      ac: {
+        default: {
+          value: 12,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -37422,6 +39354,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 4,
         modifier: -3
+      },
+      ac: {
+        default: {
+          value: 12,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -37539,6 +39478,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 5,
         modifier: -3
+      },
+      ac: {
+        default: {
+          value: 13,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -37656,6 +39602,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 6,
         modifier: -2
+      },
+      ac: {
+        default: {
+          value: 11,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -37788,6 +39741,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 9,
         modifier: -1
+      },
+      ac: {
+        default: {
+          value: 15,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -37903,6 +39863,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 10,
         modifier: 0
+      },
+      ac: {
+        default: {
+          value: 10
+        },
+        others: []
       }
     }
   },
@@ -38045,6 +40011,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 9,
         modifier: -1
+      },
+      ac: {
+        default: {
+          value: 12,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -38175,6 +40148,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 9,
         modifier: -1
+      },
+      ac: {
+        default: {
+          value: 13
+        },
+        others: []
       }
     }
   },
@@ -38307,6 +40286,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 12,
         modifier: 1
+      },
+      ac: {
+        default: {
+          value: 15,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -38428,6 +40414,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 5,
         modifier: -3
+      },
+      ac: {
+        default: {
+          value: 11,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -38549,6 +40542,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 5,
         modifier: -3
+      },
+      ac: {
+        default: {
+          value: 12,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -38681,6 +40681,16 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 8,
         modifier: -1
+      },
+      ac: {
+        default: {
+          value: 10,
+          description: 'sous forme humanoïde'
+        },
+        others: [{
+          value: 11,
+          description: 'armure naturelle sous forme hybride ou de sanglier'
+        }]
       }
     }
   },
@@ -38821,6 +40831,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 14,
         modifier: 2
+      },
+      ac: {
+        default: {
+          value: 14,
+          description: 'armure de cuir'
+        },
+        others: []
       }
     }
   },
@@ -38960,6 +40977,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 1,
         modifier: -5
+      },
+      ac: {
+        default: {
+          value: 16,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -39076,6 +41100,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 2,
         modifier: -4
+      },
+      ac: {
+        default: {
+          value: 11,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -39204,6 +41235,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 3,
         modifier: -4
+      },
+      ac: {
+        default: {
+          value: 15,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -39336,6 +41374,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 11,
         modifier: 0
+      },
+      ac: {
+        default: {
+          value: 18,
+          description: 'bouclier, cotte de mailles'
+        },
+        others: []
       }
     }
   },
@@ -39462,6 +41507,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 3,
         modifier: -4
+      },
+      ac: {
+        default: {
+          value: 12
+        },
+        others: []
       }
     }
   },
@@ -39588,6 +41639,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 3,
         modifier: -4
+      },
+      ac: {
+        default: {
+          value: 12
+        },
+        others: []
       }
     }
   },
@@ -39728,6 +41785,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 6,
         modifier: -2
+      },
+      ac: {
+        default: {
+          value: 18,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -39848,6 +41912,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 3,
         modifier: -4
+      },
+      ac: {
+        default: {
+          value: 13
+        },
+        others: []
       }
     }
   },
@@ -39964,6 +42034,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 3,
         modifier: -4
+      },
+      ac: {
+        default: {
+          value: 14
+        },
+        others: []
       }
     }
   },
@@ -40081,6 +42157,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 5,
         modifier: -3
+      },
+      ac: {
+        default: {
+          value: 14
+        },
+        others: []
       }
     }
   },
@@ -40213,6 +42295,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 7,
         modifier: -2
+      },
+      ac: {
+        default: {
+          value: 12
+        },
+        others: []
       }
     }
   },
@@ -40358,6 +42446,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 30,
         modifier: 10
+      },
+      ac: {
+        default: {
+          value: 21,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -40488,6 +42583,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 11,
         modifier: 0
+      },
+      ac: {
+        default: {
+          value: 12
+        },
+        others: []
       }
     }
   },
@@ -40620,6 +42721,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 5,
         modifier: -3
+      },
+      ac: {
+        default: {
+          value: 13,
+          description: 'débris d\'armure'
+        },
+        others: []
       }
     }
   },
@@ -40742,6 +42850,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 5,
         modifier: -3
+      },
+      ac: {
+        default: {
+          value: 13,
+          description: 'débris de barde'
+        },
+        others: []
       }
     }
   },
@@ -40875,6 +42990,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 5,
         modifier: -3
+      },
+      ac: {
+        default: {
+          value: 12,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -40996,6 +43118,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 6,
         modifier: -2
+      },
+      ac: {
+        default: {
+          value: 14,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -41128,6 +43257,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 20,
         modifier: 5
+      },
+      ac: {
+        default: {
+          value: 15,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -41264,6 +43400,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 12,
         modifier: 1
+      },
+      ac: {
+        default: {
+          value: 15,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -41393,6 +43536,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 1,
         modifier: -5
+      },
+      ac: {
+        default: {
+          value: 12
+        },
+        others: []
       }
     }
   },
@@ -41555,6 +43704,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 11,
         modifier: 0
+      },
+      ac: {
+        default: {
+          value: 25,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -41695,6 +43851,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 10,
         modifier: 0
+      },
+      ac: {
+        default: {
+          value: 16,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -41829,6 +43992,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 5,
         modifier: -3
+      },
+      ac: {
+        default: {
+          value: 15,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -41958,6 +44128,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 8,
         modifier: -1
+      },
+      ac: {
+        default: {
+          value: 12
+        },
+        others: []
       }
     }
   },
@@ -42087,6 +44263,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 8,
         modifier: -1
+      },
+      ac: {
+        default: {
+          value: 12
+        },
+        others: []
       }
     }
   },
@@ -42235,6 +44417,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 11,
         modifier: 0
+      },
+      ac: {
+        default: {
+          value: 12
+        },
+        others: []
       }
     }
   },
@@ -42357,6 +44545,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 6,
         modifier: -2
+      },
+      ac: {
+        default: {
+          value: 11
+        },
+        others: []
       }
     }
   },
@@ -42490,6 +44684,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 11,
         modifier: 0
+      },
+      ac: {
+        default: {
+          value: 14
+        },
+        others: []
       }
     }
   },
@@ -42618,6 +44818,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 5,
         modifier: -3
+      },
+      ac: {
+        default: {
+          value: 13,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -42756,6 +44963,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 7,
         modifier: -2
+      },
+      ac: {
+        default: {
+          value: 15,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -42889,6 +45103,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 9,
         modifier: -1
+      },
+      ac: {
+        default: {
+          value: 13,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -43030,6 +45251,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 18,
         modifier: 4
+      },
+      ac: {
+        default: {
+          value: 16,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -43162,6 +45390,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 12,
         modifier: 1
+      },
+      ac: {
+        default: {
+          value: 15,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -43291,6 +45526,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 2,
         modifier: -4
+      },
+      ac: {
+        default: {
+          value: 8
+        },
+        others: []
       }
     }
   },
@@ -43410,6 +45651,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 4,
         modifier: -3
+      },
+      ac: {
+        default: {
+          value: 10
+        },
+        others: []
       }
     }
   },
@@ -43539,6 +45786,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 7,
         modifier: -2
+      },
+      ac: {
+        default: {
+          value: 10
+        },
+        others: []
       }
     }
   },
@@ -43671,6 +45924,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 4,
         modifier: -3
+      },
+      ac: {
+        default: {
+          value: 18,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -43806,6 +46066,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 10,
         modifier: 0
+      },
+      ac: {
+        default: {
+          value: 17,
+          description: 'clibanion'
+        },
+        others: []
       }
     }
   },
@@ -43949,6 +46216,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 10,
         modifier: 0
+      },
+      ac: {
+        default: {
+          value: 18,
+          description: 'harnois'
+        },
+        others: []
       }
     }
   },
@@ -44090,6 +46364,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 6,
         modifier: -2
+      },
+      ac: {
+        default: {
+          value: 13,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -44232,6 +46513,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 8,
         modifier: -1
+      },
+      ac: {
+        default: {
+          value: 15,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -44351,6 +46639,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 8,
         modifier: -1
+      },
+      ac: {
+        default: {
+          value: 13,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -44485,6 +46780,13 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 11,
         modifier: 0
+      },
+      ac: {
+        default: {
+          value: 19,
+          description: 'armure naturelle'
+        },
+        others: []
       }
     }
   },
@@ -44607,6 +46909,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 5,
         modifier: -3
+      },
+      ac: {
+        default: {
+          value: 8
+        },
+        others: []
       }
     }
   },
@@ -44729,6 +47037,12 @@ export const BESTIAIRE: Monstre[] = [
       cha: {
         value: 5,
         modifier: -3
+      },
+      ac: {
+        default: {
+          value: 8
+        },
+        others: []
       }
     }
   }

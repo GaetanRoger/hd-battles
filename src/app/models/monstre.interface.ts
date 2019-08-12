@@ -1,5 +1,7 @@
 import { MonstreContent } from './monstre-content';
 import { DiceRoll } from './dice-roll';
+import { Carac } from './carac';
+import { ClasseArmure } from './classe-armure';
 
 export interface Monstre {
   header: {
@@ -57,11 +59,12 @@ export interface Monstre {
   parsed: {
     content: MonstreContent;
     hp: DiceRoll;
-    str: { value: number, modifier: number },
-    dex: { value: number, modifier: number },
-    int: { value: number, modifier: number },
-    con: { value: number, modifier: number },
-    wis: { value: number, modifier: number },
-    cha: { value: number, modifier: number },
+    str: Carac;
+    dex: Carac;
+    int: Carac;
+    con: Carac;
+    wis: Carac;
+    cha: Carac;
+    ac: ClasseArmure;
   };
 }

@@ -14,7 +14,7 @@
         <div class="carac">
           <app-medieval-icon icon="shield" class="icon"></app-medieval-icon>
           <span class="name">Classe d'armure : </span>
-          <span class="value">{{monstre.monstre.header.monster.ac}}</span>
+          <span class="value"><app-classe-armure [(value)]="monstre.monstre.parsed.ac" [editable]="true"></app-classe-armure> </span>
         </div>
         <div class="carac">
           <app-medieval-icon icon="poison" class="icon"></app-medieval-icon>

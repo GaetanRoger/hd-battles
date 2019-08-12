@@ -25,6 +25,8 @@ import { ModifierPipe } from './pipes/modifier/modifier.pipe';
 import { PageHeaderComponent } from './components/page-header/page-header.component';
 import { CaracEditorBottomSheetComponent } from './components/editors/carac-editor/carac-editor-bottom-sheet.component';
 import { DiceRollEditorBottomSheetComponent } from './components/editors/dice-roll-editor/dice-roll-editor-bottom-sheet.component';
+import { ClasseArmureComponent } from './components/classe-armure/classe-armure.component';
+import { ClasseArmureEditorBottomSheetComponent } from './components/editors/classe-armure-editor-bottom-sheet/classe-armure-editor-bottom-sheet.component';
 
 
 
@@ -56,11 +58,13 @@ const components = [
   MonstreCardTitleComponent,
   CaracComponent,
   PageHeaderComponent,
+  ClasseArmureComponent
 ];
 
 const entryComponents = [
   CaracEditorBottomSheetComponent,
-  DiceRollEditorBottomSheetComponent
+  DiceRollEditorBottomSheetComponent,
+  ClasseArmureEditorBottomSheetComponent
 ];
 
 const pipes = [
@@ -82,7 +86,7 @@ const pipes = [
     ...materialModules,
     ...pipes,
     ...components,
-    ...entryComponents,
+    ...entryComponents
   ],
   providers: [
     ...pipes

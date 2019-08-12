@@ -18,7 +18,7 @@
       true,
       {
         "limit": 140,
-        "ignore-pattern": "(content|resistances|immunities|components|description): '.*',"
+        "ignore-pattern": "(content|resistances|immunities|components|description|touche|capacites|actionsLegendaires): '.*',"
       }
     ],
     "member-access": false,

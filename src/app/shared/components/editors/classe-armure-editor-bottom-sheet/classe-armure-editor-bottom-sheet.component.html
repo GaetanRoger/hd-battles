@@ -1,0 +1,28 @@
+<form [formGroup]="classeArmureFromGroup">
+  <h3>CA par défaut</h3>
+  <div formGroupName="default" class="default">
+    <mat-form-field class="value">
+      <input matInput type="number" placeholder="CA" formControlName="value" >
+    </mat-form-field>
+    <mat-form-field class="description">
+      <input matInput placeholder="Description" formControlName="description">
+    </mat-form-field>
+  </div>
+  <h3 *ngIf="othersArray.controls.length > 0">
+    <button mat-icon-button (click)="addToOthersFormArray()"><mat-icon>add_circle_outline</mat-icon></button>
+    CA sous conditions
+  </h3>
+  <div *ngFor="let otherGroup of othersArray.controls; let i = index" [formGroup]="otherGroup" class="other">
+    <mat-form-field class="value">
+      <input matInput type="number" placeholder="CA" formControlName="value">
+    </mat-form-field>
+    <mat-form-field class="description">
+      <input matInput  placeholder="Description" formControlName="description">
+    </mat-form-field>
+    <button mat-icon-button (click)="removeOtherAt(i)"><mat-icon>delete</mat-icon></button>
+  </div>
+  <div class="buttons">
+    <button mat-flat-button color="accent" [disabled]="classeArmureFromGroup.invalid" (click)="closeAndSend()">OK</button>
+    <button mat-flat-button (click)="closeWithoutSending()">ANNULER</button>
+  </div>
+</form>
