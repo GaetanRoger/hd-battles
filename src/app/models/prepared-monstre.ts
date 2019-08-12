@@ -1,6 +1,6 @@
 import { Monstre } from './monstre.interface';
 
-export interface BattleMonstre {
+export interface PreparedMonstre {
   monstre: Monstre;
   quantity: number;
   randomHp: boolean;

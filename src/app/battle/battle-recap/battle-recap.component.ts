@@ -3,7 +3,9 @@ import { Battle } from '../../models/battle';
 import { ActivatedRoute, Router } from '@angular/router';
 import { LocalStorageService } from '../../shared/services/local-storage/local-storage.service';
 import { BestiaireService } from '../../shared/services/bestiaire/bestiaire.service';
-import { BattleMonstre } from '../../models/battle-monstre';
+import { PreparedMonstre } from '../../models/prepared-monstre';
+import { MonstreContent } from '../../models/monstre-content';
+import { MatBottomSheet } from '@angular/material';
 
 @Component({
   selector: 'app-battle-recap',
@@ -12,6 +14,13 @@ import { BattleMonstre } from '../../models/battle-monstre';
 })
 export class BattleRecapComponent implements OnInit {
   battle: Battle;
+
+  hidden = {
+    capacties: true,
+    actions: true,
+    actionsLegendaires: true,
+    reactions: true
+  };
 
   constructor(private readonly route: ActivatedRoute,
               private readonly localStorage: LocalStorageService,
@@ -23,22 +32,6 @@ export class BattleRecapComponent implements OnInit {
     this.battle = this.localStorage.retrieveFromStoredMap<Battle>('built-battles', battleId);
   }
 
-  getHp(battleMonstre: BattleMonstre): string {
-    const hp = this.bestiaire.parseHp(battleMonstre.monstre);
-    const modifier = hp.modifier >= 0 ? ('+' + hp.modifier) : hp.modifier.toString();
-
-    if (battleMonstre.randomHp) {
-      return `${hp.diceCount}d${hp.diceSize}${modifier}`;
-    } else {
-      hp.mean.toString();
-    }
-
-  }
-
-  vc($event: any) {
-    console.log($event);
-  }
-
   save() {
     this.localStorage.updateValueFromStoredMap<Battle>('built-battles', this.battle.id, this.battle);
   }
@@ -46,5 +39,9 @@ export class BattleRecapComponent implements OnInit {
   go() {
     this.save();
     this.router.navigate(['/battle/action', this.battle.id]);
+  }
+
+  getMonstreContent(monstre: PreparedMonstre): MonstreContent {
+    return this.bestiaire.parseContent(monstre.monstre);
   }
 }

@@ -1,0 +1,35 @@
+.dice-roll-editor {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 260px;
+
+  mat-form-field {
+    width: 110px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    input {
+      -moz-appearance: textfield;
+      text-align: center;
+    }
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+

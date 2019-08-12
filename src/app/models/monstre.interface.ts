@@ -1,3 +1,6 @@
+import { MonstreContent } from './monstre-content';
+import { DiceRoll } from './dice-roll';
+
 export interface Monstre {
   header: {
     title: string;
@@ -51,4 +54,14 @@ export interface Monstre {
   challenge: string;
   environment: string[];
   dungeon_type: string[];
+  parsed: {
+    content: MonstreContent;
+    hp: DiceRoll;
+    str: { value: number, modifier: number },
+    dex: { value: number, modifier: number },
+    int: { value: number, modifier: number },
+    con: { value: number, modifier: number },
+    wis: { value: number, modifier: number },
+    cha: { value: number, modifier: number },
+  };
 }

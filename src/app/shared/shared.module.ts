@@ -4,13 +4,27 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
-import { MatCardModule, MatCheckboxModule, MatIconModule, MatListModule, MatTooltipModule } from '@angular/material';
+import {
+  MatBottomSheetModule, MatButtonToggleModule,
+  MatCardModule,
+  MatCheckboxModule,
+  MatIconModule,
+  MatListModule,
+  MatRippleModule, MatSelectModule,
+  MatTooltipModule
+} from '@angular/material';
 import { AttributNamePipe } from './pipes/attribut-name.pipe';
 import { MonstreAttributsComponent } from './components/monstre-attributs/monstre-attributs.component';
 import { MedievalIconComponent } from './components/medieval-icon/medieval-icon.component';
 import { DiceRollComponent } from './components/dice-roll/dice-roll.component';
 import { SanitizeHtmlPipe } from './pipes/sanitize-html/sanitizeHtml.pipe';
 import { InlineEditableComponent } from './components/inline-editable/inline-editable.component';
+import { MonstreCardTitleComponent } from './components/monstre-card-title/monstre-card-title.component';
+import { CaracComponent } from './components/carac/carac.component';
+import { ModifierPipe } from './pipes/modifier/modifier.pipe';
+import { PageHeaderComponent } from './components/page-header/page-header.component';
+import { CaracEditorBottomSheetComponent } from './components/editors/carac-editor/carac-editor-bottom-sheet.component';
+import { DiceRollEditorBottomSheetComponent } from './components/editors/dice-roll-editor/dice-roll-editor-bottom-sheet.component';
 
 
 
@@ -22,7 +36,11 @@ const materialModules = [
   MatCheckboxModule,
   MatCardModule,
   MatListModule,
-  MatTooltipModule
+  MatTooltipModule,
+  MatRippleModule,
+  MatBottomSheetModule,
+  MatSelectModule,
+  MatButtonToggleModule
 ];
 
 const modules = [
@@ -34,17 +52,26 @@ const components = [
   MonstreAttributsComponent,
   MedievalIconComponent,
   DiceRollComponent,
-  InlineEditableComponent
+  InlineEditableComponent,
+  MonstreCardTitleComponent,
+  CaracComponent,
+  PageHeaderComponent,
+];
+
+const entryComponents = [
+  CaracEditorBottomSheetComponent,
+  DiceRollEditorBottomSheetComponent
 ];
 
 const pipes = [
   AttributNamePipe,
-  SanitizeHtmlPipe
+  SanitizeHtmlPipe,
+  ModifierPipe
 ];
 
 
 @NgModule({
-  declarations: [...pipes, ...components],
+  declarations: [...pipes, ...components, ...entryComponents],
   imports: [
     CommonModule,
     ...modules,
@@ -55,8 +82,11 @@ const pipes = [
     ...materialModules,
     ...pipes,
     ...components,
-    MedievalIconComponent,
-    DiceRollComponent
-  ]
+    ...entryComponents,
+  ],
+  providers: [
+    ...pipes
+  ],
+  entryComponents: [...entryComponents]
 })
 export class SharedModule { }

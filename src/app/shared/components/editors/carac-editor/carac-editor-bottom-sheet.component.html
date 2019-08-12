@@ -1,0 +1,17 @@
+<form class="editor" [formGroup]="caracFormGroup">
+  <div class="inputs">
+    <mat-form-field>
+      <input matInput placeholder="Valeur" type="number" formControlName="value">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput type="number" placeholder="Modificateur" formControlName="modifier">
+      <span matPrefix>{{'('}}</span>
+      <span matSuffix>)</span>
+    </mat-form-field>
+  </div>
+
+  <div class="buttons">
+    <button mat-flat-button color="accent" [disabled]="caracFormGroup.invalid" (click)="closeAndSend()">OK</button>
+    <button mat-flat-button (click)="closeWithoutSending()">ANNULER</button>
+  </div>
+</form>

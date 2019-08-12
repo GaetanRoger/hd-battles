@@ -8,18 +8,6 @@
 }
 
 
-.title {
-  font-family: "Marcellus SC", serif;
-  text-align: center;
-
-  margin-top: 0;
-
-  small {
-    opacity: 0.6;
-    font-size: 70%;
-    font-weight: 400;
-  }
-}
 
 .monstres {
   display: flex;
@@ -31,21 +19,11 @@
   margin-right: 20px;
 
   .monstre {
-    max-width: 350px;
+    width: 350px;
     margin-bottom: 20px;
     margin-left: 5px;
     margin-right: 5px;
 
-    .monster-name {
-      font-family: "Marcellus SC", serif;
-
-      text-align: center;
-
-      .quantity {
-        font-size: 16px;
-        opacity: 0.6;
-      }
-    }
 
     .caracs {
       margin-top: 20px;
@@ -71,10 +49,35 @@
       }
     }
 
-    ::ng-deep .description {
-      h2 {
-        font-family: "Marcellus SC", serif;
-        margin-bottom: 5px;
+    .content {
+      text-align: justify;
+    }
+
+    .title {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      cursor: pointer;
+    }
+
+    .action {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+
+
+      .action-icon {
+        width: 18px;
+        margin-right: 10px;
+        padding-top: 3px;
+      }
+
+      .action-info {
+        margin-top: 0;
       }
     }
 

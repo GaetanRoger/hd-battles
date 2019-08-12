@@ -34,7 +34,15 @@
       </div>
     </div>
   </div>
-  <button mat-raised-button (click)="addMonstre()">Add</button>
+
+  <div class="character" *ngFor="let characterGroup of charactersArray.controls" [formGroup]="characterGroup">
+    <mat-form-field class="character-name">
+      <input matInput placeholder="Nom du PJ" formControlName="name">
+    </mat-form-field>
+  </div>
+
+  <button mat-raised-button (click)="addMonstre()">Ajouter monstre</button>
+  <button mat-raised-button (click)="addCharacter()">Ajouter PJ</button>
   <br>
   <button mat-raised-button color="accent" [disabled]="battleBuildForm.invalid" (click)="submit()">Continuer</button>
 </form>

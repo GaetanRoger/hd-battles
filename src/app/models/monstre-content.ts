@@ -1,7 +1,7 @@
 import { Action } from './action';
 
 export interface MonstreContent {
-  actions?: (Action | string)[];
+  actions?: Action [];
   actionsLegendaires?: string;
   capacites?: string;
   reactions?: string;

@@ -1,6 +1,8 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { DiceRoll } from '../../../models/dice-roll';
 import { InfoParserService } from '../../services/info-parser/info-parser.service';
+import { MatBottomSheet } from '@angular/material';
+import { DiceRollEditorBottomSheetComponent } from '../editors/dice-roll-editor/dice-roll-editor-bottom-sheet.component';
 
 @Component({
   selector: 'app-dice-roll',
@@ -9,22 +11,47 @@ import { InfoParserService } from '../../services/info-parser/info-parser.servic
 })
 export class DiceRollComponent implements OnInit {
   @Input() dice: DiceRoll;
-  @Input() rawDice: string;
-  @Input() random = true;
-  @Input() rollButton = false;
+  @Input() random: boolean;
   @Input() editable = false;
 
-  @Output() rolledValue = new EventEmitter<number>();
+  @Output() diceChange = new EventEmitter<DiceRoll>();
 
   print: string;
 
-  constructor(private readonly infoParser: InfoParserService) { }
+  constructor(private readonly infoParser: InfoParserService,
+              private readonly bottomSheet: MatBottomSheet) { }
+
+  get tooltipText(): string {
+    return this.editable
+      ? 'Cliquez pour modifier la valeur'
+      : undefined;
+  }
 
   ngOnInit() {
-    if (this.rawDice) {
-      this.dice = this.infoParser.parseDiceRoll(this.rawDice);
+    this.updatePrint();
+  }
+
+  async openEditor() {
+    if (!this.editable) {
+      return;
     }
 
+    const results: DiceRoll = await this.bottomSheet.open<DiceRollEditorBottomSheetComponent, DiceRoll, DiceRoll>(
+      DiceRollEditorBottomSheetComponent,
+      {
+        data: this.dice,
+      })
+      .afterDismissed()
+      .toPromise();
+
+    if (!!results) {
+      this.dice = results;
+      this.diceChange.emit(this.dice);
+      this.updatePrint();
+    }
+  }
+
+  private updatePrint() {
     const modifier = this.dice.modifier >= 0
       ? ('+' + this.dice.modifier)
       : this.dice.modifier.toString();
@@ -33,5 +60,4 @@ export class DiceRollComponent implements OnInit {
       ? `${this.dice.diceCount}d${this.dice.diceSize}${modifier}`
       : this.dice.mean.toString();
   }
-
 }

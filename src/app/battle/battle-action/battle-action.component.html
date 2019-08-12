@@ -1,11 +1,29 @@
 <header>
   <h1 class="title">
     <small>C'est l'heure pour</small>
-    {{battle.name}}
+    {{builtBattle.name}}
     <small> !</small>
   </h1>
 </header>
 
 <main>
-  <h2>Round {{round}} — à {{active}} de jouer</h2>
+  <h2>Round {{round}}</h2>
+
+  <div class="monstres">
+    <mat-card *ngFor="let individual of individuals; let indiv = index" [ngClass]="{active: indiv === active}" class="individual">
+      <app-monstre-card-title [monstre]="individual.monstre"></app-monstre-card-title>
+      <mat-card-content></mat-card-content>
+      <mat-card-footer>
+        <div *ngFor="let hp of individual.hp; let indivHp = index">
+          <span>{{hp}} / {{individual.maxHp[indivHp]}}</span>
+          <button mat-icon-button (click)="removeHp(indiv, indivHp)"><mat-icon>remove_circle</mat-icon></button>
+
+        </div>
+      </mat-card-footer>
+    </mat-card>
+  </div>
 </main>
+
+<footer>
+  <button mat-raised-button (click)="nextIndividual()">Suivant !</button>
+</footer>

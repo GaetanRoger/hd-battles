@@ -1,7 +1,9 @@
-import { BattleMonstre } from './battle-monstre';
+import { PreparedMonstre } from './prepared-monstre';
+import { Character } from './character';
 
 export interface Battle {
   id: string;
   name: string;
-  monstres: BattleMonstre[];
+  monstres: PreparedMonstre[];
+  characters: Character[];
 }

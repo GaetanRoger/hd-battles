@@ -1,22 +1,15 @@
-<header>
-  <h1 class="title">
-    <small>Prêt pour</small>
-    {{battle.name}}
-    <small>?</small>
-  </h1>
-</header>
+<app-page-header
+  before="Prêt pour"
+  [title]="battle.name"
+  after=" ?"
+  subtitle="Si besoin, modifiez les valeurs des attributs ici.">
+</app-page-header>
 
 <main class="monstres">
   <mat-card *ngFor="let monstre of battle.monstres" class="monstre">
-    <mat-card-title class="monster-name">
-      <span class="quantity"> {{monstre.quantity}} × </span>
-      <span class="name">{{monstre.monstre.title}}</span>
-    </mat-card-title>
-    <mat-card-subtitle>{{monstre.monstre.header.monster.type}}
-      - {{monstre.monstre.header.monster.alignment}}</mat-card-subtitle>
+    <app-monstre-card-title [monstre]="monstre"></app-monstre-card-title>
     <mat-card-content>
-      <app-monstre-attributs [monstre]="monstre.monstre"></app-monstre-attributs>
-
+      <app-monstre-attributs [monstre]="monstre.monstre" class="attributs"></app-monstre-attributs>
       <div class="caracs">
         <div class="carac">
           <app-medieval-icon icon="shield" class="icon"></app-medieval-icon>
@@ -26,8 +19,9 @@
         <div class="carac">
           <app-medieval-icon icon="poison" class="icon"></app-medieval-icon>
           <span class="name">Points de vie : </span>
-          <app-dice-roll [rawDice]="monstre.monstre.header.monster.hp"
+          <app-dice-roll [(dice)]="monstre.monstre.parsed.hp"
                          [random]="monstre.randomHp"
+                         [editable]="true"
                          class="value"></app-dice-roll>
         </div>
         <div class="carac">
@@ -39,7 +33,56 @@
         </div>
       </div>
 
-      <div class="description" [innerHTML]="monstre.monstre.content | sanitizeHtml">
+      <div class="content" *ngIf="getMonstreContent(monstre) as content">
+        <div class="capacites" *ngIf="content.capacites">
+          <h3 class="title" (click)="hidden.capacties = !hidden.capacties" matRipple>
+            <span>Capacités</span>
+            <mat-icon *ngIf="hidden.capacties">keyboard_arrow_down</mat-icon>
+            <mat-icon *ngIf="!hidden.capacties">keyboard_arrow_up</mat-icon>
+          </h3>
+          <p [innerHTML]="content.capacites | sanitizeHtml" *ngIf="!hidden.capacties"></p>
+        </div>
+        <div class="actions" *ngIf="content.actions">
+          <h3 class="title" (click)="hidden.actions = !hidden.actions" matRipple>
+            <span>Actions</span>
+            <mat-icon *ngIf="hidden.actions">keyboard_arrow_down</mat-icon>
+            <mat-icon *ngIf="!hidden.actions">keyboard_arrow_up</mat-icon>
+          </h3>
+
+          <div *ngIf="!hidden.actions">
+            <div *ngFor="let action of content.actions" class="action">
+              <div class="action-icon">
+                <app-action-icon [type]="action.type" [typeFull]="action.typeFull"></app-action-icon>
+              </div>
+              <p class="action-info">
+                <strong>{{action.name}} : </strong>
+                <span *ngIf="action.description" [innerHTML]="action.description | sanitizeHtml"></span>
+                <span *ngIf="!action.description">
+                {{action.modificateur}} |
+                  {{action.portee}} |
+                  {{action.cibles}} <br>
+                  Touché : <span [innerHTML]="action.touche | sanitizeHtml"></span>
+              </span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="actionsLegendaires" *ngIf="content.actionsLegendaires">
+          <h3 class="title" (click)="hidden.actionsLegendaires = !hidden.actionsLegendaires" matRipple>
+            <span>Actions légendaires</span>
+            <mat-icon *ngIf="hidden.actionsLegendaires">keyboard_arrow_down</mat-icon>
+            <mat-icon *ngIf="!hidden.actionsLegendaires">keyboard_arrow_up</mat-icon>
+          </h3>
+          <p [innerHTML]="content.actionsLegendaires | sanitizeHtml" *ngIf="!hidden.actionsLegendaires"></p>
+        </div>
+        <div class="reactions" *ngIf="content.reactions">
+          <h3 class="title" (click)="hidden.reactions= !hidden.reactions" matRipple>
+            <span>Réactions</span>
+            <mat-icon *ngIf="hidden.reactions">keyboard_arrow_down</mat-icon>
+            <mat-icon *ngIf="!hidden.reactions">keyboard_arrow_up</mat-icon>
+          </h3>
+          <p [innerHTML]="content.reactions | sanitizeHtml" *ngIf="!hidden.reactions"></p>
+        </div>
       </div>
     </mat-card-content>
 

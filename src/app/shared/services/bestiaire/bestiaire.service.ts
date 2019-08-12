@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { Monstre } from 'src/app/models/monstre.interface';
 import { DiceRoll } from '../../../models/dice-roll';
 import { InfoParserService } from '../info-parser/info-parser.service';
+import { MonstreContent } from '../../../models/monstre-content';
 
 @Injectable({
   providedIn: 'root'
@@ -19,7 +20,7 @@ export class BestiaireService {
     return BESTIAIRE.find(m => m.link === id);
   }
 
-  parseHp(monstre: Monstre): DiceRoll {
-    return this.infoParser.parseDiceRoll(monstre.header.monster.hp.trim());
+  parseContent(monstre: Monstre): MonstreContent {
+    return this.infoParser.parseContent(monstre.content);
   }
 }

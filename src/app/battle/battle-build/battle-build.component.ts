@@ -27,6 +27,10 @@ export class BattleBuildComponent implements OnInit {
     return this.battleBuildForm.get('monstres') as FormArray;
   }
 
+  get charactersArray(): FormArray {
+    return this.battleBuildForm.get('characters') as FormArray;
+  }
+
   monstreName(monstre: Monstre): string {
     return monstre ? monstre.title : null;
   }
@@ -34,7 +38,8 @@ export class BattleBuildComponent implements OnInit {
   ngOnInit() {
     this.battleBuildForm = this.fb.group({
       name: [null, Validators.required],
-      monstres: this.fb.array([])
+      monstres: this.fb.array([]),
+      characters: this.fb.array([])
     });
   }
 
@@ -54,6 +59,12 @@ export class BattleBuildComponent implements OnInit {
       );
 
     this.filteredMontres.push(filteredMonstres$);
+  }
+
+  addCharacter(): void {
+    this.charactersArray.push(this.fb.group({
+      name: this.fb.control(null, Validators.required),
+    }));
   }
 
   removeMonstre(index: number): void {

@@ -1,0 +1,27 @@
+<form class="dice-roll-editor">
+  <mat-button-toggle-group name="fontStyle" aria-label="Font Style" [(ngModel)]="temp" [multiple]="false">
+    <mat-button-toggle [value]="20">D20</mat-button-toggle>
+    <mat-button-toggle [value]="12">D12</mat-button-toggle>
+    <mat-button-toggle [value]="10">D10</mat-button-toggle>
+    <mat-button-toggle [value]="8">D8</mat-button-toggle>
+    <mat-button-toggle [value]="6">D6</mat-button-toggle>
+    <mat-button-toggle [value]="4">D4</mat-button-toggle>
+  </mat-button-toggle-group>
+
+  <div class="inputs" [formGroup]="valueFormGroup">
+    <mat-form-field>
+      <span matPrefix>×</span>
+      <input matInput type="number" class="diceCount" formControlName="diceCount">
+    </mat-form-field>
+    <mat-form-field>
+      <span matPrefix>+</span>
+      <input matInput type="number" class="modifier" formControlName="modifier">
+    </mat-form-field>
+  </div>
+
+  <div class="buttons">
+    <button mat-flat-button color="accent" [disabled]="valueFormGroup.invalid" (click)="closeAndSend()">OK</button>
+    <button mat-flat-button (click)="closeWithoutSending()">CANCEL</button>
+  </div>
+
+</form>

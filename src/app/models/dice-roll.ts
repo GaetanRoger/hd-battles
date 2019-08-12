@@ -1,5 +1,5 @@
 export interface DiceRoll {
-  mean: number;
+  mean?: number;
   diceCount: number;
   diceSize: number;
   modifier: number;

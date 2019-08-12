@@ -1,0 +1,33 @@
+header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  .title {
+    font-family: "Marcellus SC", serif;
+    text-align: center;
+
+    margin-top: 0;
+    margin-bottom: 0;
+
+    .title-text {
+      font-size: 130%;
+    }
+
+
+    small {
+      opacity: 0.6;
+      font-size: 80%;
+      font-weight: 400;
+    }
+  }
+
+  p {
+    text-align: center;
+    opacity: 0.5;
+    font-size: 80%;
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: 0;
+
+  }
+}
