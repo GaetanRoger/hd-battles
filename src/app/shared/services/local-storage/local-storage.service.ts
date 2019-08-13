@@ -25,7 +25,13 @@ export class LocalStorageService {
   }
 
   retrieveStoredMap<T>(storageKey: string): { [key: string]: T } {
-    return JSON.parse(localStorage.getItem(storageKey)) as { [key: string]: T };
+    const storedString = localStorage.getItem(storageKey);
+
+    if (!storedString) {
+      return {};
+    }
+
+    return JSON.parse(storedString) as { [key: string]: T };
   }
 
   updateValueFromStoredMap<T>(storageKey: string, mapKey: string, value: T): void {

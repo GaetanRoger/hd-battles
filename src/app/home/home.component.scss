@@ -1,0 +1,56 @@
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 60vh;
+
+  color: white;
+  text-shadow: 0 0 3px rgba(0,0,0,0.5);
+  text-align: center;
+
+  background: url("/assets/home.jpg");
+  background-size: cover;
+  background-position: center;
+
+  h1 {
+    font-family: "Marcellus SC", serif;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  p{
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 1.5rem;
+
+    margin-bottom: 10vh;
+  }
+
+  .new {
+    button {
+      font-size: 1.25rem;
+      padding: 5px 10px;
+    }
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  min-height: 40vh;
+
+  .saved {
+    h2 {
+      font-family: "Marcellus SC", serif;
+      font-size: 2rem;
+    }
+
+    p {
+      font-style: italic;
+      opacity: 0.5;
+    }
+  }
+
+}

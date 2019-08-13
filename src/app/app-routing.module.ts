@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-
+import { RouterModule, Routes } from '@angular/router';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   {
@@ -8,13 +8,17 @@ const routes: Routes = [
     loadChildren: () => import('./battle/battle.module').then(m => m.BattleModule)
   },
   {
+    path: '',
+    component: HomeComponent
+  },
+  {
     path: '**',
-    redirectTo: '/battle'
+    redirectTo: ''
   }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, { enableTracing: false })],
+  imports: [RouterModule.forRoot(routes, {enableTracing: false})],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

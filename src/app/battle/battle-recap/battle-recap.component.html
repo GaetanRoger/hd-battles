@@ -34,7 +34,13 @@
           <span class="value">
             <app-sens [(value)]="monstre.monstre.parsed.senses" editable="true"></app-sens>
           </span>
-
+        </div>
+        <div class="carac">
+          <app-medieval-icon icon="axes" class="icon"></app-medieval-icon>
+          <span class="name">Difficulté&nbsp;: </span>
+          <span class="value">
+            {{monstre.monstre.challenge}} ({{monstre.monstre.header.monster.px}} PX)
+          </span>
         </div>
       </div>
 

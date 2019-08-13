@@ -1,0 +1,24 @@
+<header>
+  <h1>Héros & Dragons <br> Battles</h1>
+  <p>Gestionnaire non-officiel de combats</p>
+
+  <div class="new">
+    <button mat-raised-button routerLink="/battle/build">Nouveau combat</button>
+  </div>
+</header>
+
+<main>
+  <section class="saved">
+    <h2>Combats sauvegardés</h2>
+    <mat-nav-list *ngIf="battles.length > 0">
+      <mat-list-item mat-list-item *ngFor="let battle of battles" [routerLink]="['/battle/recap', battle.id]">
+        <h4 matLine>{{battle.name}}</h4>
+        <p matLine>{{battle.monstres.length}} monstres</p>
+      </mat-list-item>
+    </mat-nav-list>
+    <p *ngIf="battles.length === 0">Aucun pour l'instant.</p>
+
+  </section>
+</main>
+
+
