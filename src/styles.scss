@@ -2,14 +2,15 @@
 
 @font-face {
   font-family: "Marcellus SC";
-  src: url('/assets/fonts/MarcellusSC-Regular.woff2');
+  src: url("/assets/fonts/MarcellusSC-Regular.woff2");
 }
 @font-face {
   font-family: "Cinzel";
-  src: url('/assets/fonts/Cinzel-Regular.woff2');
+  src: url("/assets/fonts/Cinzel-Regular.woff2");
 }
 
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -17,5 +18,7 @@ html, body {
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
-  background-color: #F4F4F4;
+  background-color: #f4f4f4;
+  background: url("/assets/black-paper.jpg");
+  background-repeat: repeat;
 }
