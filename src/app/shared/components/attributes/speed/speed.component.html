@@ -1,0 +1,5 @@
+<span (click)="openSheet()" [class.edicursor]="editable" [matTooltip]="tooltipText">
+  <span *ngFor="let speed of value">
+    {{toSpeedString(speed)}} <br>
+  </span>
+</span>

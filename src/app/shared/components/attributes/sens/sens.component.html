@@ -1,0 +1,5 @@
+<span (click)="openSheet()" [class.edicursor]="editable" [matTooltip]="tooltipText">
+  <span *ngFor="let sens of value">
+    {{toSensString(sens)}} <br>
+  </span>
+</span>

@@ -1,6 +1,6 @@
 import { BESTIAIRE } from './bestiaire';
 import { Injectable } from '@angular/core';
-import { Monstre } from 'src/app/models/monstre.interface';
+import { Monstre } from 'src/app/models/monstre';
 import { DiceRoll } from '../../../models/dice-roll';
 import { InfoParserService } from '../info-parser/info-parser.service';
 import { MonstreContent } from '../../../models/monstre-content';

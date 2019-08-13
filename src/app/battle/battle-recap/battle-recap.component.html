@@ -1,7 +1,4 @@
-<app-page-header
-  before="Prêt pour"
-  [title]="battle.name"
-  after=" ?"
+<app-page-header before="Prêt pour" [title]="battle.name" after=" ?"
   subtitle="Si besoin, modifiez les valeurs des attributs ici.">
 </app-page-header>
 
@@ -13,23 +10,31 @@
       <div class="caracs">
         <div class="carac">
           <app-medieval-icon icon="shield" class="icon"></app-medieval-icon>
-          <span class="name">Classe d'armure : </span>
-          <span class="value"><app-classe-armure [(value)]="monstre.monstre.parsed.ac" [editable]="true"></app-classe-armure> </span>
+          <span class="name">Classe d'armure&nbsp;: </span>
+          <span class="value">
+            <app-classe-armure [(value)]="monstre.monstre.parsed.ac" [editable]="true"></app-classe-armure>
+          </span>
         </div>
         <div class="carac">
           <app-medieval-icon icon="poison" class="icon"></app-medieval-icon>
-          <span class="name">Points de vie : </span>
-          <app-dice-roll [(dice)]="monstre.monstre.parsed.hp"
-                         [random]="monstre.randomHp"
-                         [editable]="true"
-                         class="value"></app-dice-roll>
+          <span class="name">Points de vie&nbsp;: </span>
+          <app-dice-roll [(dice)]="monstre.monstre.parsed.hp" [random]="monstre.randomHp" [editable]="true"
+            class="value"></app-dice-roll>
         </div>
         <div class="carac">
           <app-medieval-icon icon="flag" class="icon"></app-medieval-icon>
-          <span class="name">Vitesse : </span>
+          <span class="name">Vitesse&nbsp;: </span>
           <span class="value">
-              <app-inline-editable [value]="monstre.monstre.header.monster.speed"
-                                   (valueChange)="monstre.monstre.header.monster.speed = $event"></app-inline-editable></span>
+            <app-speed [(value)]="monstre.monstre.parsed.speed" editable="true"></app-speed>
+          </span>
+        </div>
+        <div class="carac">
+          <app-medieval-icon icon="torch" class="icon"></app-medieval-icon>
+          <span class="name">Sens&nbsp;: </span>
+          <span class="value">
+            <app-sens [(value)]="monstre.monstre.parsed.senses" editable="true"></app-sens>
+          </span>
+
         </div>
       </div>
 
@@ -58,11 +63,11 @@
                 <strong>{{action.name}} : </strong>
                 <span *ngIf="action.description" [innerHTML]="action.description | sanitizeHtml"></span>
                 <span *ngIf="!action.description">
-                {{action.modificateur}} |
+                  {{action.modificateur}} |
                   {{action.portee}} |
                   {{action.cibles}} <br>
                   Touché : <span [innerHTML]="action.touche | sanitizeHtml"></span>
-              </span>
+                </span>
               </p>
             </div>
           </div>

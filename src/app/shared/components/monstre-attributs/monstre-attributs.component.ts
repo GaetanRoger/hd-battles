@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Monstre } from '../../../models/monstre.interface';
+import { Monstre } from '../../../models/monstre';
 
 @Component({
   selector: 'app-monstre-attributs',

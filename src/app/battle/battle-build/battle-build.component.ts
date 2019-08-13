@@ -3,7 +3,7 @@ import { Observable } from 'rxjs';
 import { filter, map } from 'rxjs/operators';
 import { Component, OnInit } from '@angular/core';
 import { FormArray, FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { Monstre } from 'src/app/models/monstre.interface';
+import { Monstre } from 'src/app/models/monstre';
 import { Battle } from '../../models/battle';
 import { LocalStorageService } from '../../shared/services/local-storage/local-storage.service';
 import { Router } from '@angular/router';

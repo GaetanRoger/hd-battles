@@ -1,7 +1,7 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { MatBottomSheet } from '@angular/material';
-import { CaracEditorBottomSheetComponent } from '../editors/carac-editor/carac-editor-bottom-sheet.component';
-import { Carac } from '../../../models/carac';
+import { Carac } from '../../../../models/carac';
+import { CaracEditorBottomSheetComponent } from '../../editors/carac-editor/carac-editor-bottom-sheet.component';
 
 @Component({
   selector: 'app-carac',

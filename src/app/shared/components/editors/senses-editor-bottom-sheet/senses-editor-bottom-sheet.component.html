@@ -1,0 +1,34 @@
+<h3>
+  <button mat-icon-button (click)="addToSensFormArray()">
+    <mat-icon>add_circle_outline</mat-icon>
+  </button>
+  Sens
+</h3>
+<div *ngFor="let sensGroup of sensesFormArray.controls; let i = index" [formGroup]="sensGroup">
+  <mat-form-field>
+    <mat-select formControlName="type">
+      <mat-option value="perception des vibrations">Perception des vibrations</mat-option>
+      <mat-option value="perception passive">Perception passive</mat-option>
+      <mat-option value="vision aveugle">Vision aveugle</mat-option>
+      <mat-option value="vision dans le noir">Vision dans le noir</mat-option>
+      <mat-option value="vision parfaite">Vision parfaite</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput type="number" placeholder="Value" formControlName="value">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput placeholder="Description" formControlName="description">
+  </mat-form-field>
+
+  <button mat-icon-button (click)="removeFromSensFormArrayAt(i)">
+    <mat-icon>delete</mat-icon>
+  </button>
+</div>
+
+<div class="buttons">
+  <button mat-flat-button color="accent" [disabled]="sensesFormArray.invalid" (click)="closeAndSend()">OK</button>
+  <button mat-flat-button (click)="closeWithoutSending()">CANCEL</button>
+</div>
