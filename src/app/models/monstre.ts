@@ -1,6 +1,7 @@
 import { MonstreContent } from './monstre-content';
 import { DiceRoll } from './dice-roll';
 import { Carac } from './carac';
+import { Sens } from './sens';
 import { ClasseArmure } from './classe-armure';
 
 export interface Monstre {
@@ -66,5 +67,6 @@ export interface Monstre {
     wis: Carac;
     cha: Carac;
     ac: ClasseArmure;
+    senses: Sens[];
   };
 }

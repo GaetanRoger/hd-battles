@@ -1,4 +1,4 @@
-import { Monstre } from '../../../models/monstre.interface';
+import { Monstre } from '../../../models/monstre';
 
 export const BESTIAIRE: Monstre[] = [
   {
@@ -137,7 +137,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 20
+        }
+      ]
     }
   },
   {
@@ -161,7 +171,7 @@ export const BESTIAIRE: Monstre[] = [
         vulnerabilities: 'de feu',
         resistances: 'd\'acide et de froid',
         immunities: 'de poison',
-        senses: 'vision dans le noir (18 m) ; Perception passive 16',
+        senses: 'vision dans le noir 18 m ; Perception passive 16',
         languages: 'Commun des profondeurs, profond, télépathie (18 m), langue raciale de la créature d\'origine',
         challenge: '7',
         px: '2900'
@@ -278,7 +288,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 16
+        }
+      ]
     }
   },
   {
@@ -399,7 +419,13 @@ export const BESTIAIRE: Monstre[] = [
           value: 10
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 12
+        }
+      ]
     }
   },
   {
@@ -524,7 +550,13 @@ export const BESTIAIRE: Monstre[] = [
           value: 12
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 14
+        }
+      ]
     }
   },
   {
@@ -659,7 +691,13 @@ export const BESTIAIRE: Monstre[] = [
           value: 13
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 14
+        }
+      ]
     }
   },
   {
@@ -799,7 +837,17 @@ export const BESTIAIRE: Monstre[] = [
           value: 13
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 12
+        }
+      ]
     }
   },
   {
@@ -956,7 +1004,17 @@ export const BESTIAIRE: Monstre[] = [
           value: 12
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 13
+        }
+      ]
     }
   },
   {
@@ -1109,7 +1167,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision parfaite',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 20
+        }
+      ]
     }
   },
   {
@@ -1243,7 +1311,21 @@ export const BESTIAIRE: Monstre[] = [
             description: 'quand il est à terre'
           }
         ]
-      }
+      },
+      senses: [
+        {
+          type: 'perception des vibrations',
+          value: 18
+        },
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 11
+        }
+      ]
     }
   },
   {
@@ -1368,7 +1450,17 @@ export const BESTIAIRE: Monstre[] = [
           value: 12
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 9
+        },
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -1494,7 +1586,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 9
+        },
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -1630,7 +1732,21 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 3
+        },
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -1755,7 +1871,21 @@ export const BESTIAIRE: Monstre[] = [
           value: 13
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 3
+        },
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 13
+        }
+      ]
     }
   },
   {
@@ -1879,7 +2009,13 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -2002,7 +2138,13 @@ export const BESTIAIRE: Monstre[] = [
           value: 9
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -2121,7 +2263,7 @@ export const BESTIAIRE: Monstre[] = [
       },
       ac: {
         default: {
-          value: 12,
+          value: 12
         },
         others: [
           {
@@ -2129,7 +2271,13 @@ export const BESTIAIRE: Monstre[] = [
             description: 'avec armure du mage'
           }
         ]
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 12
+        }
+      ]
     }
   },
   {
@@ -2269,7 +2417,18 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 18,
+          description: 'aveugle au-delà de cette distance'
+        },
+        {
+          type: 'perception passive',
+          value: 6
+        }
+      ]
     }
   },
   {
@@ -2404,7 +2563,13 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure de cuir clouté'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 13
+        }
+      ]
     }
   },
   {
@@ -2533,7 +2698,13 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle, bouclier'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 11
+        }
+      ]
     }
   },
   {
@@ -2673,7 +2844,17 @@ export const BESTIAIRE: Monstre[] = [
           value: 9
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -2796,7 +2977,13 @@ export const BESTIAIRE: Monstre[] = [
           value: 12
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 11
+        }
+      ]
     }
   },
   {
@@ -2937,7 +3124,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision parfaite',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 13
+        }
+      ]
     }
   },
   {
@@ -3067,7 +3264,13 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure de cuir'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -3198,7 +3401,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 9
+        }
+      ]
     }
   },
   {
@@ -3320,7 +3533,13 @@ export const BESTIAIRE: Monstre[] = [
           value: 11
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -3470,7 +3689,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 27
+        },
+        {
+          type: 'perception passive',
+          value: 16
+        }
+      ]
     }
   },
   {
@@ -3595,7 +3824,13 @@ export const BESTIAIRE: Monstre[] = [
           value: 13
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 13
+        }
+      ]
     }
   },
   {
@@ -3720,7 +3955,13 @@ export const BESTIAIRE: Monstre[] = [
           value: 13
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 13
+        }
+      ]
     }
   },
   {
@@ -3843,7 +4084,13 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure de peau'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -3966,7 +4213,17 @@ export const BESTIAIRE: Monstre[] = [
           value: 10
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 9
+        },
+        {
+          type: 'perception passive',
+          value: 11
+        }
+      ]
     }
   },
   {
@@ -4101,7 +4358,17 @@ export const BESTIAIRE: Monstre[] = [
           value: 10
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 9
+        },
+        {
+          type: 'perception passive',
+          value: 11
+        }
+      ]
     }
   },
   {
@@ -4241,7 +4508,17 @@ export const BESTIAIRE: Monstre[] = [
           value: 13
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -4374,7 +4651,21 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception des vibrations',
+          value: 18
+        },
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 16
+        }
+      ]
     }
   },
   {
@@ -4509,7 +4800,13 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure de cuir clouté'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -4657,7 +4954,13 @@ export const BESTIAIRE: Monstre[] = [
           value: 12
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 13
+        }
+      ]
     }
   },
   {
@@ -4800,7 +5103,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision parfaite',
+          value: 12
+        },
+        {
+          type: 'perception passive',
+          value: 20
+        }
+      ]
     }
   },
   {
@@ -4925,7 +5238,13 @@ export const BESTIAIRE: Monstre[] = [
           value: 12
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 13
+        }
+      ]
     }
   },
   {
@@ -5064,7 +5383,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure de cuir'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 12
+        }
+      ]
     }
   },
   {
@@ -5195,7 +5524,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure de peau'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 15
+        }
+      ]
     }
   },
   {
@@ -5328,7 +5667,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure de cuir'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 12
+        }
+      ]
     }
   },
   {
@@ -5450,7 +5799,13 @@ export const BESTIAIRE: Monstre[] = [
           value: 9
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 9
+        }
+      ]
     }
   },
   {
@@ -5605,7 +5960,13 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle, bouclier'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 13
+        }
+      ]
     }
   },
   {
@@ -5730,7 +6091,13 @@ export const BESTIAIRE: Monstre[] = [
           value: 12
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 13
+        }
+      ]
     }
   },
   {
@@ -5855,7 +6222,17 @@ export const BESTIAIRE: Monstre[] = [
           value: 12
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 11
+        }
+      ]
     }
   },
   {
@@ -5980,7 +6357,17 @@ export const BESTIAIRE: Monstre[] = [
           value: 13
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 11
+        }
+      ]
     }
   },
   {
@@ -6119,7 +6506,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure de peau, bouclier'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -6268,7 +6665,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure de peau, bouclier'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -6391,7 +6798,13 @@ export const BESTIAIRE: Monstre[] = [
           value: 11
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 11
+        }
+      ]
     }
   },
   {
@@ -6522,7 +6935,17 @@ export const BESTIAIRE: Monstre[] = [
           value: 13
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 17
+        }
+      ]
     }
   },
   {
@@ -6645,7 +7068,13 @@ export const BESTIAIRE: Monstre[] = [
           value: 12
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 11
+        }
+      ]
     }
   },
   {
@@ -6767,7 +7196,13 @@ export const BESTIAIRE: Monstre[] = [
           value: 10
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -6891,7 +7326,13 @@ export const BESTIAIRE: Monstre[] = [
           value: 10
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -7031,7 +7472,13 @@ export const BESTIAIRE: Monstre[] = [
           description: 'harnois'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -7156,7 +7603,13 @@ export const BESTIAIRE: Monstre[] = [
           value: 10
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -7282,7 +7735,13 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 11
+        }
+      ]
     }
   },
   {
@@ -7404,7 +7863,13 @@ export const BESTIAIRE: Monstre[] = [
           value: 13
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 12
+        }
+      ]
     }
   },
   {
@@ -7533,7 +7998,17 @@ export const BESTIAIRE: Monstre[] = [
           value: 12
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 15
+        }
+      ]
     }
   },
   {
@@ -7660,7 +8135,13 @@ export const BESTIAIRE: Monstre[] = [
           value: 13
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 13
+        }
+      ]
     }
   },
   {
@@ -7812,7 +8293,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 18
+        }
+      ]
     }
   },
   {
@@ -7935,7 +8426,17 @@ export const BESTIAIRE: Monstre[] = [
           value: 11
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 13
+        }
+      ]
     }
   },
   {
@@ -8058,7 +8559,17 @@ export const BESTIAIRE: Monstre[] = [
           value: 12
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 15
+        }
+      ]
     }
   },
   {
@@ -8196,7 +8707,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 14
+        }
+      ]
     }
   },
   {
@@ -8323,7 +8844,17 @@ export const BESTIAIRE: Monstre[] = [
           value: 11
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 11
+        }
+      ]
     }
   },
   {
@@ -8450,7 +8981,13 @@ export const BESTIAIRE: Monstre[] = [
           value: 12
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 13
+        }
+      ]
     }
   },
   {
@@ -8591,7 +9128,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision parfaite',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 15
+        }
+      ]
     }
   },
   {
@@ -8717,7 +9264,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 9
+        },
+        {
+          type: 'perception passive',
+          value: 9
+        }
+      ]
     }
   },
   {
@@ -8845,7 +9402,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 9
+        },
+        {
+          type: 'perception passive',
+          value: 9
+        }
+      ]
     }
   },
   {
@@ -8974,7 +9541,17 @@ export const BESTIAIRE: Monstre[] = [
           value: 11
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 9
+        },
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -9102,7 +9679,18 @@ export const BESTIAIRE: Monstre[] = [
           value: 5
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 9,
+          description: 'aveugle au-delà de cette distance'
+        },
+        {
+          type: 'perception passive',
+          value: 6
+        }
+      ]
     }
   },
   {
@@ -9230,7 +9818,13 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -9370,7 +9964,13 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -9509,7 +10109,18 @@ export const BESTIAIRE: Monstre[] = [
           value: 6
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 18,
+          description: 'aveugle au-delà'
+        },
+        {
+          type: 'perception passive',
+          value: 8
+        }
+      ]
     }
   },
   {
@@ -9640,7 +10251,13 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 11
+        }
+      ]
     }
   },
   {
@@ -9783,7 +10400,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 19
+        }
+      ]
     }
   },
   {
@@ -9918,7 +10545,18 @@ export const BESTIAIRE: Monstre[] = [
           value: 15
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 18,
+          description: 'aveugle au-delà'
+        },
+        {
+          type: 'perception passive',
+          value: 14
+        }
+      ]
     }
   },
   {
@@ -10067,7 +10705,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 18
+        }
+      ]
     }
   },
   {
@@ -10208,7 +10856,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -10357,7 +11015,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 13
+        }
+      ]
     }
   },
   {
@@ -10495,7 +11163,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 11
+        }
+      ]
     }
   },
   {
@@ -10648,7 +11326,21 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 18
+        },
+        {
+          type: 'vision dans le noir',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 12
+        }
+      ]
     }
   },
   {
@@ -10789,7 +11481,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 12
+        }
+      ]
     }
   },
   {
@@ -10921,7 +11623,17 @@ export const BESTIAIRE: Monstre[] = [
           value: 13
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 11
+        }
+      ]
     }
   },
   {
@@ -11074,7 +11786,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision parfaite',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 14
+        }
+      ]
     }
   },
   {
@@ -11208,7 +11930,13 @@ export const BESTIAIRE: Monstre[] = [
           value: 14
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        }
+      ]
     }
   },
   {
@@ -11345,7 +12073,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 13
+        }
+      ]
     }
   },
   {
@@ -11483,7 +12221,17 @@ export const BESTIAIRE: Monstre[] = [
           value: 14
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 11
+        }
+      ]
     }
   },
   {
@@ -11639,7 +12387,21 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 18
+        },
+        {
+          type: 'vision dans le noir',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 21
+        }
+      ]
     }
   },
   {
@@ -11795,7 +12557,21 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 18
+        },
+        {
+          type: 'vision dans le noir',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 23
+        }
+      ]
     }
   },
   {
@@ -11953,7 +12729,21 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 18
+        },
+        {
+          type: 'vision dans le noir',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 22
+        }
+      ]
     }
   },
   {
@@ -12111,7 +12901,21 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 18
+        },
+        {
+          type: 'vision dans le noir',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 27
+        }
+      ]
     }
   },
   {
@@ -12267,7 +13071,21 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 18
+        },
+        {
+          type: 'vision dans le noir',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 21
+        }
+      ]
     }
   },
   {
@@ -12427,7 +13245,21 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 18
+        },
+        {
+          type: 'vision dans le noir',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 24
+        }
+      ]
     }
   },
   {
@@ -12587,7 +13419,21 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 18
+        },
+        {
+          type: 'vision dans le noir',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 21
+        }
+      ]
     }
   },
   {
@@ -12747,7 +13593,21 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 18
+        },
+        {
+          type: 'vision dans le noir',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 26
+        }
+      ]
     }
   },
   {
@@ -12907,7 +13767,21 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 18
+        },
+        {
+          type: 'vision dans le noir',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 24
+        }
+      ]
     }
   },
   {
@@ -13067,7 +13941,21 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 18
+        },
+        {
+          type: 'vision dans le noir',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 27
+        }
+      ]
     }
   },
   {
@@ -13229,7 +14117,21 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 18
+        },
+        {
+          type: 'vision dans le noir',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 22
+        }
+      ]
     }
   },
   {
@@ -13391,7 +14293,21 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 18
+        },
+        {
+          type: 'vision dans le noir',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 27
+        }
+      ]
     }
   },
   {
@@ -13547,7 +14463,21 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 18
+        },
+        {
+          type: 'vision dans le noir',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 22
+        }
+      ]
     }
   },
   {
@@ -13707,7 +14637,21 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 18
+        },
+        {
+          type: 'vision dans le noir',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 27
+        }
+      ]
     }
   },
   {
@@ -13863,7 +14807,21 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 18
+        },
+        {
+          type: 'vision dans le noir',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 21
+        }
+      ]
     }
   },
   {
@@ -14019,7 +14977,21 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 18
+        },
+        {
+          type: 'vision dans le noir',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 26
+        }
+      ]
     }
   },
   {
@@ -14175,7 +15147,21 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 18
+        },
+        {
+          type: 'vision dans le noir',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 23
+        }
+      ]
     }
   },
   {
@@ -14331,7 +15317,21 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 18
+        },
+        {
+          type: 'vision dans le noir',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 26
+        }
+      ]
     }
   },
   {
@@ -14491,7 +15491,21 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 18
+        },
+        {
+          type: 'vision dans le noir',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 22
+        }
+      ]
     }
   },
   {
@@ -14651,7 +15665,21 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 18
+        },
+        {
+          type: 'vision dans le noir',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 27
+        }
+      ]
     }
   },
   {
@@ -14804,7 +15832,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 11
+        }
+      ]
     }
   },
   {
@@ -14934,7 +15972,21 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 3
+        },
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 14
+        }
+      ]
     }
   },
   {
@@ -15066,7 +16118,21 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 3
+        },
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 14
+        }
+      ]
     }
   },
   {
@@ -15196,7 +16262,21 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 3
+        },
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 14
+        }
+      ]
     }
   },
   {
@@ -15326,7 +16406,21 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 3
+        },
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 14
+        }
+      ]
     }
   },
   {
@@ -15457,7 +16551,21 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 3
+        },
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 14
+        }
+      ]
     }
   },
   {
@@ -15590,7 +16698,21 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 3
+        },
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 14
+        }
+      ]
     }
   },
   {
@@ -15720,7 +16842,21 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 3
+        },
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 14
+        }
+      ]
     }
   },
   {
@@ -15851,7 +16987,21 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 3
+        },
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 14
+        }
+      ]
     }
   },
   {
@@ -15981,7 +17131,21 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 3
+        },
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 14
+        }
+      ]
     }
   },
   {
@@ -16116,7 +17280,21 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 3
+        },
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 14
+        }
+      ]
     }
   },
   {
@@ -16144,7 +17322,7 @@ export const BESTIAIRE: Monstre[] = [
         immunities_debilities: [
           'empoisonné'
         ],
-        senses: 'vision dans le noir à 36 m, Perception passive 12',
+        senses: 'vision dans le noir 36 m, Perception passive 12',
         languages: 'commun',
         challenge: '0.25',
         px: '50'
@@ -16240,7 +17418,17 @@ export const BESTIAIRE: Monstre[] = [
           value: 13
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 12
+        }
+      ]
     }
   },
   {
@@ -16380,7 +17568,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 9
+        }
+      ]
     }
   },
   {
@@ -16529,7 +17727,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 15
+        }
+      ]
     }
   },
   {
@@ -16666,7 +17874,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'chemise de mailles'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 12
+        }
+      ]
     }
   },
   {
@@ -16781,7 +17999,7 @@ export const BESTIAIRE: Monstre[] = [
       },
       ac: {
         default: {
-          value: 11,
+          value: 11
         },
         others: [
           {
@@ -16789,7 +18007,13 @@ export const BESTIAIRE: Monstre[] = [
             description: 'avec peau d\'écorce'
           }
         ]
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 14
+        }
+      ]
     }
   },
   {
@@ -16916,11 +18140,23 @@ export const BESTIAIRE: Monstre[] = [
         default: {
           value: 11
         },
-        others: [{
-          value: 16,
-          description: 'avec peau d\'écorceLoup-garou'
-        }]
-      }
+        others: [
+          {
+            value: 16,
+            description: 'avec peau d\'écorceLoup-garou'
+          }
+        ]
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 14
+        }
+      ]
     }
   },
   {
@@ -17065,7 +18301,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure d\'écailles, bouclier'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -17188,7 +18434,13 @@ export const BESTIAIRE: Monstre[] = [
           description: 'chemise de mailles'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 13
+        }
+      ]
     }
   },
   {
@@ -17323,7 +18575,13 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure de cuir'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 15
+        }
+      ]
     }
   },
   {
@@ -17464,7 +18722,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 12
+        }
+      ]
     }
   },
   {
@@ -17597,7 +18865,13 @@ export const BESTIAIRE: Monstre[] = [
           value: 10
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -17729,7 +19003,13 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 14
+        }
+      ]
     }
   },
   {
@@ -17874,7 +19154,17 @@ export const BESTIAIRE: Monstre[] = [
           value: 15
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -18019,7 +19309,17 @@ export const BESTIAIRE: Monstre[] = [
           value: 14
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -18158,7 +19458,21 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception des vibrations',
+          value: 18
+        },
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -18297,7 +19611,17 @@ export const BESTIAIRE: Monstre[] = [
           value: 13
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -18433,7 +19757,13 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -18578,7 +19908,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 16
+        }
+      ]
     }
   },
   {
@@ -18702,7 +20042,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 13
+        }
+      ]
     }
   },
   {
@@ -18838,7 +20188,18 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 18,
+          description: 'aveugle au-delà'
+        },
+        {
+          type: 'perception passive',
+          value: 7
+        }
+      ]
     }
   },
   {
@@ -18980,7 +20341,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'harnois'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision parfaite',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 12
+        }
+      ]
     }
   },
   {
@@ -19114,7 +20485,13 @@ export const BESTIAIRE: Monstre[] = [
           value: 12
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 16
+        }
+      ]
     }
   },
   {
@@ -19258,7 +20635,13 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure de cuir'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 13
+        }
+      ]
     }
   },
   {
@@ -19407,7 +20790,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 13
+        }
+      ]
     }
   },
   {
@@ -19548,7 +20941,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 14
+        }
+      ]
     }
   },
   {
@@ -19671,7 +21074,13 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure de cuir'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 11
+        }
+      ]
     }
   },
   {
@@ -19821,7 +21230,17 @@ export const BESTIAIRE: Monstre[] = [
           value: 11
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 11
+        }
+      ]
     }
   },
   {
@@ -19948,7 +21367,13 @@ export const BESTIAIRE: Monstre[] = [
           value: 13
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 14
+        }
+      ]
     }
   },
   {
@@ -20075,7 +21500,13 @@ export const BESTIAIRE: Monstre[] = [
           value: 12
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 14
+        }
+      ]
     }
   },
   {
@@ -20215,7 +21646,17 @@ export const BESTIAIRE: Monstre[] = [
           value: 19
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 12
+        }
+      ]
     }
   },
   {
@@ -20337,7 +21778,13 @@ export const BESTIAIRE: Monstre[] = [
           description: 'bouclier, chemise de mailles'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 12
+        }
+      ]
     }
   },
   {
@@ -20474,7 +21921,21 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 3
+        },
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -20617,7 +22078,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -20757,7 +22228,13 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 12
+        }
+      ]
     }
   },
   {
@@ -20896,7 +22373,13 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 17
+        }
+      ]
     }
   },
   {
@@ -21035,7 +22518,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 14
+        }
+      ]
     }
   },
   {
@@ -21180,7 +22673,13 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure d\'écailles'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 19
+        }
+      ]
     }
   },
   {
@@ -21320,7 +22819,13 @@ export const BESTIAIRE: Monstre[] = [
           description: 'harnois'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 16
+        }
+      ]
     }
   },
   {
@@ -21458,7 +22963,13 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure composite'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 13
+        }
+      ]
     }
   },
   {
@@ -21594,7 +23105,18 @@ export const BESTIAIRE: Monstre[] = [
           value: 8
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 18,
+          description: 'aveugle au-delà'
+        },
+        {
+          type: 'perception passive',
+          value: 8
+        }
+      ]
     }
   },
   {
@@ -21735,7 +23257,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision parfaite',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 13
+        }
+      ]
     }
   },
   {
@@ -21871,7 +23403,13 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure de cuir clouté, bouclier'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 11
+        }
+      ]
     }
   },
   {
@@ -22016,7 +23554,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure de peau, bouclier'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -22153,7 +23701,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'chemise de mailles'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 12
+        }
+      ]
     }
   },
   {
@@ -22292,7 +23850,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure de cuir, bouclier'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 9
+        }
+      ]
     }
   },
   {
@@ -22439,7 +24007,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure de peau'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 14
+        }
+      ]
     }
   },
   {
@@ -22574,7 +24152,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure de peau, bouclier'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -22716,7 +24304,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 9
+        }
+      ]
     }
   },
   {
@@ -22853,7 +24451,17 @@ export const BESTIAIRE: Monstre[] = [
           value: 9
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -23003,7 +24611,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -23145,7 +24763,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -23286,7 +24914,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 14
+        }
+      ]
     }
   },
   {
@@ -23425,7 +25063,17 @@ export const BESTIAIRE: Monstre[] = [
           value: 12
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -23561,7 +25209,13 @@ export const BESTIAIRE: Monstre[] = [
           value: 12
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 13
+        }
+      ]
     }
   },
   {
@@ -23674,7 +25328,17 @@ export const BESTIAIRE: Monstre[] = [
           value: 11
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 9
+        },
+        {
+          type: 'perception passive',
+          value: 11
+        }
+      ]
     }
   },
   {
@@ -23801,7 +25465,17 @@ export const BESTIAIRE: Monstre[] = [
           value: 11
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 9
+        },
+        {
+          type: 'perception passive',
+          value: 12
+        }
+      ]
     }
   },
   {
@@ -23942,7 +25616,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 12
+        }
+      ]
     }
   },
   {
@@ -24080,7 +25764,17 @@ export const BESTIAIRE: Monstre[] = [
           value: 12
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 15
+        }
+      ]
     }
   },
   {
@@ -24219,7 +25913,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 11
+        }
+      ]
     }
   },
   {
@@ -24360,7 +26064,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 16
+        }
+      ]
     }
   },
   {
@@ -24499,7 +26213,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 14
+        }
+      ]
     }
   },
   {
@@ -24625,7 +26349,13 @@ export const BESTIAIRE: Monstre[] = [
           value: 12
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -24748,7 +26478,13 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure de peau'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -24889,7 +26625,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision parfaite',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 18
+        }
+      ]
     }
   },
   {
@@ -25032,7 +26778,13 @@ export const BESTIAIRE: Monstre[] = [
           value: 11
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -25173,7 +26925,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 11
+        }
+      ]
     }
   },
   {
@@ -25296,7 +27058,17 @@ export const BESTIAIRE: Monstre[] = [
           value: 12
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 14
+        }
+      ]
     }
   },
   {
@@ -25431,7 +27203,17 @@ export const BESTIAIRE: Monstre[] = [
           value: 13
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 14
+        }
+      ]
     }
   },
   {
@@ -25570,7 +27352,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 13
+        }
+      ]
     }
   },
   {
@@ -25683,7 +27475,13 @@ export const BESTIAIRE: Monstre[] = [
           value: 11
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -25807,7 +27605,13 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 11
+        }
+      ]
     }
   },
   {
@@ -25947,7 +27751,13 @@ export const BESTIAIRE: Monstre[] = [
           value: 11
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 15
+        }
+      ]
     }
   },
   {
@@ -26082,7 +27892,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'bouclier, cotte de mailles'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -26237,7 +28057,13 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle, bouclier'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 13
+        }
+      ]
     }
   },
   {
@@ -26363,7 +28189,13 @@ export const BESTIAIRE: Monstre[] = [
           value: 11
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 12
+        }
+      ]
     }
   },
   {
@@ -26493,7 +28325,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -26624,7 +28466,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 16
+        }
+      ]
     }
   },
   {
@@ -26749,7 +28601,13 @@ export const BESTIAIRE: Monstre[] = [
           value: 11
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 13
+        }
+      ]
     }
   },
   {
@@ -26874,7 +28732,13 @@ export const BESTIAIRE: Monstre[] = [
           value: 12
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 13
+        }
+      ]
     }
   },
   {
@@ -27017,7 +28881,21 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 9
+        },
+        {
+          type: 'vision dans le noir',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 16
+        }
+      ]
     }
   },
   {
@@ -27161,7 +29039,21 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 9
+        },
+        {
+          type: 'vision dans le noir',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 19
+        }
+      ]
     }
   },
   {
@@ -27303,7 +29195,21 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 9
+        },
+        {
+          type: 'vision dans le noir',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 16
+        }
+      ]
     }
   },
   {
@@ -27445,7 +29351,21 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 9
+        },
+        {
+          type: 'vision dans le noir',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 18
+        }
+      ]
     }
   },
   {
@@ -27588,7 +29508,21 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 9
+        },
+        {
+          type: 'vision dans le noir',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 19
+        }
+      ]
     }
   },
   {
@@ -27733,7 +29667,21 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 9
+        },
+        {
+          type: 'vision dans le noir',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 17
+        }
+      ]
     }
   },
   {
@@ -27875,7 +29823,21 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 9
+        },
+        {
+          type: 'vision dans le noir',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 17
+        }
+      ]
     }
   },
   {
@@ -28018,7 +29980,21 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 9
+        },
+        {
+          type: 'vision dans le noir',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 16
+        }
+      ]
     }
   },
   {
@@ -28160,7 +30136,21 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 9
+        },
+        {
+          type: 'vision dans le noir',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 18
+        }
+      ]
     }
   },
   {
@@ -28307,7 +30297,21 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 9
+        },
+        {
+          type: 'vision dans le noir',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 17
+        }
+      ]
     }
   },
   {
@@ -28443,7 +30447,17 @@ export const BESTIAIRE: Monstre[] = [
           value: 12
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 8
+        }
+      ]
     }
   },
   {
@@ -28598,7 +30612,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision parfaite',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 14
+        }
+      ]
     }
   },
   {
@@ -28745,7 +30769,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 12
+        }
+      ]
     }
   },
   {
@@ -28877,7 +30911,21 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception des vibrations',
+          value: 12
+        },
+        {
+          type: 'vision aveugle',
+          value: 12
+        },
+        {
+          type: 'perception passive',
+          value: 16
+        }
+      ]
     }
   },
   {
@@ -29007,7 +31055,17 @@ export const BESTIAIRE: Monstre[] = [
           value: 7
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -29131,7 +31189,17 @@ export const BESTIAIRE: Monstre[] = [
           value: 10
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 9
+        },
+        {
+          type: 'perception passive',
+          value: 9
+        }
+      ]
     }
   },
   {
@@ -29256,7 +31324,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 9
+        },
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -29390,7 +31468,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision parfaite',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 19
+        }
+      ]
     }
   },
   {
@@ -29541,7 +31629,17 @@ export const BESTIAIRE: Monstre[] = [
           value: 12
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 13
+        }
+      ]
     }
   },
   {
@@ -29672,7 +31770,13 @@ export const BESTIAIRE: Monstre[] = [
           value: 12
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 13
+        }
+      ]
     }
   },
   {
@@ -29800,7 +31904,13 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 13
+        }
+      ]
     }
   },
   {
@@ -29929,7 +32039,13 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 15
+        }
+      ]
     }
   },
   {
@@ -30055,7 +32171,13 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 13
+        }
+      ]
     }
   },
   {
@@ -30203,11 +32325,19 @@ export const BESTIAIRE: Monstre[] = [
           value: 11,
           description: 'sous forme humanoïde'
         },
-        others: [{
-          value: 12,
-          description: 'armure naturelle sous forme hybride ou de loup'
-        }]
-      }
+        others: [
+          {
+            value: 12,
+            description: 'armure naturelle sous forme hybride ou de loup'
+          }
+        ]
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 14
+        }
+      ]
     }
   },
   {
@@ -30326,13 +32456,21 @@ export const BESTIAIRE: Monstre[] = [
       },
       ac: {
         default: {
-          value: 12,
+          value: 12
         },
-        others: [{
-          value: 15,
-          description: 'avec armure du mage'
-        }]
-      }
+        others: [
+          {
+            value: 15,
+            description: 'avec armure du mage'
+          }
+        ]
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 11
+        }
+      ]
     }
   },
   {
@@ -30459,7 +32597,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -30594,7 +32742,13 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure de cuir'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -30726,7 +32880,13 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -30856,7 +33016,17 @@ export const BESTIAIRE: Monstre[] = [
           value: 11
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -31005,7 +33175,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 11
+        }
+      ]
     }
   },
   {
@@ -31154,7 +33334,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 11
+        }
+      ]
     }
   },
   {
@@ -31296,7 +33486,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision parfaite',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 13
+        }
+      ]
     }
   },
   {
@@ -31421,7 +33621,13 @@ export const BESTIAIRE: Monstre[] = [
           value: 12
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 13
+        }
+      ]
     }
   },
   {
@@ -31572,7 +33778,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 14
+        }
+      ]
     }
   },
   {
@@ -31695,7 +33911,13 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure de cuir'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -31831,7 +34053,17 @@ export const BESTIAIRE: Monstre[] = [
           value: 11
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 12
+        }
+      ]
     }
   },
   {
@@ -31963,7 +34195,17 @@ export const BESTIAIRE: Monstre[] = [
           value: 11
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -32099,7 +34341,17 @@ export const BESTIAIRE: Monstre[] = [
           value: 12
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 12
+        }
+      ]
     }
   },
   {
@@ -32233,7 +34485,17 @@ export const BESTIAIRE: Monstre[] = [
           value: 10
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -32382,7 +34644,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -32503,7 +34775,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 9
+        },
+        {
+          type: 'perception passive',
+          value: 8
+        }
+      ]
     }
   },
   {
@@ -32644,7 +34926,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 11
+        }
+      ]
     }
   },
   {
@@ -32783,7 +35075,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 17
+        }
+      ]
     }
   },
   {
@@ -32919,7 +35221,18 @@ export const BESTIAIRE: Monstre[] = [
           value: 5
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 9,
+          description: 'aveugle au-delà'
+        },
+        {
+          type: 'perception passive',
+          value: 6
+        }
+      ]
     }
   },
   {
@@ -33050,7 +35363,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 15
+        }
+      ]
     }
   },
   {
@@ -33192,7 +35515,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -33336,7 +35669,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 14
+        }
+      ]
     }
   },
   {
@@ -33447,7 +35790,17 @@ export const BESTIAIRE: Monstre[] = [
           value: 11
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -33574,7 +35927,13 @@ export const BESTIAIRE: Monstre[] = [
           value: 10
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -33706,7 +36065,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 12
+        }
+      ]
     }
   },
   {
@@ -33836,7 +36205,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 14
+        }
+      ]
     }
   },
   {
@@ -33985,7 +36364,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision parfaite',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 11
+        }
+      ]
     }
   },
   {
@@ -34137,7 +36526,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure de cuir clouté'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 13
+        }
+      ]
     }
   },
   {
@@ -34260,7 +36659,13 @@ export const BESTIAIRE: Monstre[] = [
           description: 'cuirasse'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 12
+        }
+      ]
     }
   },
   {
@@ -34396,7 +36801,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 3
+        },
+        {
+          type: 'perception passive',
+          value: 8
+        }
+      ]
     }
   },
   {
@@ -34535,7 +36950,17 @@ export const BESTIAIRE: Monstre[] = [
           value: 12
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 11
+        }
+      ]
     }
   },
   {
@@ -34670,7 +37095,13 @@ export const BESTIAIRE: Monstre[] = [
           value: 12
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 15
+        }
+      ]
     }
   },
   {
@@ -34807,7 +37238,17 @@ export const BESTIAIRE: Monstre[] = [
           value: 13
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 8
+        }
+      ]
     }
   },
   {
@@ -34942,7 +37383,17 @@ export const BESTIAIRE: Monstre[] = [
           value: 10
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 9
+        },
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -35079,7 +37530,17 @@ export const BESTIAIRE: Monstre[] = [
           value: 14
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 3
+        },
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -35219,7 +37680,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure de peau'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 8
+        }
+      ]
     }
   },
   {
@@ -35358,7 +37829,17 @@ export const BESTIAIRE: Monstre[] = [
           value: 12
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -35501,7 +37982,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'cotte de mailles'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 14
+        }
+      ]
     }
   },
   {
@@ -35638,7 +38129,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure de peau'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -35781,7 +38282,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 11
+        }
+      ]
     }
   },
   {
@@ -35923,7 +38434,13 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 13
+        }
+      ]
     }
   },
   {
@@ -36059,7 +38576,13 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 13
+        }
+      ]
     }
   },
   {
@@ -36197,7 +38720,13 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 13
+        }
+      ]
     }
   },
   {
@@ -36343,11 +38872,19 @@ export const BESTIAIRE: Monstre[] = [
           value: 10,
           description: 'sous forme humanoïde'
         },
-        others: [{
-          value: 11,
-          description: 'armure naturelle sous forme hybride ou d\'ours'
-        }]
-      }
+        others: [
+          {
+            value: 11,
+            description: 'armure naturelle sous forme hybride ou d\'ours'
+          }
+        ]
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 17
+        }
+      ]
     }
   },
   {
@@ -36480,7 +39017,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 11
+        }
+      ]
     }
   },
   {
@@ -36615,7 +39162,13 @@ export const BESTIAIRE: Monstre[] = [
           value: 12
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 14
+        }
+      ]
     }
   },
   {
@@ -36742,7 +39295,18 @@ export const BESTIAIRE: Monstre[] = [
           value: 12
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 18,
+          description: 'aveugle au-delà'
+        },
+        {
+          type: 'perception passive',
+          value: 8
+        }
+      ]
     }
   },
   {
@@ -36867,7 +39431,13 @@ export const BESTIAIRE: Monstre[] = [
           value: 12
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 16
+        }
+      ]
     }
   },
   {
@@ -36994,7 +39564,17 @@ export const BESTIAIRE: Monstre[] = [
           value: 12
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 9
+        },
+        {
+          type: 'perception passive',
+          value: 12
+        }
+      ]
     }
   },
   {
@@ -37121,7 +39701,17 @@ export const BESTIAIRE: Monstre[] = [
           value: 11
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 14
+        }
+      ]
     }
   },
   {
@@ -37246,7 +39836,17 @@ export const BESTIAIRE: Monstre[] = [
           value: 13
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 8
+        }
+      ]
     }
   },
   {
@@ -37385,7 +39985,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision parfaite',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 21
+        }
+      ]
     }
   },
   {
@@ -37512,7 +40122,13 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 13
+        }
+      ]
     }
   },
   {
@@ -37636,7 +40252,13 @@ export const BESTIAIRE: Monstre[] = [
           value: 10
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -37774,7 +40396,18 @@ export const BESTIAIRE: Monstre[] = [
           value: 7
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 18,
+          description: 'aveugle au-delà'
+        },
+        {
+          type: 'perception passive',
+          value: 8
+        }
+      ]
     }
   },
   {
@@ -37923,7 +40556,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure de coquillages'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 16
+        }
+      ]
     }
   },
   {
@@ -38058,7 +40701,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'cuirasse +2'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 17
+        }
+      ]
     }
   },
   {
@@ -38195,7 +40848,21 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 3
+        },
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 13
+        }
+      ]
     }
   },
   {
@@ -38323,7 +40990,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 9
+        },
+        {
+          type: 'perception passive',
+          value: 8
+        }
+      ]
     }
   },
   {
@@ -38459,7 +41136,17 @@ export const BESTIAIRE: Monstre[] = [
           value: 13
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -38590,7 +41277,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 13
+        }
+      ]
     }
   },
   {
@@ -38713,7 +41410,17 @@ export const BESTIAIRE: Monstre[] = [
           value: 10
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 9
+        },
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -38836,7 +41543,17 @@ export const BESTIAIRE: Monstre[] = [
           value: 12
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -38982,7 +41699,18 @@ export const BESTIAIRE: Monstre[] = [
           value: 12
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18,
+          description: 'forme de rat uniquement'
+        },
+        {
+          type: 'perception passive',
+          value: 12
+        }
+      ]
     }
   },
   {
@@ -39113,7 +41841,21 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception des vibrations',
+          value: 18
+        },
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -39237,7 +41979,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 9
+        },
+        {
+          type: 'perception passive',
+          value: 12
+        }
+      ]
     }
   },
   {
@@ -39361,7 +42113,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 9
+        },
+        {
+          type: 'perception passive',
+          value: 12
+        }
+      ]
     }
   },
   {
@@ -39485,7 +42247,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 13
+        }
+      ]
     }
   },
   {
@@ -39609,7 +42381,13 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 11
+        }
+      ]
     }
   },
   {
@@ -39748,7 +42526,13 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 14
+        }
+      ]
     }
   },
   {
@@ -39869,7 +42653,13 @@ export const BESTIAIRE: Monstre[] = [
           value: 10
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -40018,7 +42808,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 15
+        }
+      ]
     }
   },
   {
@@ -40154,7 +42954,17 @@ export const BESTIAIRE: Monstre[] = [
           value: 13
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 9
+        }
+      ]
     }
   },
   {
@@ -40293,7 +43103,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -40421,7 +43241,13 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 9
+        }
+      ]
     }
   },
   {
@@ -40549,7 +43375,13 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 8
+        }
+      ]
     }
   },
   {
@@ -40687,11 +43519,19 @@ export const BESTIAIRE: Monstre[] = [
           value: 10,
           description: 'sous forme humanoïde'
         },
-        others: [{
-          value: 11,
-          description: 'armure naturelle sous forme hybride ou de sanglier'
-        }]
-      }
+        others: [
+          {
+            value: 11,
+            description: 'armure naturelle sous forme hybride ou de sanglier'
+          }
+        ]
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 12
+        }
+      ]
     }
   },
   {
@@ -40838,7 +43678,13 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure de cuir'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 12
+        }
+      ]
     }
   },
   {
@@ -40984,7 +43830,13 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -41107,7 +43959,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 3
+        },
+        {
+          type: 'perception passive',
+          value: 9
+        }
+      ]
     }
   },
   {
@@ -41242,7 +44104,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 9
+        }
+      ]
     }
   },
   {
@@ -41381,7 +44253,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'bouclier, cotte de mailles'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -41513,7 +44395,17 @@ export const BESTIAIRE: Monstre[] = [
           value: 12
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 3
+        },
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -41645,7 +44537,17 @@ export const BESTIAIRE: Monstre[] = [
           value: 12
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 3
+        },
+        {
+          type: 'perception passive',
+          value: 12
+        }
+      ]
     }
   },
   {
@@ -41792,7 +44694,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -41918,7 +44830,17 @@ export const BESTIAIRE: Monstre[] = [
           value: 13
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 3
+        },
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -42040,7 +44962,17 @@ export const BESTIAIRE: Monstre[] = [
           value: 14
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 3
+        },
+        {
+          type: 'perception passive',
+          value: 12
+        }
+      ]
     }
   },
   {
@@ -42163,7 +45095,17 @@ export const BESTIAIRE: Monstre[] = [
           value: 14
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 3
+        },
+        {
+          type: 'perception passive',
+          value: 11
+        }
+      ]
     }
   },
   {
@@ -42301,7 +45243,13 @@ export const BESTIAIRE: Monstre[] = [
           value: 12
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 14
+        }
+      ]
     }
   },
   {
@@ -42453,7 +45401,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision parfaite',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 24
+        }
+      ]
     }
   },
   {
@@ -42589,7 +45547,17 @@ export const BESTIAIRE: Monstre[] = [
           value: 12
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -42728,7 +45696,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'débris d\'armure'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 9
+        }
+      ]
     }
   },
   {
@@ -42857,7 +45835,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'débris de barde'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 9
+        }
+      ]
     }
   },
   {
@@ -42997,7 +45985,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 9
+        }
+      ]
     }
   },
   {
@@ -43125,7 +46123,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 9
+        }
+      ]
     }
   },
   {
@@ -43264,7 +46272,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 15
+        }
+      ]
     }
   },
   {
@@ -43407,7 +46425,13 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 13
+        }
+      ]
     }
   },
   {
@@ -43542,7 +46566,18 @@ export const BESTIAIRE: Monstre[] = [
           value: 12
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 18,
+          description: 'aveugle au-delà'
+        },
+        {
+          type: 'perception passive',
+          value: 6
+        }
+      ]
     }
   },
   {
@@ -43711,7 +46746,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -43858,7 +46903,21 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception des vibrations',
+          value: 18
+        },
+        {
+          type: 'vision aveugle',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 18
+        }
+      ]
     }
   },
   {
@@ -43999,7 +47058,18 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 18,
+          description: 'aveugle au-delà'
+        },
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -44134,7 +47204,17 @@ export const BESTIAIRE: Monstre[] = [
           value: 12
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 13
+        }
+      ]
     }
   },
   {
@@ -44269,7 +47349,13 @@ export const BESTIAIRE: Monstre[] = [
           value: 12
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 13
+        }
+      ]
     }
   },
   {
@@ -44423,7 +47509,17 @@ export const BESTIAIRE: Monstre[] = [
           value: 12
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 15
+        }
+      ]
     }
   },
   {
@@ -44551,7 +47647,18 @@ export const BESTIAIRE: Monstre[] = [
           value: 11
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 9,
+          description: 'ou 3m s\'il est assourdi ; aveugle au-delà'
+        },
+        {
+          type: 'perception passive',
+          value: 13
+        }
+      ]
     }
   },
   {
@@ -44690,7 +47797,17 @@ export const BESTIAIRE: Monstre[] = [
           value: 14
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 18
+        }
+      ]
     }
   },
   {
@@ -44825,7 +47942,13 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 10
+        }
+      ]
     }
   },
   {
@@ -44970,7 +48093,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 12
+        }
+      ]
     }
   },
   {
@@ -45110,7 +48243,13 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 14
+        }
+      ]
     }
   },
   {
@@ -45258,7 +48397,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 17
+        }
+      ]
     }
   },
   {
@@ -45397,7 +48546,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 13
+        }
+      ]
     }
   },
   {
@@ -45532,7 +48691,18 @@ export const BESTIAIRE: Monstre[] = [
           value: 8
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 18,
+          description: 'aveugle au-delà'
+        },
+        {
+          type: 'perception passive',
+          value: 8
+        }
+      ]
     }
   },
   {
@@ -45657,7 +48827,13 @@ export const BESTIAIRE: Monstre[] = [
           value: 10
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 13
+        }
+      ]
     }
   },
   {
@@ -45792,7 +48968,13 @@ export const BESTIAIRE: Monstre[] = [
           value: 10
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 13
+        }
+      ]
     }
   },
   {
@@ -45931,7 +49113,21 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception des vibrations',
+          value: 18
+        },
+        {
+          type: 'vision aveugle',
+          value: 9
+        },
+        {
+          type: 'perception passive',
+          value: 9
+        }
+      ]
     }
   },
   {
@@ -46073,7 +49269,13 @@ export const BESTIAIRE: Monstre[] = [
           description: 'clibanion'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception passive',
+          value: 12
+        }
+      ]
     }
   },
   {
@@ -46223,7 +49425,21 @@ export const BESTIAIRE: Monstre[] = [
           description: 'harnois'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision aveugle',
+          value: 3
+        },
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 12
+        }
+      ]
     }
   },
   {
@@ -46371,7 +49587,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 14
+        }
+      ]
     }
   },
   {
@@ -46520,7 +49746,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 36
+        },
+        {
+          type: 'perception passive',
+          value: 11
+        }
+      ]
     }
   },
   {
@@ -46646,7 +49882,17 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 14
+        }
+      ]
     }
   },
   {
@@ -46787,7 +50033,21 @@ export const BESTIAIRE: Monstre[] = [
           description: 'armure naturelle'
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'perception des vibrations',
+          value: 18
+        },
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 16
+        }
+      ]
     }
   },
   {
@@ -46915,7 +50175,17 @@ export const BESTIAIRE: Monstre[] = [
           value: 8
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 8
+        }
+      ]
     }
   },
   {
@@ -47043,7 +50313,17 @@ export const BESTIAIRE: Monstre[] = [
           value: 8
         },
         others: []
-      }
+      },
+      senses: [
+        {
+          type: 'vision dans le noir',
+          value: 18
+        },
+        {
+          type: 'perception passive',
+          value: 8
+        }
+      ]
     }
   }
 ];

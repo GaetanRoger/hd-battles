@@ -27,6 +27,8 @@ import { CaracEditorBottomSheetComponent } from './components/editors/carac-edit
 import { DiceRollEditorBottomSheetComponent } from './components/editors/dice-roll-editor/dice-roll-editor-bottom-sheet.component';
 import { ClasseArmureComponent } from './components/classe-armure/classe-armure.component';
 import { ClasseArmureEditorBottomSheetComponent } from './components/editors/classe-armure-editor-bottom-sheet/classe-armure-editor-bottom-sheet.component';
+import { SensComponent } from './components/sens/sens.component';
+import { SensesEditorBottomSheetComponent } from './components/editors/senses-editor-bottom-sheet/senses-editor-bottom-sheet.component';
 
 
 
@@ -58,13 +60,15 @@ const components = [
   MonstreCardTitleComponent,
   CaracComponent,
   PageHeaderComponent,
-  ClasseArmureComponent
+  ClasseArmureComponent,
+  SensComponent
 ];
 
 const entryComponents = [
   CaracEditorBottomSheetComponent,
   DiceRollEditorBottomSheetComponent,
-  ClasseArmureEditorBottomSheetComponent
+  ClasseArmureEditorBottomSheetComponent,
+  SensesEditorBottomSheetComponent
 ];
 
 const pipes = [
