@@ -20,15 +20,16 @@ import { DiceRollComponent } from './components/dice-roll/dice-roll.component';
 import { SanitizeHtmlPipe } from './pipes/sanitize-html/sanitizeHtml.pipe';
 import { InlineEditableComponent } from './components/inline-editable/inline-editable.component';
 import { MonstreCardTitleComponent } from './components/monstre-card-title/monstre-card-title.component';
-import { CaracComponent } from './components/carac/carac.component';
+import { CaracComponent } from './components/attributes/carac/carac.component';
 import { ModifierPipe } from './pipes/modifier/modifier.pipe';
 import { PageHeaderComponent } from './components/page-header/page-header.component';
 import { CaracEditorBottomSheetComponent } from './components/editors/carac-editor/carac-editor-bottom-sheet.component';
 import { DiceRollEditorBottomSheetComponent } from './components/editors/dice-roll-editor/dice-roll-editor-bottom-sheet.component';
-import { ClasseArmureComponent } from './components/classe-armure/classe-armure.component';
+import { ClasseArmureComponent } from './components/attributes/classe-armure/classe-armure.component';
 import { ClasseArmureEditorBottomSheetComponent } from './components/editors/classe-armure-editor-bottom-sheet/classe-armure-editor-bottom-sheet.component';
-import { SensComponent } from './components/sens/sens.component';
+import { SensComponent } from './components/attributes/sens/sens.component';
 import { SensesEditorBottomSheetComponent } from './components/editors/senses-editor-bottom-sheet/senses-editor-bottom-sheet.component';
+import { SpeedComponent } from './components/attributes/speed/speed.component';
 
 
 
@@ -61,7 +62,8 @@ const components = [
   CaracComponent,
   PageHeaderComponent,
   ClasseArmureComponent,
-  SensComponent
+  SensComponent,
+  SpeedComponent
 ];
 
 const entryComponents = [

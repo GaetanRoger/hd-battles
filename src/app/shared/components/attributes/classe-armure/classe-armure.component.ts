@@ -1,7 +1,7 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { ClasseArmure } from '../../../models/classe-armure';
 import { MatBottomSheet } from '@angular/material';
-import { ClasseArmureEditorBottomSheetComponent } from '../editors/classe-armure-editor-bottom-sheet/classe-armure-editor-bottom-sheet.component';
+import { ClasseArmure } from 'src/app/models/classe-armure';
+import { ClasseArmureEditorBottomSheetComponent } from '../../editors/classe-armure-editor-bottom-sheet/classe-armure-editor-bottom-sheet.component';
 
 @Component({
   selector: 'app-classe-armure',

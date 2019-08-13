@@ -25,8 +25,7 @@
           <app-medieval-icon icon="flag" class="icon"></app-medieval-icon>
           <span class="name">Vitesse&nbsp;: </span>
           <span class="value">
-            <app-inline-editable [value]="monstre.monstre.header.monster.speed"
-              (valueChange)="monstre.monstre.header.monster.speed = $event"></app-inline-editable>
+            <app-speed [(value)]="monstre.monstre.parsed.speed" editable="true"></app-speed>
           </span>
         </div>
         <div class="carac">

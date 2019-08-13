@@ -1,7 +1,7 @@
+import { MatBottomSheet } from '@angular/material';
+import { SensesEditorBottomSheetComponent } from '../../editors/senses-editor-bottom-sheet/senses-editor-bottom-sheet.component';
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Sens } from 'src/app/models/sens';
-import { MatBottomSheet } from '@angular/material';
-import { SensesEditorBottomSheetComponent } from '../editors/senses-editor-bottom-sheet/senses-editor-bottom-sheet.component';
 
 @Component({
   selector: 'app-sens',

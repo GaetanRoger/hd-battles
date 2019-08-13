@@ -1,3 +1,5 @@
+/* tslint:disable:max-line-length */
+
 import { Monstre } from '../../../models/monstre';
 
 export const BESTIAIRE: Monstre[] = [
@@ -147,6 +149,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 20
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 3
+        },
+        {
+          type: 'nage',
+          value: 12
+        }
       ]
     }
   },
@@ -159,7 +171,7 @@ export const BESTIAIRE: Monstre[] = [
         alignment: 'Loyal Mauvais',
         ac: '15 (armure naturelle)',
         hp: '104 (16d8+32)',
-        speed: '9 m au sol',
+        speed: '9 m',
         str: '16 (+3)',
         dex: '14 (+2)',
         con: '15 (+2)',
@@ -298,6 +310,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 16
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        }
       ]
     }
   },
@@ -424,6 +442,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 12
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
         }
       ]
     }
@@ -555,6 +579,16 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 14
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 3
+        },
+        {
+          type: 'vol',
+          value: 18
         }
       ]
     }
@@ -696,6 +730,16 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 14
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 3
+        },
+        {
+          type: 'vol',
+          value: 24
         }
       ]
     }
@@ -847,6 +891,17 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 12
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 0
+        },
+        {
+          type: 'vol',
+          value: 18,
+          description: 'vol stationnaire'
+        }
       ]
     }
   },
@@ -859,7 +914,7 @@ export const BESTIAIRE: Monstre[] = [
         alignment: 'Loyal Mauvais',
         ac: '12',
         hp: '71 (13d8+13)',
-        speed: '9 m au sol ; nage 9 m',
+        speed: '9 m, nage 9 m',
         str: '17 (+3)',
         dex: '11 (+0)',
         con: '13 (+1)',
@@ -1013,6 +1068,16 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 13
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        },
+        {
+          type: 'nage',
+          value: 9
         }
       ]
     }
@@ -1177,6 +1242,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 20
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
+        },
+        {
+          type: 'vol',
+          value: 18
+        }
       ]
     }
   },
@@ -1325,6 +1400,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 11
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        },
+        {
+          type: 'fouissement',
+          value: 3
+        }
       ]
     }
   },
@@ -1459,6 +1544,16 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 10
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 6
+        },
+        {
+          type: 'escalade',
+          value: 6
         }
       ]
     }
@@ -1595,6 +1690,16 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 10
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        },
+        {
+          type: 'escalade',
+          value: 9
         }
       ]
     }
@@ -1746,6 +1851,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 10
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        },
+        {
+          type: 'escalade',
+          value: 9
+        }
       ]
     }
   },
@@ -1885,6 +2000,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 13
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
+        },
+        {
+          type: 'escalade',
+          value: 12
+        }
       ]
     }
   },
@@ -2015,6 +2140,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 10
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 6
+        }
       ]
     }
   },
@@ -2143,6 +2274,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 10
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 6
         }
       ]
     }
@@ -2276,6 +2413,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 12
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
         }
       ]
     }
@@ -2428,6 +2571,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 6
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 7.5
+        }
       ]
     }
   },
@@ -2569,6 +2718,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 13
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        }
       ]
     }
   },
@@ -2703,6 +2858,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 11
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
         }
       ]
     }
@@ -2854,6 +3015,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 10
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 3
+        },
+        {
+          type: 'nage',
+          value: 3
+        }
       ]
     }
   },
@@ -2982,6 +3153,16 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 11
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        },
+        {
+          type: 'escalade',
+          value: 9
         }
       ]
     }
@@ -3134,6 +3315,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 13
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
+        },
+        {
+          type: 'vol',
+          value: 24
+        }
       ]
     }
   },
@@ -3269,6 +3460,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 10
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
         }
       ]
     }
@@ -3411,6 +3608,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 9
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 6
+        }
       ]
     }
   },
@@ -3538,6 +3741,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 10
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 15
         }
       ]
     }
@@ -3699,6 +3908,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 16
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 15
+        },
+        {
+          type: 'escalade',
+          value: 12
+        }
       ]
     }
   },
@@ -3829,6 +4048,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 13
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
         }
       ]
     }
@@ -3961,6 +4186,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 13
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
+        }
       ]
     }
   },
@@ -4089,6 +4320,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 10
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
         }
       ]
     }
@@ -4222,6 +4459,16 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 11
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 6
+        },
+        {
+          type: 'fouissement',
+          value: 1.5
         }
       ]
     }
@@ -4367,6 +4614,16 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 11
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        },
+        {
+          type: 'fouissement',
+          value: 3
         }
       ]
     }
@@ -4518,6 +4775,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 10
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        }
       ]
     }
   },
@@ -4665,6 +4928,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 16
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
+        },
+        {
+          type: 'fouissement',
+          value: 12
+        }
       ]
     }
   },
@@ -4805,6 +5078,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 10
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
         }
       ]
     }
@@ -4960,6 +5239,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 13
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 15
+        }
       ]
     }
   },
@@ -5113,6 +5398,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 20
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
+        }
       ]
     }
   },
@@ -5243,6 +5534,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 13
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
         }
       ]
     }
@@ -5393,6 +5690,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 12
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        }
       ]
     }
   },
@@ -5533,6 +5836,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 15
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
         }
       ]
     }
@@ -5677,6 +5986,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 12
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        }
       ]
     }
   },
@@ -5804,6 +6119,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 9
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 15
         }
       ]
     }
@@ -5966,6 +6287,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 13
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        },
+        {
+          type: 'nage',
+          value: 9
+        }
       ]
     }
   },
@@ -6096,6 +6427,16 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 13
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
+        },
+        {
+          type: 'escalade',
+          value: 9
         }
       ]
     }
@@ -6232,6 +6573,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 11
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 1.5
+        },
+        {
+          type: 'vol',
+          value: 9
+        }
       ]
     }
   },
@@ -6366,6 +6717,16 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 11
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 3
+        },
+        {
+          type: 'vol',
+          value: 18
         }
       ]
     }
@@ -6515,6 +6876,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 10
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
         }
       ]
     }
@@ -6675,6 +7042,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 10
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        }
       ]
     }
   },
@@ -6803,6 +7176,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 11
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 19
         }
       ]
     }
@@ -6945,6 +7324,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 17
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 18
+        }
       ]
     }
   },
@@ -7074,6 +7459,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 11
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 18
+        }
       ]
     }
   },
@@ -7201,6 +7592,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 10
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 18
         }
       ]
     }
@@ -7331,6 +7728,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 10
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 18
         }
       ]
     }
@@ -7478,6 +7881,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 10
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        }
       ]
     }
   },
@@ -7608,6 +8017,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 10
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
         }
       ]
     }
@@ -7741,6 +8156,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 11
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
+        }
       ]
     }
   },
@@ -7868,6 +8289,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 12
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 15
         }
       ]
     }
@@ -8008,6 +8435,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 15
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
+        }
       ]
     }
   },
@@ -8140,6 +8573,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 13
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
         }
       ]
     }
@@ -8303,6 +8742,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 18
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        },
+        {
+          type: 'vol',
+          value: 18
+        }
       ]
     }
   },
@@ -8436,6 +8885,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 13
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 1.5
+        },
+        {
+          type: 'vol',
+          value: 18
+        }
       ]
     }
   },
@@ -8568,6 +9027,16 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 15
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 1.5
+        },
+        {
+          type: 'vol',
+          value: 18
         }
       ]
     }
@@ -8717,6 +9186,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 14
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        },
+        {
+          type: 'nage',
+          value: 9
+        }
       ]
     }
   },
@@ -8854,6 +9333,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 11
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 6
+        },
+        {
+          type: 'vol',
+          value: 12
+        }
       ]
     }
   },
@@ -8986,6 +9475,16 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 13
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 3
+        },
+        {
+          type: 'vol',
+          value: 15
         }
       ]
     }
@@ -9138,6 +9637,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 15
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        },
+        {
+          type: 'vol',
+          value: 27
+        }
       ]
     }
   },
@@ -9273,6 +9782,16 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 9
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 6
+        },
+        {
+          type: 'nage',
+          value: 6
         }
       ]
     }
@@ -9410,6 +9929,16 @@ export const BESTIAIRE: Monstre[] = [
         },
         {
           type: 'perception passive',
+          value: 9
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        },
+        {
+          type: 'nage',
           value: 9
         }
       ]
@@ -9551,6 +10080,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 10
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 6
+        },
+        {
+          type: 'nage',
+          value: 12
+        }
       ]
     }
   },
@@ -9690,6 +10229,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 6
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 0
+        }
       ]
     }
   },
@@ -9823,6 +10368,16 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 10
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 6
+        },
+        {
+          type: 'nage',
+          value: 9
         }
       ]
     }
@@ -9969,6 +10524,16 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 10
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        },
+        {
+          type: 'nage',
+          value: 15
         }
       ]
     }
@@ -10120,6 +10685,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 8
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 4.5
+        }
       ]
     }
   },
@@ -10256,6 +10827,16 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 11
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 18
+        },
+        {
+          type: 'vol',
+          value: 27
         }
       ]
     }
@@ -10410,6 +10991,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 19
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        },
+        {
+          type: 'vol',
+          value: 27
+        }
       ]
     }
   },
@@ -10423,7 +11014,7 @@ export const BESTIAIRE: Monstre[] = [
         alignment: 'Neutre Mauvais',
         ac: '15',
         hp: '212 (25d10+75)',
-        speed: '1,50 m au sol ; 9 mètres en vol',
+        speed: '1,50 m, vol 9 m',
         str: '12 (+1)',
         dex: '14 (+2)',
         con: '16 (+3)',
@@ -10555,6 +11146,16 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 14
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 1.5
+        },
+        {
+          type: 'vol',
+          value: 9
         }
       ]
     }
@@ -10715,6 +11316,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 18
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        }
       ]
     }
   },
@@ -10865,6 +11472,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 10
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
         }
       ]
     }
@@ -11025,6 +11638,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 13
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 6
+        },
+        {
+          type: 'vol',
+          value: 18
+        }
       ]
     }
   },
@@ -11172,6 +11795,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 11
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
         }
       ]
     }
@@ -11340,6 +11969,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 12
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
+        }
       ]
     }
   },
@@ -11491,6 +12126,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 12
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
+        },
+        {
+          type: 'vol',
+          value: 12
+        }
       ]
     }
   },
@@ -11632,6 +12277,16 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 11
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 6
+        },
+        {
+          type: 'vol',
+          value: 12
         }
       ]
     }
@@ -11796,6 +12451,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 14
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        },
+        {
+          type: 'vol',
+          value: 18
+        }
       ]
     }
   },
@@ -11935,6 +12600,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'vision dans le noir',
           value: 18
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
         }
       ]
     }
@@ -12083,6 +12754,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 13
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        },
+        {
+          type: 'vol',
+          value: 27
+        }
       ]
     }
   },
@@ -12230,6 +12911,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 11
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
         }
       ]
     }
@@ -12401,6 +13088,24 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 21
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
+        },
+        {
+          type: 'fouissement',
+          value: 9
+        },
+        {
+          type: 'nage',
+          value: 12
+        },
+        {
+          type: 'vol',
+          value: 24
+        }
       ]
     }
   },
@@ -12570,6 +13275,24 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 23
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
+        },
+        {
+          type: 'fouissement',
+          value: 12
+        },
+        {
+          type: 'nage',
+          value: 12
+        },
+        {
+          type: 'vol',
+          value: 24
         }
       ]
     }
@@ -12743,6 +13466,20 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 22
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
+        },
+        {
+          type: 'fouissement',
+          value: 9
+        },
+        {
+          type: 'vol',
+          value: 24
+        }
       ]
     }
   },
@@ -12915,6 +13652,20 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 27
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
+        },
+        {
+          type: 'fouissement',
+          value: 12
+        },
+        {
+          type: 'vol',
+          value: 24
+        }
       ]
     }
   },
@@ -13084,6 +13835,20 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 21
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
+        },
+        {
+          type: 'fouissement',
+          value: 9
+        },
+        {
+          type: 'vol',
+          value: 24
         }
       ]
     }
@@ -13257,6 +14022,20 @@ export const BESTIAIRE: Monstre[] = [
         },
         {
           type: 'perception passive',
+          value: 24
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
+        },
+        {
+          type: 'fouissement',
+          value: 12
+        },
+        {
+          type: 'vol',
           value: 24
         }
       ]
@@ -13433,6 +14212,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 21
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
+        },
+        {
+          type: 'vol',
+          value: 24
+        }
       ]
     }
   },
@@ -13606,6 +14395,16 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 26
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
+        },
+        {
+          type: 'vol',
+          value: 24
         }
       ]
     }
@@ -13781,6 +14580,20 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 24
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
+        },
+        {
+          type: 'nage',
+          value: 12
+        },
+        {
+          type: 'vol',
+          value: 24
+        }
       ]
     }
   },
@@ -13954,6 +14767,20 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 27
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
+        },
+        {
+          type: 'nage',
+          value: 12
+        },
+        {
+          type: 'vol',
+          value: 24
         }
       ]
     }
@@ -14131,6 +14958,20 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 22
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
+        },
+        {
+          type: 'nage',
+          value: 12
+        },
+        {
+          type: 'vol',
+          value: 24
+        }
       ]
     }
   },
@@ -14307,6 +15148,20 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 27
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
+        },
+        {
+          type: 'nage',
+          value: 12
+        },
+        {
+          type: 'vol',
+          value: 24
+        }
       ]
     }
   },
@@ -14476,6 +15331,20 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 22
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
+        },
+        {
+          type: 'escalade',
+          value: 12
+        },
+        {
+          type: 'vol',
+          value: 24
         }
       ]
     }
@@ -14651,6 +15520,20 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 27
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
+        },
+        {
+          type: 'escalade',
+          value: 12
+        },
+        {
+          type: 'vol',
+          value: 24
+        }
       ]
     }
   },
@@ -14820,6 +15703,20 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 21
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
+        },
+        {
+          type: 'nage',
+          value: 12
+        },
+        {
+          type: 'vol',
+          value: 24
         }
       ]
     }
@@ -14991,6 +15888,20 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 26
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
+        },
+        {
+          type: 'nage',
+          value: 12
+        },
+        {
+          type: 'vol',
+          value: 24
+        }
       ]
     }
   },
@@ -15161,6 +16072,20 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 23
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
+        },
+        {
+          type: 'escalade',
+          value: 12
+        },
+        {
+          type: 'vol',
+          value: 24
+        }
       ]
     }
   },
@@ -15330,6 +16255,20 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 26
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
+        },
+        {
+          type: 'escalade',
+          value: 12
+        },
+        {
+          type: 'vol',
+          value: 24
         }
       ]
     }
@@ -15505,6 +16444,20 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 22
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
+        },
+        {
+          type: 'nage',
+          value: 12
+        },
+        {
+          type: 'vol',
+          value: 24
+        }
       ]
     }
   },
@@ -15679,6 +16632,20 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 27
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
+        },
+        {
+          type: 'nage',
+          value: 12
+        },
+        {
+          type: 'vol',
+          value: 24
+        }
       ]
     }
   },
@@ -15842,6 +16809,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 11
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 6
+        },
+        {
+          type: 'nage',
+          value: 12
+        }
       ]
     }
   },
@@ -15985,6 +16962,24 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 14
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        },
+        {
+          type: 'fouissement',
+          value: 4.5
+        },
+        {
+          type: 'nage',
+          value: 9
+        },
+        {
+          type: 'vol',
+          value: 18
         }
       ]
     }
@@ -16132,6 +17127,20 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 14
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        },
+        {
+          type: 'fouissement',
+          value: 4.5
+        },
+        {
+          type: 'vol',
+          value: 18
+        }
       ]
     }
   },
@@ -16275,6 +17284,20 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 14
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        },
+        {
+          type: 'fouissement',
+          value: 4.5
+        },
+        {
+          type: 'vol',
+          value: 18
         }
       ]
     }
@@ -16420,6 +17443,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 14
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        },
+        {
+          type: 'vol',
+          value: 18
+        }
       ]
     }
   },
@@ -16564,6 +17597,20 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 14
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        },
+        {
+          type: 'nage',
+          value: 9
+        },
+        {
+          type: 'vol',
+          value: 18
         }
       ]
     }
@@ -16712,6 +17759,20 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 14
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        },
+        {
+          type: 'nage',
+          value: 9
+        },
+        {
+          type: 'vol',
+          value: 18
+        }
       ]
     }
   },
@@ -16855,6 +17916,20 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 14
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        },
+        {
+          type: 'escalade',
+          value: 9
+        },
+        {
+          type: 'vol',
+          value: 18
         }
       ]
     }
@@ -17001,6 +18076,20 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 14
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        },
+        {
+          type: 'nage',
+          value: 9
+        },
+        {
+          type: 'vol',
+          value: 18
+        }
       ]
     }
   },
@@ -17144,6 +18233,20 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 14
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        },
+        {
+          type: 'escalade',
+          value: 9
+        },
+        {
+          type: 'vol',
+          value: 18
         }
       ]
     }
@@ -17294,6 +18397,20 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 14
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        },
+        {
+          type: 'nage',
+          value: 9
+        },
+        {
+          type: 'vol',
+          value: 18
+        }
       ]
     }
   },
@@ -17426,6 +18543,16 @@ export const BESTIAIRE: Monstre[] = [
         },
         {
           type: 'perception passive',
+          value: 12
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 6
+        },
+        {
+          type: 'vol',
           value: 12
         }
       ]
@@ -17577,6 +18704,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 9
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 6
         }
       ]
     }
@@ -17737,6 +18870,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 15
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        },
+        {
+          type: 'escalade',
+          value: 9
+        }
       ]
     }
   },
@@ -17884,6 +19027,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 12
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        }
       ]
     }
   },
@@ -18012,6 +19161,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 14
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
         }
       ]
     }
@@ -18155,6 +19310,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 14
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
         }
       ]
     }
@@ -18311,6 +19472,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 10
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 7.5
+        }
       ]
     }
   },
@@ -18439,6 +19606,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 13
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 7.5
         }
       ]
     }
@@ -18580,6 +19753,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 15
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
         }
       ]
     }
@@ -18732,6 +19911,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 12
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
+        },
+        {
+          type: 'vol',
+          value: 18
+        }
       ]
     }
   },
@@ -18871,6 +20060,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 10
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 15
+        }
       ]
     }
   },
@@ -19008,6 +20203,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 14
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 18
         }
       ]
     }
@@ -19164,6 +20365,17 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 10
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 0
+        },
+        {
+          type: 'vol',
+          value: 27,
+          description: 'vol stationnaire'
+        }
       ]
     }
   },
@@ -19319,6 +20531,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 10
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        },
+        {
+          type: 'nage',
+          value: 27
+        }
       ]
     }
   },
@@ -19472,6 +20694,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 10
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        },
+        {
+          type: 'fouissement',
+          value: 9
+        }
       ]
     }
   },
@@ -19621,6 +20853,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 10
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 15
+        }
       ]
     }
   },
@@ -19762,6 +21000,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 10
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
         }
       ]
     }
@@ -19918,6 +21162,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 16
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 3
+        },
+        {
+          type: 'escalade',
+          value: 3
+        }
       ]
     }
   },
@@ -20051,6 +21305,16 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 13
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 0
+        },
+        {
+          type: 'nage',
+          value: 18
         }
       ]
     }
@@ -20198,6 +21462,17 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 7
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 0
+        },
+        {
+          type: 'vol',
+          value: 15,
+          description: 'vol stationnaire'
         }
       ]
     }
@@ -20351,6 +21626,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 12
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        },
+        {
+          type: 'vol',
+          value: 18
+        }
       ]
     }
   },
@@ -20490,6 +21775,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 16
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
         }
       ]
     }
@@ -20640,6 +21931,16 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 13
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 3
+        },
+        {
+          type: 'vol',
+          value: 12
         }
       ]
     }
@@ -20800,6 +22101,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 13
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        },
+        {
+          type: 'escalade',
+          value: 9
+        }
       ]
     }
   },
@@ -20951,6 +22262,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 14
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
+        }
       ]
     }
   },
@@ -21079,6 +22396,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 11
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
         }
       ]
     }
@@ -21240,6 +22563,17 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 11
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 0
+        },
+        {
+          type: 'vol',
+          value: 12,
+          description: 'vol stationnaire'
+        }
       ]
     }
   },
@@ -21373,6 +22707,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 14
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 3
+        },
+        {
+          type: 'vol',
+          value: 18
+        }
       ]
     }
   },
@@ -21505,6 +22849,16 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 14
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 3
+        },
+        {
+          type: 'vol',
+          value: 18
         }
       ]
     }
@@ -21656,6 +23010,17 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 12
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 0
+        },
+        {
+          type: 'vol',
+          value: 15,
+          description: 'vol stationnaire'
+        }
       ]
     }
   },
@@ -21783,6 +23148,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 12
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
         }
       ]
     }
@@ -21934,6 +23305,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 10
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
         }
       ]
     }
@@ -22088,6 +23465,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 10
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        },
+        {
+          type: 'vol',
+          value: 18
+        }
       ]
     }
   },
@@ -22234,6 +23621,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 12
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
+        }
       ]
     }
   },
@@ -22378,6 +23771,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 17
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
         }
       ]
     }
@@ -22527,6 +23926,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 14
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
         }
       ]
     }
@@ -22679,6 +24084,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 19
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 15
+        },
+        {
+          type: 'nage',
+          value: 15
+        }
       ]
     }
   },
@@ -22825,6 +24240,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 16
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        }
       ]
     }
   },
@@ -22968,6 +24389,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 13
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
         }
       ]
     }
@@ -23115,6 +24542,16 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 8
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 3
+        },
+        {
+          type: 'escalade',
+          value: 3
         }
       ]
     }
@@ -23267,6 +24704,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 13
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
+        }
       ]
     }
   },
@@ -23408,6 +24851,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 11
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
         }
       ]
     }
@@ -23564,6 +25013,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 10
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        }
       ]
     }
   },
@@ -23710,6 +25165,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 12
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 6
         }
       ]
     }
@@ -23858,6 +25319,12 @@ export const BESTIAIRE: Monstre[] = [
         },
         {
           type: 'perception passive',
+          value: 9
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
           value: 9
         }
       ]
@@ -24017,6 +25484,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 14
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        }
       ]
     }
   },
@@ -24161,6 +25634,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 10
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
         }
       ]
     }
@@ -24314,6 +25793,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 9
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 6
+        }
       ]
     }
   },
@@ -24460,6 +25945,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 10
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
         }
       ]
     }
@@ -24621,6 +26112,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 10
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        }
       ]
     }
   },
@@ -24773,6 +26270,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 10
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        }
       ]
     }
   },
@@ -24924,6 +26427,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 14
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
+        }
       ]
     }
   },
@@ -25073,6 +26582,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 10
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        }
       ]
     }
   },
@@ -25215,6 +26730,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 13
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        },
+        {
+          type: 'escalade',
+          value: 9
+        }
       ]
     }
   },
@@ -25337,6 +26862,16 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 11
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 6
+        },
+        {
+          type: 'nage',
+          value: 6
         }
       ]
     }
@@ -25474,6 +27009,16 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 12
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        },
+        {
+          type: 'nage',
+          value: 9
         }
       ]
     }
@@ -25626,6 +27171,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 12
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        },
+        {
+          type: 'escalade',
+          value: 9
+        }
       ]
     }
   },
@@ -25773,6 +27328,16 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 15
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        },
+        {
+          type: 'vol',
+          value: 24
         }
       ]
     }
@@ -25922,6 +27487,16 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 11
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        },
+        {
+          type: 'nage',
+          value: 12
         }
       ]
     }
@@ -26074,6 +27649,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 16
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        }
       ]
     }
   },
@@ -26223,6 +27804,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 14
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        }
       ]
     }
   },
@@ -26355,6 +27942,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 10
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 3
+        },
+        {
+          type: 'vol',
+          value: 15
+        }
       ]
     }
   },
@@ -26483,6 +28080,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 10
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
         }
       ]
     }
@@ -26635,6 +28238,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 18
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
+        },
+        {
+          type: 'vol',
+          value: 18
+        }
       ]
     }
   },
@@ -26783,6 +28396,16 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 10
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 6
+        },
+        {
+          type: 'vol',
+          value: 12
         }
       ]
     }
@@ -26935,6 +28558,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 11
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        }
       ]
     }
   },
@@ -27067,6 +28696,16 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 14
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 3
+        },
+        {
+          type: 'vol',
+          value: 18
         }
       ]
     }
@@ -27212,6 +28851,16 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 14
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 3
+        },
+        {
+          type: 'vol',
+          value: 24
         }
       ]
     }
@@ -27362,6 +29011,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 13
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
+        }
       ]
     }
   },
@@ -27480,6 +29135,16 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 10
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 0
+        },
+        {
+          type: 'nage',
+          value: 6
         }
       ]
     }
@@ -27610,6 +29275,16 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 11
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 0
+        },
+        {
+          type: 'nage',
+          value: 12
         }
       ]
     }
@@ -27757,6 +29432,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 15
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
+        },
+        {
+          type: 'vol',
+          value: 18
+        }
       ]
     }
   },
@@ -27901,6 +29586,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 10
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
         }
       ]
     }
@@ -28063,6 +29754,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 13
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        },
+        {
+          type: 'nage',
+          value: 9
+        }
       ]
     }
   },
@@ -28193,6 +29894,16 @@ export const BESTIAIRE: Monstre[] = [
       senses: [
         {
           type: 'perception passive',
+          value: 12
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 3
+        },
+        {
+          type: 'nage',
           value: 12
         }
       ]
@@ -28335,6 +30046,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 10
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 6
+        },
+        {
+          type: 'vol',
+          value: 12
+        }
       ]
     }
   },
@@ -28476,6 +30197,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 16
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        },
+        {
+          type: 'nage',
+          value: 9
+        }
       ]
     }
   },
@@ -28607,6 +30338,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 13
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 15
+        }
       ]
     }
   },
@@ -28737,6 +30474,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 13
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 15
         }
       ]
     }
@@ -28894,6 +30637,24 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 16
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
+        },
+        {
+          type: 'fouissement',
+          value: 6
+        },
+        {
+          type: 'nage',
+          value: 12
+        },
+        {
+          type: 'vol',
+          value: 24
         }
       ]
     }
@@ -29053,6 +30814,20 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 19
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
+        },
+        {
+          type: 'fouissement',
+          value: 6
+        },
+        {
+          type: 'vol',
+          value: 24
+        }
       ]
     }
   },
@@ -29208,6 +30983,20 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 16
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
+        },
+        {
+          type: 'fouissement',
+          value: 6
+        },
+        {
+          type: 'vol',
+          value: 24
         }
       ]
     }
@@ -29365,6 +31154,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 18
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
+        },
+        {
+          type: 'vol',
+          value: 24
+        }
       ]
     }
   },
@@ -29521,6 +31320,20 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 19
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
+        },
+        {
+          type: 'nage',
+          value: 12
+        },
+        {
+          type: 'vol',
+          value: 24
         }
       ]
     }
@@ -29681,6 +31494,20 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 17
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
+        },
+        {
+          type: 'nage',
+          value: 12
+        },
+        {
+          type: 'vol',
+          value: 24
+        }
       ]
     }
   },
@@ -29836,6 +31663,20 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 17
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
+        },
+        {
+          type: 'escalade',
+          value: 12
+        },
+        {
+          type: 'vol',
+          value: 24
         }
       ]
     }
@@ -29994,6 +31835,20 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 16
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
+        },
+        {
+          type: 'nage',
+          value: 12
+        },
+        {
+          type: 'vol',
+          value: 24
+        }
       ]
     }
   },
@@ -30149,6 +32004,20 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 18
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
+        },
+        {
+          type: 'escalade',
+          value: 12
+        },
+        {
+          type: 'vol',
+          value: 24
         }
       ]
     }
@@ -30311,6 +32180,20 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 17
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
+        },
+        {
+          type: 'nage',
+          value: 12
+        },
+        {
+          type: 'vol',
+          value: 24
+        }
       ]
     }
   },
@@ -30456,6 +32339,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 8
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
         }
       ]
     }
@@ -30622,6 +32511,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 14
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 6
+        },
+        {
+          type: 'nage',
+          value: 18
+        }
       ]
     }
   },
@@ -30779,6 +32678,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 12
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        }
       ]
     }
   },
@@ -30925,6 +32830,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 16
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 6
+        },
+        {
+          type: 'fouissement',
+          value: 6
+        }
       ]
     }
   },
@@ -31065,6 +32980,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 10
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 4.5
+        }
       ]
     }
   },
@@ -31198,6 +33119,16 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 9
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 6
+        },
+        {
+          type: 'escalade',
+          value: 6
         }
       ]
     }
@@ -31333,6 +33264,16 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 10
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        },
+        {
+          type: 'escalade',
+          value: 9
         }
       ]
     }
@@ -31477,6 +33418,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 19
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
         }
       ]
     }
@@ -31639,6 +33586,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 13
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 15
+        }
       ]
     }
   },
@@ -31776,6 +33729,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 13
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 15
+        }
       ]
     }
   },
@@ -31909,6 +33868,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 13
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
         }
       ]
     }
@@ -32045,6 +34010,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 15
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 15
+        }
       ]
     }
   },
@@ -32176,6 +34147,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 13
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 15
         }
       ]
     }
@@ -32337,6 +34314,13 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 14
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9,
+          description: '12 m sous forme de loup'
+        }
       ]
     }
   },
@@ -32469,6 +34453,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 11
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
         }
       ]
     }
@@ -32606,6 +34596,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 10
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
         }
       ]
     }
@@ -32748,6 +34744,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 10
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        }
       ]
     }
   },
@@ -32885,6 +34887,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 10
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
         }
       ]
     }
@@ -33025,6 +35033,16 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 10
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 3
+        },
+        {
+          type: 'vol',
+          value: 9
         }
       ]
     }
@@ -33185,6 +35203,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 11
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 3
+        },
+        {
+          type: 'vol',
+          value: 12
+        }
       ]
     }
   },
@@ -33344,6 +35372,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 11
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        },
+        {
+          type: 'vol',
+          value: 15
+        }
       ]
     }
   },
@@ -33496,6 +35534,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 13
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
+        }
       ]
     }
   },
@@ -33626,6 +35670,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 13
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
         }
       ]
     }
@@ -33788,6 +35838,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 14
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        }
       ]
     }
   },
@@ -33916,6 +35972,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 10
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
         }
       ]
     }
@@ -34063,6 +36125,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 12
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        },
+        {
+          type: 'vol',
+          value: 9
+        }
       ]
     }
   },
@@ -34204,6 +36276,16 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 10
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        },
+        {
+          type: 'vol',
+          value: 9
         }
       ]
     }
@@ -34351,6 +36433,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 12
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        },
+        {
+          type: 'vol',
+          value: 9
+        }
       ]
     }
   },
@@ -34494,6 +36586,16 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 10
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        },
+        {
+          type: 'vol',
+          value: 9
         }
       ]
     }
@@ -34654,6 +36756,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 10
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 3
+        },
+        {
+          type: 'nage',
+          value: 12
+        }
       ]
     }
   },
@@ -34784,6 +36896,16 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 8
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        },
+        {
+          type: 'escalade',
+          value: 9
         }
       ]
     }
@@ -34936,6 +37058,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 11
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 4.5
+        }
       ]
     }
   },
@@ -35085,6 +37213,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 17
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
+        }
       ]
     }
   },
@@ -35232,6 +37366,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 6
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 1.5
+        }
       ]
     }
   },
@@ -35371,6 +37511,12 @@ export const BESTIAIRE: Monstre[] = [
         },
         {
           type: 'perception passive',
+          value: 15
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
           value: 15
         }
       ]
@@ -35524,6 +37670,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 10
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 6
         }
       ]
     }
@@ -35679,6 +37831,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 14
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 6
+        }
       ]
     }
   },
@@ -35799,6 +37957,16 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 10
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        },
+        {
+          type: 'vol',
+          value: 18
         }
       ]
     }
@@ -35932,6 +38100,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 10
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
         }
       ]
     }
@@ -36075,6 +38249,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 12
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
+        }
       ]
     }
   },
@@ -36214,6 +38394,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 14
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
         }
       ]
     }
@@ -36373,6 +38559,16 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 11
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 6
+        },
+        {
+          type: 'vol',
+          value: 9
         }
       ]
     }
@@ -36536,6 +38732,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 13
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        }
       ]
     }
   },
@@ -36664,6 +38866,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 12
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
         }
       ]
     }
@@ -36810,6 +39018,16 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 8
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 6
+        },
+        {
+          type: 'escalade',
+          value: 6
         }
       ]
     }
@@ -36960,6 +39178,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 11
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 0
+        },
+        {
+          type: 'vol',
+          value: 9
+        }
       ]
     }
   },
@@ -37099,6 +39327,16 @@ export const BESTIAIRE: Monstre[] = [
       senses: [
         {
           type: 'perception passive',
+          value: 15
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 3
+        },
+        {
+          type: 'vol',
           value: 15
         }
       ]
@@ -37248,6 +39486,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 8
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 0
+        },
+        {
+          type: 'nage',
+          value: 12
+        }
       ]
     }
   },
@@ -37392,6 +39640,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 10
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
         }
       ]
     }
@@ -37539,6 +39793,16 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 10
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        },
+        {
+          type: 'nage',
+          value: 9
         }
       ]
     }
@@ -37690,6 +39954,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 8
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
+        }
       ]
     }
   },
@@ -37838,6 +40108,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 10
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
         }
       ]
     }
@@ -37992,6 +40268,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 14
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        },
+        {
+          type: 'vol',
+          value: 9
+        }
       ]
     }
   },
@@ -38138,6 +40424,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 10
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
         }
       ]
     }
@@ -38292,6 +40584,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 11
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        }
       ]
     }
   },
@@ -38440,6 +40738,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 13
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
+        },
+        {
+          type: 'escalade',
+          value: 9
+        }
       ]
     }
   },
@@ -38581,6 +40889,16 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 13
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
+        },
+        {
+          type: 'escalade',
+          value: 9
         }
       ]
     }
@@ -38726,6 +41044,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 13
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
+        },
+        {
+          type: 'nage',
+          value: 9
+        }
       ]
     }
   },
@@ -38739,7 +41067,7 @@ export const BESTIAIRE: Monstre[] = [
         alignment: 'Neutre Bon',
         ac: '10 sous forme humanoïde, 11 (armure naturelle) sous forme hybride ou d\'ours',
         hp: '135 (18d8+54)',
-        speed: '9 m (12 m, escalade 9 m sous forme hybride ou d\'ours)',
+        speed: '9 m (12 m sous forme hybride ou d\'ours), escalade 9 m (sous forme hybride ou d\'ours)',
         str: '19 (+4)',
         dex: '10 (+0)',
         con: '17 (+3)',
@@ -38884,6 +41212,18 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 17
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9,
+          description: '12 m sous forme hybride ou d\'ours'
+        },
+        {
+          type: 'escalade',
+          value: 9,
+          description: 'sous forme hybride ou d\'ours'
+        }
       ]
     }
   },
@@ -39027,6 +41367,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 11
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
+        }
       ]
     }
   },
@@ -39168,6 +41514,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 14
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 15
+        },
+        {
+          type: 'escalade',
+          value: 12
+        }
       ]
     }
   },
@@ -39180,7 +41536,7 @@ export const BESTIAIRE: Monstre[] = [
         alignment: 'Neutre',
         ac: '12',
         hp: '7 (2d6)',
-        speed: '9 m au sol',
+        speed: '9 m',
         str: '8 (-1)',
         dex: '15 (+2)',
         con: '11 (+0)',
@@ -39305,6 +41661,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 8
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
         }
       ]
     }
@@ -39436,6 +41798,16 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 16
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 18
+        },
+        {
+          type: 'vol',
+          value: 27
         }
       ]
     }
@@ -39574,6 +41946,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 12
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 1.5
+        },
+        {
+          type: 'nage',
+          value: 9
+        }
       ]
     }
   },
@@ -39711,6 +42093,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 14
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 3
+        },
+        {
+          type: 'nage',
+          value: 18
+        }
       ]
     }
   },
@@ -39845,6 +42237,16 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 8
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 0
+        },
+        {
+          type: 'nage',
+          value: 12
         }
       ]
     }
@@ -39995,6 +42397,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 21
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
+        },
+        {
+          type: 'vol',
+          value: 36
+        }
       ]
     }
   },
@@ -40128,6 +42540,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 13
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 6
+        },
+        {
+          type: 'nage',
+          value: 12
+        }
       ]
     }
   },
@@ -40257,6 +42679,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 10
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
         }
       ]
     }
@@ -40406,6 +42834,16 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 8
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 6
+        },
+        {
+          type: 'escalade',
+          value: 6
         }
       ]
     }
@@ -40566,6 +43004,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 16
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        },
+        {
+          type: 'nage',
+          value: 12
+        }
       ]
     }
   },
@@ -40710,6 +43158,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 17
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
         }
       ]
     }
@@ -40862,6 +43316,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 13
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 4.5
+        },
+        {
+          type: 'vol',
+          value: 18
+        }
       ]
     }
   },
@@ -40999,6 +43463,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 8
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
         }
       ]
     }
@@ -41146,6 +43616,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 10
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
+        }
       ]
     }
   },
@@ -41287,6 +43763,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 13
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
+        }
       ]
     }
   },
@@ -41420,6 +43902,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 10
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 6
+        }
       ]
     }
   },
@@ -41552,6 +44040,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 10
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
         }
       ]
     }
@@ -41710,6 +44204,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 12
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        }
       ]
     }
   },
@@ -41855,6 +44355,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 10
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        },
+        {
+          type: 'fouissement',
+          value: 6
+        }
       ]
     }
   },
@@ -41987,6 +44497,16 @@ export const BESTIAIRE: Monstre[] = [
         },
         {
           type: 'perception passive',
+          value: 12
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 0
+        },
+        {
+          type: 'nage',
           value: 12
         }
       ]
@@ -42123,6 +44643,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 12
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 0
+        },
+        {
+          type: 'nage',
+          value: 12
+        }
       ]
     }
   },
@@ -42257,6 +44787,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 13
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 0
+        },
+        {
+          type: 'nage',
+          value: 15
+        }
       ]
     }
   },
@@ -42386,6 +44926,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 11
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
         }
       ]
     }
@@ -42532,6 +45078,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 14
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 6
+        },
+        {
+          type: 'vol',
+          value: 36
+        }
       ]
     }
   },
@@ -42658,6 +45214,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 10
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
         }
       ]
     }
@@ -42818,6 +45380,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 15
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        },
+        {
+          type: 'nage',
+          value: 12
+        }
       ]
     }
   },
@@ -42962,6 +45534,12 @@ export const BESTIAIRE: Monstre[] = [
         },
         {
           type: 'perception passive',
+          value: 9
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
           value: 9
         }
       ]
@@ -43113,6 +45691,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 10
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        }
       ]
     }
   },
@@ -43247,6 +45831,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 9
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
+        }
       ]
     }
   },
@@ -43380,6 +45970,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 8
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
         }
       ]
     }
@@ -43530,6 +46126,13 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 12
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9,
+          description: '12 m sous forme de sanglier'
         }
       ]
     }
@@ -43684,6 +46287,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 12
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
+        }
       ]
     }
   },
@@ -43836,6 +46445,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 10
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 0
+        }
       ]
     }
   },
@@ -43968,6 +46583,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 9
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 3
         }
       ]
     }
@@ -44113,6 +46734,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 9
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
         }
       ]
     }
@@ -44263,6 +46890,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 10
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        }
       ]
     }
   },
@@ -44405,6 +47038,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 10
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        },
+        {
+          type: 'nage',
+          value: 9
+        }
       ]
     }
   },
@@ -44546,6 +47189,16 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 12
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        },
+        {
+          type: 'nage',
+          value: 9
         }
       ]
     }
@@ -44704,6 +47357,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 10
         }
+      ],
+      speed: [
+        {
+          type: 'nage',
+          value: 15
+        }
       ]
     }
   },
@@ -44840,6 +47499,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 10
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        },
+        {
+          type: 'nage',
+          value: 9
+        }
       ]
     }
   },
@@ -44971,6 +47640,16 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 12
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        },
+        {
+          type: 'nage',
+          value: 9
         }
       ]
     }
@@ -45104,6 +47783,20 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 11
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        },
+        {
+          type: 'vol',
+          value: 18
+        },
+        {
+          type: 'nage',
+          value: 9
         }
       ]
     }
@@ -45248,6 +47941,16 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 14
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
+        },
+        {
+          type: 'escalade',
+          value: 12
         }
       ]
     }
@@ -45411,6 +48114,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 24
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 15
+        },
+        {
+          type: 'vol',
+          value: 45
+        }
       ]
     }
   },
@@ -45556,6 +48269,17 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 10
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 0
+        },
+        {
+          type: 'vol',
+          value: 15,
+          description: 'vol stationnaire'
         }
       ]
     }
@@ -45706,6 +48430,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 9
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        }
       ]
     }
   },
@@ -45844,6 +48574,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 9
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 18
         }
       ]
     }
@@ -45995,6 +48731,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 9
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
+        }
       ]
     }
   },
@@ -46132,6 +48874,16 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 9
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 3
+        },
+        {
+          type: 'vol',
+          value: 12
         }
       ]
     }
@@ -46282,6 +49034,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 15
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        },
+        {
+          type: 'vol',
+          value: 18
+        }
       ]
     }
   },
@@ -46431,6 +49193,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 13
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        }
       ]
     }
   },
@@ -46576,6 +49344,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 6
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 3
         }
       ]
     }
@@ -46756,6 +49530,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 10
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
+        }
       ]
     }
   },
@@ -46917,6 +49697,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 18
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        },
+        {
+          type: 'fouissement',
+          value: 6
+        }
       ]
     }
   },
@@ -47069,6 +49859,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 10
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 6
+        },
+        {
+          type: 'nage',
+          value: 6
+        }
       ]
     }
   },
@@ -47214,6 +50014,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 13
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
+        }
       ]
     }
   },
@@ -47354,6 +50160,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 13
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
         }
       ]
     }
@@ -47519,6 +50331,13 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 15
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9,
+          description: '12 m sous forme de tigre'
+        }
       ]
     }
   },
@@ -47657,6 +50476,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 13
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
         }
       ]
     }
@@ -47807,6 +50632,17 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 18
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 15
+        },
+        {
+          type: 'vol',
+          value: 15,
+          description: 'vol stationnaire'
+        }
       ]
     }
   },
@@ -47947,6 +50783,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 10
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 15
         }
       ]
     }
@@ -48103,6 +50945,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 12
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        }
       ]
     }
   },
@@ -48248,6 +51096,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 14
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 15
         }
       ]
     }
@@ -48407,6 +51261,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 17
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        }
       ]
     }
   },
@@ -48556,6 +51416,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 13
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        }
       ]
     }
   },
@@ -48702,6 +51568,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 8
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 3
+        },
+        {
+          type: 'escalade',
+          value: 3
+        }
       ]
     }
   },
@@ -48832,6 +51708,16 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 13
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 3
+        },
+        {
+          type: 'vol',
+          value: 15
         }
       ]
     }
@@ -48973,6 +51859,16 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 13
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 3
+        },
+        {
+          type: 'vol',
+          value: 15
         }
       ]
     }
@@ -49127,6 +52023,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 9
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 15
+        },
+        {
+          type: 'fouissement',
+          value: 9
+        }
       ]
     }
   },
@@ -49274,6 +52180,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 12
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
         }
       ]
     }
@@ -49439,6 +52351,12 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 12
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        }
       ]
     }
   },
@@ -49596,6 +52514,16 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 14
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 6
+        },
+        {
+          type: 'vol',
+          value: 24
         }
       ]
     }
@@ -49756,6 +52684,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 11
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 12
+        },
+        {
+          type: 'vol',
+          value: 18
+        }
       ]
     }
   },
@@ -49891,6 +52829,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 14
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 15
         }
       ]
     }
@@ -50047,6 +52991,16 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 16
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 6
+        },
+        {
+          type: 'fouissement',
+          value: 6
+        }
       ]
     }
   },
@@ -50184,6 +53138,12 @@ export const BESTIAIRE: Monstre[] = [
         {
           type: 'perception passive',
           value: 8
+        }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 6
         }
       ]
     }
@@ -50323,7 +53283,13 @@ export const BESTIAIRE: Monstre[] = [
           type: 'perception passive',
           value: 8
         }
+      ],
+      speed: [
+        {
+          type: 'sol',
+          value: 9
+        }
       ]
     }
   }
-];
+]

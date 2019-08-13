@@ -3,6 +3,7 @@ import { DiceRoll } from './dice-roll';
 import { Carac } from './carac';
 import { Sens } from './sens';
 import { ClasseArmure } from './classe-armure';
+import { Speed } from './speed';
 
 export interface Monstre {
   header: {
@@ -68,5 +69,6 @@ export interface Monstre {
     cha: Carac;
     ac: ClasseArmure;
     senses: Sens[];
+    speed: Speed[];
   };
 }
