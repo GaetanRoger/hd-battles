@@ -1,0 +1,93 @@
+header {
+  background: url("/assets/battle-build.jpg");
+  background-position: top;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  color: white;
+  text-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+  text-align: center;
+
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  h1 {
+    font-family: "Marcellus SC", serif;
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 10px;
+    margin-top: 0;
+  }
+
+  p {
+    margin-top: 0;
+    padding-top: 0;
+
+    font-size: 1rem;
+  }
+}
+
+main {
+  min-height: 50vh;
+
+  .battle-name-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .battle-name {
+    font-size: 2rem;
+    width: 50%;
+    text-align: center;
+    font-family: "Marcellus SC", serif;
+  }
+
+  .monstres-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .monstre {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .add-monstre {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      width: 100%;
+
+      .monstre-id {
+        font-size: 2rem;
+        width: 50%;
+        text-align: center;
+        font-family: "Marcellus SC", serif;
+      }
+
+      button {
+        font-size: 1rem;
+        padding: 5px 10px;
+        margin-left: 10px;
+      }
+    }
+
+
+  }
+}

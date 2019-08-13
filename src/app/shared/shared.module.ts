@@ -10,7 +10,7 @@ import {
   MatCheckboxModule,
   MatIconModule,
   MatListModule,
-  MatRippleModule, MatSelectModule,
+  MatRippleModule, MatSelectModule, MatSliderModule, MatStepperModule,
   MatTooltipModule
 } from '@angular/material';
 import { AttributNamePipe } from './pipes/attribut-name.pipe';
@@ -45,7 +45,9 @@ const materialModules = [
   MatRippleModule,
   MatBottomSheetModule,
   MatSelectModule,
-  MatButtonToggleModule
+  MatButtonToggleModule,
+  MatStepperModule,
+  MatSliderModule
 ];
 
 const modules = [
