@@ -1,8 +1,8 @@
 import { BestiaireService } from '../../shared/services/bestiaire/bestiaire.service';
 import { Observable } from 'rxjs';
-import { filter, map, tap } from 'rxjs/operators';
+import { filter, map } from 'rxjs/operators';
 import { Component, OnInit } from '@angular/core';
-import { FormArray, FormBuilder, FormControl, FormGroup, Validators, ValidationErrors } from '@angular/forms';
+import { FormArray, FormBuilder, FormControl, FormGroup, ValidationErrors, Validators } from '@angular/forms';
 import { Monstre } from 'src/app/models/monstre';
 import { Battle } from '../../models/battle';
 import { LocalStorageService } from '../../shared/services/local-storage/local-storage.service';
@@ -17,11 +17,12 @@ export class BattleBuildComponent implements OnInit {
   battleBuildForm: FormGroup;
   filteredMontres$: Observable<Monstre[]>;
   expandedMonstres: boolean[] = [];
+  step = 1;
 
   constructor(private readonly fb: FormBuilder,
-    private readonly bestiaire: BestiaireService,
-    private readonly localStorage: LocalStorageService,
-    private readonly router: Router) {
+              private readonly bestiaire: BestiaireService,
+              private readonly localStorage: LocalStorageService,
+              private readonly router: Router) {
   }
 
   get battleName(): FormControl {

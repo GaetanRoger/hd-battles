@@ -1,121 +1,71 @@
 <app-page-header title="Création d'un combat" subtitle="C'est l'heue du du-du-du du-du duel !"
-  image="/assets/img/battle-build.jpg">
+                 image="/assets/img/battle-build.jpg">
 </app-page-header>
 
 <main [formGroup]="battleBuildForm">
-  <mat-vertical-stepper [linear]="true">
-    <mat-step [stepControl]="battleName" label="Nom du combat">
-      <section class="battle-name-section">
-        <mat-form-field class="battle-name">
-          <input matInput placeholder="Nom du combat" formControlName="name">
-          <mat-error *ngIf="battleName.errors?.required">Pensez a utiliser votre clavier</mat-error>
-        </mat-form-field>
-
-        <button mat-raised-button matStepperNext [disabled]="battleName.invalid" color="primary">CONTINUER
-        </button>
-      </section>
-    </mat-step>
-    <mat-step [stepControl]="monstresArray" label="Ajout des monstres">
-      <section class="monstres-section">
-        <div class="monstres">
-          <mat-card [formGroup]="monstreGroup" *ngFor="let monstreGroup of monstresArray.controls; let i = index"
-            class="monstre">
-            <app-monstre-card-title [monstre]="monstreGroup.value"></app-monstre-card-title>
-            <div>
-              <span class="param-name">Nombre : </span>
-              <mat-slider formControlName="quantity" min="1" max="10" thumbLabel="true">d</mat-slider>
-            </div>
-            <div>
-              <span class="param-name">PV aléatoire : </span>
-              <mat-checkbox formControlName="randomHp"></mat-checkbox>
-            </div>
-            <div class="expand-button">
-              <button mat-icon-button (click)="expandedMonstres[i] = !expandedMonstres[i]">
-                <mat-icon *ngIf="!expandedMonstres[i]">keyboard_arrow_down</mat-icon>
-                <mat-icon *ngIf="expandedMonstres[i]">keyboard_arrow_up</mat-icon>
-              </button>
-            </div>
-            <div class="expanded-area" *ngIf="expandedMonstres[i]">
-              <app-monstre-attributs [monstre]="monstreGroup.value.monstre" [editable]="false"></app-monstre-attributs>
-              <app-monstre-caracs [preparedMonstre]="monstreGroup.value" [editable]="false" class="caracs">
-              </app-monstre-caracs>
-            </div>
-          </mat-card>
+  <section class="battle-name-section" *ngIf="step === 1">
+    <p class="prefix-text">Cet affrontement mythique portera le nom...</p>
+    <mat-form-field class="battle-name">
+      <input matInput formControlName="name" autofocus>
+      <mat-error *ngIf="battleName.errors?.required">En manque d'inspiration ? Regardez <a
+        href="https://fr.fantasynamegenerators.com/noms-de-batailles.php">par ici</a>...
+      </mat-error>
+      <button mat-icon-button matSuffix
+              [disabled]="battleName.invalid"
+              color="accent"
+              (click)="step = 2">
+        <mat-icon>play_circle_filled</mat-icon>
+      </button>
+    </mat-form-field>
+  </section>
+  <section class="monstres-section" *ngIf="step === 2">
+    <h2>{{battleName.value}}</h2>
+    <p class="prefix-text">... et verra s'affronter les terribles...</p>
+    <div class="monstres">
+      <mat-card [formGroup]="monstreGroup" *ngFor="let monstreGroup of monstresArray.controls; let i = index"
+                class="monstre">
+        <app-monstre-card-title [monstre]="monstreGroup.value"></app-monstre-card-title>
+        <div>
+          <span class="param-name">Nombre : </span>
+          <mat-slider formControlName="quantity" min="1" max="10" thumbLabel="true">d</mat-slider>
         </div>
-
-        <div class="add-monstre">
-          <mat-form-field class="monstre-id">
-            <input matInput placeholder="Ajouter un monstre..." formControlName="monstreSearch"
-              [matAutocomplete]="auto">
-            <mat-autocomplete #auto="matAutocomplete" [displayWith]="monstreName">
-              <mat-option *ngFor="let monstre of filteredMontres$ | async" [value]="monstre">
-                <span>{{monstre.title}}</span>
-              </mat-option>
-            </mat-autocomplete>
-          </mat-form-field>
-
-          <button mat-raised-button color="primary" (click)="addMonstre()" [disabled]="!monstreCanBeAdded">
-            <mat-icon>add_circle_outline</mat-icon>
-            Ajouter
+        <div>
+          <span class="param-name">PV aléatoire : </span>
+          <mat-checkbox formControlName="randomHp"></mat-checkbox>
+        </div>
+        <div class="expand-button">
+          <button mat-icon-button (click)="expandedMonstres[i] = !expandedMonstres[i]">
+            <mat-icon *ngIf="!expandedMonstres[i]">keyboard_arrow_down</mat-icon>
+            <mat-icon *ngIf="expandedMonstres[i]">keyboard_arrow_up</mat-icon>
           </button>
         </div>
+        <div class="expanded-area" *ngIf="expandedMonstres[i]">
+          <app-monstre-attributs [monstre]="monstreGroup.value.monstre"
+                                 [editable]="false"></app-monstre-attributs>
+          <app-monstre-caracs [preparedMonstre]="monstreGroup.value" [editable]="false" class="caracs">
+          </app-monstre-caracs>
+        </div>
+      </mat-card>
+    </div>
 
-      </section>
+    <div class="add-monstre">
+      <mat-form-field class="monstre-id">
+        <input matInput placeholder="Ajouter un monstre..." formControlName="monstreSearch"
+               [matAutocomplete]="auto">
+        <mat-autocomplete #auto="matAutocomplete" [displayWith]="monstreName">
+          <mat-option *ngFor="let monstre of filteredMontres$ | async" [value]="monstre">
+            <span>{{monstre.title}}</span>
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
 
-      <button mat-raised-button (click)="submit()" [disabled]="monstresArray.invalid"
-        color="primary">ENREGISTRER</button>
-    </mat-step>
-  </mat-vertical-stepper>
+      <button mat-raised-button color="primary" (click)="addMonstre()" [disabled]="!monstreCanBeAdded">
+        <mat-icon>add_circle_outline</mat-icon>
+        Ajouter
+      </button>
+    </div>
 
+    <button mat-raised-button color="accent" [disabled]="battleBuildForm.invalid" (click)="submit()">CONTINUER</button>
 
+  </section>
 </main>
-
-
-<!--<form [formGroup]="battleBuildForm">-->
-<!--  <mat-form-field class="name">-->
-<!--    <input matInput placeholder="Nom du combat" formControlName="name">-->
-<!--  </mat-form-field>-->
-
-<!--  <div class="monstre" *ngFor="let monstreGroup of monstresArray.controls; let i = index" [formGroup]="monstreGroup">-->
-<!--    <mat-form-field class="monstre-id">-->
-<!--      <input matInput placeholder="ID du monstre" formControlName="monstre" [matAutocomplete]="auto">-->
-<!--      <mat-autocomplete #auto="matAutocomplete" [displayWith]="monstreName">-->
-<!--        <mat-option *ngFor="let monstre of filteredMontres[i] | async" [value]="monstre">-->
-<!--          <span>{{monstre.title}}</span>-->
-<!--        </mat-option>-->
-<!--      </mat-autocomplete>-->
-<!--    </mat-form-field>-->
-
-<!--    <mat-form-field class="monstre-quantity">-->
-<!--      <input matInput type="number" placeholder="Nombre" formControlName="quantity">-->
-<!--    </mat-form-field>-->
-
-<!--    <mat-checkbox formControlName="randomHp">PV tirés au dé ?</mat-checkbox>-->
-
-<!--    <button mat-icon-button (click)="removeMonstre(i)">-->
-<!--      <mat-icon>close</mat-icon>-->
-<!--    </button>-->
-
-
-<!--    <div class="monstre-card" *ngIf="monstreGroup.value.monstre as monstre">-->
-<!--      <div *ngIf="monstre.title">-->
-<!--        <ul>-->
-<!--          <li>Nom : {{monstre.title}}</li>-->
-<!--          <li>Type : {{monstre.truetype}}</li>-->
-<!--          <li>Taille : {{monstre.size}}</li>-->
-<!--        </ul>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </div>-->
-
-<!--  <div class="character" *ngFor="let characterGroup of charactersArray.controls" [formGroup]="characterGroup">-->
-<!--    <mat-form-field class="character-name">-->
-<!--      <input matInput placeholder="Nom du PJ" formControlName="name">-->
-<!--    </mat-form-field>-->
-<!--  </div>-->
-
-<!--  <button mat-raised-button (click)="addMonstre()">Ajouter monstre</button>-->
-<!--  <button mat-raised-button (click)="addCharacter()">Ajouter PJ</button>-->
-<!--  <br>-->
-<!--  <button mat-raised-button color="accent" [disabled]="battleBuildForm.invalid" (click)="submit()">Continuer</button>-->
-<!--</form>-->
