@@ -52,7 +52,19 @@
 
 footer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  .go {
+    margin-bottom: 10px;
+
+    font-size: 2rem;
+    width: 300px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
