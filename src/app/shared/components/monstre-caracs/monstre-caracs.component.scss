@@ -1,0 +1,19 @@
+.carac {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 10px;
+
+  .icon {
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    margin-right: 10px;
+  }
+
+  .name {
+    font-weight: 700;
+    margin-right: 10px;
+  }
+}

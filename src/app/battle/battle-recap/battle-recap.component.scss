@@ -1,52 +1,21 @@
-.battle-recap {
-  //background: linear-gradient(
-  //    rgba(0, 0, 0, 0.7),
-  //    rgba(0, 0, 0, 0.7)
-  //), url("/assets/battle.jpg");
-  //background-position: center;
-  //background-size: contain;
-}
-
-:host {
-}
-
 .monstres {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 20px;
 
   .monstre {
     width: 350px;
     margin-bottom: 20px;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
 
     .caracs {
       margin-top: 20px;
-
-      .carac {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: flex-start;
-        margin-top: 10px;
-
-        .icon {
-          width: 18px;
-          height: 18px;
-          line-height: 18px;
-          margin-right: 10px;
-        }
-
-        .name {
-          font-weight: 700;
-          margin-right: 10px;
-        }
-      }
     }
 
     .content {

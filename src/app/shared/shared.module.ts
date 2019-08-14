@@ -30,6 +30,7 @@ import { ClasseArmureEditorBottomSheetComponent } from './components/editors/cla
 import { SensComponent } from './components/attributes/sens/sens.component';
 import { SensesEditorBottomSheetComponent } from './components/editors/senses-editor-bottom-sheet/senses-editor-bottom-sheet.component';
 import { SpeedComponent } from './components/attributes/speed/speed.component';
+import { MonstreCaracsComponent } from './components/monstre-caracs/monstre-caracs.component';
 
 
 
@@ -65,7 +66,8 @@ const components = [
   PageHeaderComponent,
   ClasseArmureComponent,
   SensComponent,
-  SpeedComponent
+  SpeedComponent,
+  MonstreCaracsComponent
 ];
 
 const entryComponents = [
