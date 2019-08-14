@@ -2,7 +2,7 @@ import { BestiaireService } from '../../shared/services/bestiaire/bestiaire.serv
 import { Observable } from 'rxjs';
 import { filter, map, tap } from 'rxjs/operators';
 import { Component, OnInit } from '@angular/core';
-import { FormArray, FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormArray, FormBuilder, FormControl, FormGroup, Validators, ValidationErrors } from '@angular/forms';
 import { Monstre } from 'src/app/models/monstre';
 import { Battle } from '../../models/battle';
 import { LocalStorageService } from '../../shared/services/local-storage/local-storage.service';
@@ -16,11 +16,12 @@ import { Router } from '@angular/router';
 export class BattleBuildComponent implements OnInit {
   battleBuildForm: FormGroup;
   filteredMontres$: Observable<Monstre[]>;
+  expandedMonstres: boolean[] = [];
 
   constructor(private readonly fb: FormBuilder,
-              private readonly bestiaire: BestiaireService,
-              private readonly localStorage: LocalStorageService,
-              private readonly router: Router) {
+    private readonly bestiaire: BestiaireService,
+    private readonly localStorage: LocalStorageService,
+    private readonly router: Router) {
   }
 
   get battleName(): FormControl {
@@ -50,7 +51,7 @@ export class BattleBuildComponent implements OnInit {
   ngOnInit() {
     this.battleBuildForm = this.fb.group({
       name: [null, Validators.required],
-      monstres: this.fb.array([]),
+      monstres: this.fb.array([], this.atLeastOneSensValidator),
       characters: this.fb.array([]),
       monstreSearch: this.fb.control('')
     });
@@ -72,6 +73,7 @@ export class BattleBuildComponent implements OnInit {
       randomHp: this.fb.control(true, [Validators.required])
     });
     this.monstresArray.push(newMonstreControlGroup);
+    this.expandedMonstres.push(false);
 
     monstreSearchField.setValue('');
   }
@@ -84,11 +86,20 @@ export class BattleBuildComponent implements OnInit {
 
   removeMonstre(index: number): void {
     this.monstresArray.removeAt(index);
+    this.expandedMonstres.splice(index, 1);
   }
 
   submit() {
     const id = Date.now().toString();
-    this.localStorage.addToStoredMap<Battle>('built-battles', id, {id, ...this.battleBuildForm.value});
+    const date = new Date();
+    const battle = {
+      ...this.battleBuildForm.value,
+      id,
+      creationDate: date,
+      lastModificationDate: date
+    };
+
+    this.localStorage.addToStoredMap<Battle>('built-battles', id, battle);
     this.router.navigate(['/battle/recap', id]);
   }
 
@@ -96,6 +107,16 @@ export class BattleBuildComponent implements OnInit {
     const cleanedFilterValue = filterValue.trim().toLowerCase();
 
     return monstres.filter(monstre => monstre.title.trim().toLowerCase().includes(cleanedFilterValue));
+  }
+
+  private atLeastOneSensValidator(array: FormArray): ValidationErrors | null {
+    if (array.controls.length > 0) {
+      return null;
+    }
+
+    return {
+      atLeastOneSens: 'false'
+    };
   }
 
 }

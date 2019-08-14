@@ -1,0 +1,35 @@
+<div class="carac">
+  <app-medieval-icon icon="shield" class="icon"></app-medieval-icon>
+  <span class="name">Classe d'armure&nbsp;: </span>
+  <span class="value">
+    <app-classe-armure [(value)]="preparedMonstre.monstre.parsed.ac" [editable]="editable"></app-classe-armure>
+  </span>
+</div>
+<div class="carac">
+  <app-medieval-icon icon="poison" class="icon"></app-medieval-icon>
+  <span class="name">Points de vie&nbsp;: </span>
+  <app-dice-roll [(dice)]="preparedMonstre.monstre.parsed.hp" [random]="preparedMonstre.randomHp" [editable]="editable"
+    class="value">
+  </app-dice-roll>
+</div>
+<div class="carac">
+  <app-medieval-icon icon="flag" class="icon"></app-medieval-icon>
+  <span class="name">Vitesse&nbsp;: </span>
+  <span class="value">
+    <app-speed [(value)]="preparedMonstre.monstre.parsed.speed" [editable]="editable"></app-speed>
+  </span>
+</div>
+<div class="carac">
+  <app-medieval-icon icon="torch" class="icon"></app-medieval-icon>
+  <span class="name">Sens&nbsp;: </span>
+  <span class="value">
+    <app-sens [(value)]="preparedMonstre.monstre.parsed.senses" [editable]="editable"></app-sens>
+  </span>
+</div>
+<div class="carac">
+  <app-medieval-icon icon="axes" class="icon"></app-medieval-icon>
+  <span class="name">Difficulté&nbsp;: </span>
+  <span class="value">
+    {{preparedMonstre.monstre.challenge}} ({{preparedMonstre.monstre.header.monster.px}} PX)
+  </span>
+</div>

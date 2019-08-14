@@ -1,7 +1,6 @@
-<header>
-  <h1>Création d'un combat</h1>
-  <p>Nommez votre combat pour commencer</p>
-</header>
+<app-page-header title="Création d'un combat" subtitle="C'est l'heue du du-du-du du-du duel !"
+  image="/assets/img/battle-build.jpg">
+</app-page-header>
 
 <main [formGroup]="battleBuildForm">
   <mat-vertical-stepper [linear]="true">
@@ -9,37 +8,45 @@
       <section class="battle-name-section">
         <mat-form-field class="battle-name">
           <input matInput placeholder="Nom du combat" formControlName="name">
+          <mat-error *ngIf="battleName.errors?.required">Pensez a utiliser votre clavier</mat-error>
         </mat-form-field>
 
-        <button mat-raised-button
-                matStepperNext
-                [disabled]="battleName.invalid"
-                color="primary">Continuer
+        <button mat-raised-button matStepperNext [disabled]="battleName.invalid" color="primary">CONTINUER
         </button>
       </section>
     </mat-step>
     <mat-step [stepControl]="monstresArray" label="Ajout des monstres">
       <section class="monstres-section">
-
-
-        <div *ngFor="let monstreGroup of monstresArray.controls; let i = index" [formGroup]="monstreGroup"
-             class="monstre">
-          <div>
-            <span>Nombre : </span>
-            <mat-slider formControlName="quantity"
-                        min="1" max="10"
-                        thumbLabel="true">d</mat-slider>
-          </div>
-          <div>
-            <span>PV aléatoire : </span>
-            <mat-checkbox formControlName="randomHp"></mat-checkbox>
-          </div>
+        <div class="monstres">
+          <mat-card [formGroup]="monstreGroup" *ngFor="let monstreGroup of monstresArray.controls; let i = index"
+            class="monstre">
+            <app-monstre-card-title [monstre]="monstreGroup.value"></app-monstre-card-title>
+            <div>
+              <span class="param-name">Nombre : </span>
+              <mat-slider formControlName="quantity" min="1" max="10" thumbLabel="true">d</mat-slider>
+            </div>
+            <div>
+              <span class="param-name">PV aléatoire : </span>
+              <mat-checkbox formControlName="randomHp"></mat-checkbox>
+            </div>
+            <div class="expand-button">
+              <button mat-icon-button (click)="expandedMonstres[i] = !expandedMonstres[i]">
+                <mat-icon *ngIf="!expandedMonstres[i]">keyboard_arrow_down</mat-icon>
+                <mat-icon *ngIf="expandedMonstres[i]">keyboard_arrow_up</mat-icon>
+              </button>
+            </div>
+            <div class="expanded-area" *ngIf="expandedMonstres[i]">
+              <app-monstre-attributs [monstre]="monstreGroup.value.monstre" [editable]="false"></app-monstre-attributs>
+              <app-monstre-caracs [preparedMonstre]="monstreGroup.value" [editable]="false" class="caracs">
+              </app-monstre-caracs>
+            </div>
+          </mat-card>
         </div>
-
 
         <div class="add-monstre">
           <mat-form-field class="monstre-id">
-            <input matInput placeholder="Nom du monstre" formControlName="monstreSearch" [matAutocomplete]="auto">
+            <input matInput placeholder="Ajouter un monstre..." formControlName="monstreSearch"
+              [matAutocomplete]="auto">
             <mat-autocomplete #auto="matAutocomplete" [displayWith]="monstreName">
               <mat-option *ngFor="let monstre of filteredMontres$ | async" [value]="monstre">
                 <span>{{monstre.title}}</span>
@@ -47,9 +54,7 @@
             </mat-autocomplete>
           </mat-form-field>
 
-          <button mat-raised-button color="primary"
-                  (click)="addMonstre()"
-                  [disabled]="!monstreCanBeAdded">
+          <button mat-raised-button color="primary" (click)="addMonstre()" [disabled]="!monstreCanBeAdded">
             <mat-icon>add_circle_outline</mat-icon>
             Ajouter
           </button>
@@ -57,6 +62,8 @@
 
       </section>
 
+      <button mat-raised-button (click)="submit()" [disabled]="monstresArray.invalid"
+        color="primary">ENREGISTRER</button>
     </mat-step>
   </mat-vertical-stepper>
 
