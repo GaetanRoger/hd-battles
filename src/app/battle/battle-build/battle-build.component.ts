@@ -91,7 +91,15 @@ export class BattleBuildComponent implements OnInit {
 
   submit() {
     const id = Date.now().toString();
-    this.localStorage.addToStoredMap<Battle>('built-battles', id, { id, ...this.battleBuildForm.value });
+    const date = new Date();
+    const battle = {
+      ...this.battleBuildForm.value,
+      id,
+      creationDate: date,
+      lastModificationDate: date
+    };
+
+    this.localStorage.addToStoredMap<Battle>('built-battles', id, battle);
     this.router.navigate(['/battle/recap', id]);
   }
 
