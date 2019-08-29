@@ -13,7 +13,9 @@
     <mat-nav-list *ngIf="battles.length > 0">
       <mat-list-item mat-list-item *ngFor="let battle of battles" [routerLink]="['/battle/recap', battle.id]">
         <h4 matLine>{{battle.name}}</h4>
-        <p matLine>{{battle.monstres.length}} monstres — derniere modification le {{battle.lastModificationDate | date}}
+        <p matLine>Modifie le
+          {{battle.lastModificationDate | date:'shortDate'}} a
+          {{battle.lastModificationDate | date:'shortTime'}}
         </p>
       </mat-list-item>
     </mat-nav-list>
